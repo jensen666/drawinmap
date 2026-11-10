@@ -1,0 +1,500 @@
+{
+  "_meta": {
+    "description": "controller 10 场景 golden 基线（T-B2d）。由 `node test/controller-golden.mjs --update` 生成；reply 已归一化 traceId/时间戳，其余字段逐字比较。",
+    "generatedFromCommit": "4d3198c"
+  },
+  "scenarios": [
+    {
+      "id": "local-hit",
+      "title": "本地参考命中：唯一本地候选 + 其余两路失败 → 直接规划（不弹卡）",
+      "captures": [
+        {
+          "reply": "画一只天鹅\n地点「广州塔」→ 广州塔\n已规划「天鹅」路线：1.00 km · 约 13 分钟 · 贴合 平均 20 m / 最大 40 m · 绕行 1.20× · 覆盖全部顶点 · 全程可走（路线贴合 85 · 尺寸 1.2 km · 朝向 0°）\n绿色线就是要走的路线，紫色虚线是图形轮廓；想调整位置、大小或换个图形，直接说就行。",
+          "status": "ok",
+          "shape": {
+            "shapeName": "天鹅",
+            "sizeMeters": 1200,
+            "score": 85,
+            "reference": false
+          },
+          "outline": {
+            "source": "reference",
+            "name": "天鹅",
+            "pointCount": 24,
+            "dataUrl": null
+          },
+          "commitDraw": {
+            "count": 1,
+            "reference": false,
+            "score": 85,
+            "shapeName": "天鹅",
+            "sizeMeters": 1200,
+            "routeMeters": 1000,
+            "deliveredObjects": []
+          },
+          "referenceChoice": null,
+          "scalePool": null,
+          "guide": null
+        }
+      ]
+    },
+    {
+      "id": "online-hit",
+      "title": "在线命中：出候选卡（点选前引擎 0 次调用）→ 点选在线卡后正式规划交付",
+      "captures": [
+        {
+          "reply": "请选择一个目标轮廓（共 1 个候选）：",
+          "status": null,
+          "shape": null,
+          "outline": null,
+          "commitDraw": null,
+          "referenceChoice": {
+            "status": "awaiting-selection",
+            "candidateCount": 1,
+            "origins": [
+              "online"
+            ],
+            "names": [
+              "天鹅"
+            ],
+            "reviewStatuses": [
+              "unreviewed"
+            ],
+            "objects": null
+          },
+          "scalePool": null,
+          "guide": null
+        },
+        {
+          "reply": "画一只天鹅\n地点「广州塔」→ 广州塔\n已规划「天鹅」路线：1.00 km · 约 13 分钟 · 贴合 平均 20 m / 最大 40 m · 绕行 1.20× · 覆盖全部顶点 · 全程可走（路线贴合 85 · 尺寸 1.2 km · 朝向 0°）\n绿色线就是要走的路线，紫色虚线是图形轮廓；想调整位置、大小或换个图形，直接说就行。",
+          "status": "ok",
+          "shape": {
+            "shapeName": "天鹅",
+            "sizeMeters": 1200,
+            "score": 85,
+            "reference": false
+          },
+          "outline": {
+            "source": "reference",
+            "name": "天鹅",
+            "pointCount": 24,
+            "dataUrl": null
+          },
+          "commitDraw": {
+            "count": 1,
+            "reference": false,
+            "score": 85,
+            "shapeName": "天鹅",
+            "sizeMeters": 1200,
+            "routeMeters": 1000,
+            "deliveredObjects": []
+          },
+          "referenceChoice": null,
+          "scalePool": null,
+          "guide": null
+        }
+      ]
+    },
+    {
+      "id": "freeform-pass",
+      "title": "自由轮廓通过视觉质检：出 1 张自由轮廓卡 → 点选 → 规划交付（复用质检结论）",
+      "captures": [
+        {
+          "reply": "请选择一个目标轮廓（共 1 个候选）：",
+          "status": null,
+          "shape": null,
+          "outline": null,
+          "commitDraw": null,
+          "referenceChoice": {
+            "status": "awaiting-selection",
+            "candidateCount": 1,
+            "origins": [
+              "freeform"
+            ],
+            "names": [
+              "天鹅"
+            ],
+            "reviewStatuses": [
+              "freeform-reviewed"
+            ],
+            "objects": null
+          },
+          "scalePool": null,
+          "guide": null
+        },
+        {
+          "reply": "画一只天鹅\n地点「广州塔」→ 广州塔\n已规划「天鹅」路线：1.00 km · 约 13 分钟 · 贴合 平均 20 m / 最大 40 m · 绕行 1.20× · 覆盖全部顶点 · 全程可走（路线贴合 80 · 尺寸 1.2 km · 朝向 0°）\n绿色线就是要走的路线，紫色虚线是图形轮廓；想调整位置、大小或换个图形，直接说就行。",
+          "status": "ok",
+          "shape": {
+            "shapeName": "天鹅",
+            "sizeMeters": 1200,
+            "score": 80,
+            "reference": false
+          },
+          "outline": {
+            "source": "llm",
+            "name": "天鹅",
+            "pointCount": 84,
+            "dataUrl": null
+          },
+          "commitDraw": {
+            "count": 1,
+            "reference": false,
+            "score": 80,
+            "shapeName": "天鹅",
+            "sizeMeters": 1200,
+            "routeMeters": 1000,
+            "deliveredObjects": []
+          },
+          "referenceChoice": null,
+          "scalePool": null,
+          "guide": null
+        }
+      ]
+    },
+    {
+      "id": "all-source-fail",
+      "title": "三路都失败：无候选卡、不规划、不画线，回复点明目标与主要原因",
+      "captures": [
+        {
+          "reply": "「天鹅」这次没画出来：生成出来不像你要的那个（或没满足你提的要求）（视觉质检结论为不像：四条腿呈方波）。\n把你最想要的那一个特征说得更具体一点（比如\"头朝左、尾巴翘起来\"），我重画。",
+          "status": null,
+          "shape": null,
+          "outline": null,
+          "commitDraw": null,
+          "referenceChoice": null,
+          "scalePool": null,
+          "guide": null
+        }
+      ]
+    },
+    {
+      "id": "multi-object",
+      "title": "多对象全部命中：组合 2 部分 multi-part 目标 → 规划交付（交付对象=请求对象）",
+      "captures": [
+        {
+          "reply": "好的，我给你画一匹马和一只狗\n地点「广州塔」→ 广州塔\n已规划「马+狗」路线：1.00 km · 约 13 分钟 · 贴合 平均 20 m / 最大 40 m · 绕行 1.20× · 覆盖全部顶点 · 全程可走（路线贴合 78 · 尺寸 1.2 km · 朝向 0°）\n绿色线就是要走的路线，紫色虚线是图形轮廓；想调整位置、大小或换个图形，直接说就行。",
+          "status": "ok",
+          "shape": {
+            "shapeName": "马+狗",
+            "sizeMeters": 1200,
+            "score": 78,
+            "reference": false
+          },
+          "outline": {
+            "source": "reference",
+            "name": "马+狗",
+            "pointCount": 44,
+            "dataUrl": null
+          },
+          "commitDraw": {
+            "count": 1,
+            "reference": false,
+            "score": 78,
+            "shapeName": "马+狗",
+            "sizeMeters": 1200,
+            "routeMeters": 1000,
+            "deliveredObjects": [
+              "马",
+              "狗"
+            ]
+          },
+          "referenceChoice": null,
+          "scalePool": null,
+          "guide": null
+        }
+      ]
+    },
+    {
+      "id": "scale-pick",
+      "title": "多比例尺点选：绿线交付挂 3 档池 → 点选 3.6 km 卡切换（不重规划）",
+      "captures": [
+        {
+          "reply": "好的。\n地点「广州塔」→ 广州塔\n已规划「马」路线：1.00 km · 约 13 分钟 · 贴合 平均 20 m / 最大 40 m · 绕行 1.20× · 覆盖全部顶点 · 全程可走（路线贴合 75 · 尺寸 1.8 km · 朝向 0°）\n另有一版尺寸更大、路程更长（3.6 km）：1.0 km · 约 13 分钟 · 路线贴合 72 · 形状最大偏差 40 m。想换这一版点下方比例尺卡片，或直接说\"要大一点的那版\"。\n绿色线就是要走的路线，紫色虚线是图形轮廓；想调整位置、大小或换个图形，直接说就行。",
+          "status": "ok",
+          "shape": {
+            "shapeName": "马",
+            "sizeMeters": 1800,
+            "score": 75,
+            "reference": false
+          },
+          "outline": {
+            "source": "builtin",
+            "name": "五角星",
+            "pointCount": 30,
+            "dataUrl": null
+          },
+          "commitDraw": {
+            "count": 1,
+            "reference": false,
+            "score": 75,
+            "shapeName": "马",
+            "sizeMeters": 1800,
+            "routeMeters": 1000,
+            "deliveredObjects": []
+          },
+          "referenceChoice": null,
+          "scalePool": {
+            "cardCount": 3,
+            "hiddenCount": 0,
+            "shapeName": "五角星",
+            "currentSizeMeters": 1800,
+            "sizes": [
+              900,
+              1800,
+              3600
+            ],
+            "scores": [
+              68,
+              75,
+              72
+            ]
+          },
+          "guide": null
+        },
+        {
+          "reply": "",
+          "status": "switched",
+          "shape": null,
+          "outline": null,
+          "commitDraw": {
+            "count": 2,
+            "reference": false,
+            "score": 72,
+            "shapeName": "马",
+            "sizeMeters": 3600,
+            "routeMeters": 1000,
+            "deliveredObjects": []
+          },
+          "referenceChoice": null,
+          "scalePool": {
+            "cardCount": 3,
+            "hiddenCount": 0,
+            "shapeName": "五角星",
+            "currentSizeMeters": 3600,
+            "sizes": [
+              900,
+              1800,
+              3600
+            ],
+            "scores": [
+              68,
+              75,
+              72
+            ]
+          },
+          "guide": null
+        }
+      ]
+    },
+    {
+      "id": "alternative-switch",
+      "title": "备选切换：交付 5.4 km 版 + 备选 9 km 版 → 短语\"要大一点的那版\"切到 9 km（不重规划）",
+      "captures": [
+        {
+          "reply": "好的。\n地点「广州塔」→ 广州塔\n已规划「马」路线：1.00 km · 约 13 分钟 · 贴合 平均 20 m / 最大 40 m · 绕行 1.20× · 覆盖全部顶点 · 全程可走（路线贴合 70 · 尺寸 5.4 km · 朝向 0°）\n另有一版尺寸更大、路程更长（9.0 km）：1.0 km · 约 13 分钟 · 路线贴合 77 · 形状最大偏差 40 m。想换这一版点下方比例尺卡片，或直接说\"要大一点的那版\"。\n绿色线就是要走的路线，紫色虚线是图形轮廓；想调整位置、大小或换个图形，直接说就行。",
+          "status": "ok",
+          "shape": {
+            "shapeName": "马",
+            "sizeMeters": 5400,
+            "score": 70,
+            "reference": false
+          },
+          "outline": {
+            "source": "builtin",
+            "name": "心形",
+            "pointCount": 120,
+            "dataUrl": null
+          },
+          "commitDraw": {
+            "count": 1,
+            "reference": false,
+            "score": 70,
+            "shapeName": "马",
+            "sizeMeters": 5400,
+            "routeMeters": 1000,
+            "deliveredObjects": []
+          },
+          "referenceChoice": null,
+          "scalePool": {
+            "cardCount": 2,
+            "hiddenCount": 0,
+            "shapeName": "心形",
+            "currentSizeMeters": 5400,
+            "sizes": [
+              5400,
+              9000
+            ],
+            "scores": [
+              70,
+              77
+            ]
+          },
+          "guide": null
+        },
+        {
+          "reply": "已切换到更大的一版「心形」：1.00 km · 约 13 分钟 · 贴合 平均 20 m / 最大 40 m · 路线贴合 77。\n绿色线就是要走的路线，想再换尺寸直接说\"要大一点/小一点的那版\"，或直接说明目标尺寸。",
+          "status": "ok",
+          "shape": {
+            "shapeName": "马",
+            "sizeMeters": 9000,
+            "score": 77,
+            "reference": false
+          },
+          "outline": {
+            "source": "builtin",
+            "name": "心形",
+            "pointCount": 120,
+            "dataUrl": null
+          },
+          "commitDraw": {
+            "count": 2,
+            "reference": false,
+            "score": 77,
+            "shapeName": "马",
+            "sizeMeters": 9000,
+            "routeMeters": 1000,
+            "deliveredObjects": null
+          },
+          "referenceChoice": null,
+          "scalePool": {
+            "cardCount": 2,
+            "hiddenCount": 0,
+            "shapeName": "心形",
+            "currentSizeMeters": 9000,
+            "sizes": [
+              5400,
+              9000
+            ],
+            "scores": [
+              70,
+              77
+            ]
+          },
+          "guide": null
+        }
+      ]
+    },
+    {
+      "id": "plan-reference",
+      "title": "参考版回退：plan 低于 60 分交付闸门 → 橙色参考版（reference=true），不绿线",
+      "captures": [
+        {
+          "reply": "画马\n地点「广州塔」→ 广州塔\n这一带画不出达标的「马」路线：路线贴合 55 低于交付线 60。\n给你一版最接近的参考（地图上橙色虚线，非合格）：1.00 km · 约 13 分钟 · 无特征检查 · 路线贴合 55 · 尺寸 1.2 km · 朝向 0°。\n这版仅供参考，不建议按它走；换地点（路网方正的商圈）、换尺寸或换个图形可能更好。",
+          "status": "reference",
+          "shape": {
+            "shapeName": "马",
+            "sizeMeters": 1200,
+            "score": 55,
+            "reference": true
+          },
+          "outline": {
+            "source": "llm",
+            "name": "马A",
+            "pointCount": 32,
+            "dataUrl": null
+          },
+          "commitDraw": {
+            "count": 1,
+            "reference": true,
+            "score": 55,
+            "shapeName": "马",
+            "sizeMeters": 1200,
+            "routeMeters": 1000,
+            "deliveredObjects": []
+          },
+          "referenceChoice": null,
+          "scalePool": null,
+          "guide": null
+        }
+      ]
+    },
+    {
+      "id": "recommend-fallback",
+      "title": "推荐失败回退：推荐失败但 bests 有可回退候选 → 参考版交付（reference=true）",
+      "captures": [
+        {
+          "reply": "看看能画什么\n地点「珠江新城」→ 珠江新城\n这一带画不出达标的「马」路线：路线贴合 55 低于交付线 60。\n给你一版最接近的参考（地图上橙色虚线，非合格）：1.00 km · 约 13 分钟 · 无特征检查 · 路线贴合 55 · 尺寸 1.2 km · 朝向 0°。\n这版仅供参考，不建议按它走；换地点（路网方正的商圈）、换尺寸或换个图形可能更好。",
+          "status": "reference",
+          "shape": {
+            "shapeName": "马",
+            "sizeMeters": 1200,
+            "score": 55,
+            "reference": true
+          },
+          "outline": {
+            "source": "builtin",
+            "name": "心形",
+            "pointCount": 120,
+            "dataUrl": null
+          },
+          "commitDraw": {
+            "count": 1,
+            "reference": true,
+            "score": 55,
+            "shapeName": "马",
+            "sizeMeters": 1200,
+            "routeMeters": 1000,
+            "deliveredObjects": []
+          },
+          "referenceChoice": null,
+          "scalePool": null,
+          "guide": null
+        }
+      ]
+    },
+    {
+      "id": "guide-question",
+      "title": "引导追问：意图缺地点 → 出 5 个地点选项；用户点选广州塔 → 规划交付",
+      "captures": [
+        {
+          "reply": "好的。\n想在哪里画？点选一个地点，或直接输入别的地点。",
+          "status": "guide",
+          "shape": null,
+          "outline": null,
+          "commitDraw": null,
+          "referenceChoice": null,
+          "scalePool": null,
+          "guide": {
+            "slot": "place",
+            "options": [
+              "广州塔",
+              "花城广场",
+              "珠江新城",
+              "广州大剧院",
+              "当前视野中心"
+            ]
+          }
+        },
+        {
+          "reply": "需求明确：「广州塔」 · 画「五角星」。开始规划：\n地点「广州塔」→ 广州塔\n已规划「五角星」路线：1.00 km · 约 13 分钟 · 贴合 平均 20 m / 最大 40 m · 绕行 1.20× · 覆盖全部顶点 · 全程可走（路线贴合 78 · 尺寸 1.2 km · 朝向 0°）\n绿色线就是要走的路线，紫色虚线是图形轮廓；想调整位置、大小或换个图形，直接说就行。",
+          "status": "ok",
+          "shape": {
+            "shapeName": "五角星",
+            "sizeMeters": 1200,
+            "score": 78,
+            "reference": false
+          },
+          "outline": {
+            "source": "builtin",
+            "name": "五角星",
+            "pointCount": 30,
+            "dataUrl": null
+          },
+          "commitDraw": {
+            "count": 1,
+            "reference": false,
+            "score": 78,
+            "shapeName": "五角星",
+            "sizeMeters": 1200,
+            "routeMeters": 1000,
+            "deliveredObjects": []
+          },
+          "referenceChoice": null,
+          "scalePool": null,
+          "guide": null
+        }
+      ]
+    }
+  ]
+}

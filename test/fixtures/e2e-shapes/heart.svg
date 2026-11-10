@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="162.28656"
+   width="187.63309"
+   id="svg2"
+   sodipodi:docname="WhiteHeart.svg"
+   viewBox="0 0 187.63309 162.28656"
+   version="1.1"
+   inkscape:version="1.1-dev (05168dc, 2020-06-16)"
+   inkscape:export-filename="./WhiteHeart.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="19"
+     pagecolor="#ffffff"
+     inkscape:window-height="1007"
+     inkscape:window-maximized="0"
+     inkscape:zoom="1.4142136"
+     inkscape:window-x="864"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="-25.115049"
+     inkscape:cy="186.92402"
+     inkscape:window-width="942"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     id="layer1"
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     transform="translate(-212.60527,-196.86644)">
+    <path
+       inkscape:connector-curvature="0"
+       d="m 302.71,233.89645 c -35.86037,-62.11198 -78.02,-34.33545 -87.248,0.41655 -21.683,81.658 87.182,124.84 87.182,124.84 0,0 117.98,-43.609 94.504,-125.51 -9.1125,-31.79 -57.42339,-63.85774 -94.438,0.25345 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7;stroke-opacity:1"
+       sodipodi:nodetypes="cscscc"
+       id="path7112-4" />
+  </g>
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:date>2010-05-25T06:45:01</dc:date>
+        <dc:description>A pink and red love shield. Um escudo rosa e vermelho com coração.</dc:description>
+        <dc:source>https://openclipart.org/detail/62707/love-shield-by-laobc</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>laobc</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>heart</rdf:li>
+            <rdf:li>heraldry</rdf:li>
+            <rdf:li>love</rdf:li>
+            <rdf:li>romance</rdf:li>
+            <rdf:li>shield</rdf:li>
+            <rdf:li>valentine</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

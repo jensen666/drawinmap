@@ -1,0 +1,3696 @@
+{
+  "version": 1,
+  "description": "参考图素材库：seed 与 E2E 素材合并、SHA 去重、人工审核（review 绑定素材哈希）后入库；同对象多版本构成参考候选。",
+  "licensePolicy": {
+    "allowed": [
+      "CC0-1.0",
+      "PDM-1.0",
+      "Public-Domain",
+      "CC-BY-4.0"
+    ],
+    "attributionRequired": [
+      "CC-BY-4.0"
+    ]
+  },
+  "assets": [
+    {
+      "id": "horse-phylopic",
+      "names": {
+        "zh": [
+          "马"
+        ],
+        "en": [
+          "horse"
+        ]
+      },
+      "aliases": [
+        "马",
+        "horse",
+        "马匹",
+        "普氏野马"
+      ],
+      "group": "animal",
+      "file": "seed/horse-phylopic.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/9f550f9e-b8df-43c4-9f00-396548507424",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Andy Wilson"
+      },
+      "scientificName": "Equus ferus przewalskii",
+      "notes": "PhyloPic 矢量剪影（Equus ferus przewalskii），potrace 生成单路径，含全局翻转变换。",
+      "sha256": "ffcd7a4162510f22b1d7e3d4a2a54bd0d624b41aa63b56622c5ab56472f19f44",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "ffcd7a4162510f22b1d7e3d4a2a54bd0d624b41aa63b56622c5ab56472f19f44"
+      }
+    },
+    {
+      "id": "cat-phylopic",
+      "names": {
+        "zh": [
+          "猫"
+        ],
+        "en": [
+          "cat"
+        ]
+      },
+      "aliases": [
+        "猫",
+        "cat",
+        "小猫",
+        "丛林猫"
+      ],
+      "group": "animal",
+      "file": "seed/cat-phylopic.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/9e632d6e-9251-493b-a0cf-ec90e0fbb46b",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      },
+      "scientificName": "Felis chaus",
+      "notes": "PhyloPic 矢量剪影（Felis chaus）。",
+      "sha256": "93d0a6f1cc4e99ef92e41e82e7e71b1e938841faa3902bfed96a4074b656b101",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "93d0a6f1cc4e99ef92e41e82e7e71b1e938841faa3902bfed96a4074b656b101"
+      }
+    },
+    {
+      "id": "dog-phylopic",
+      "names": {
+        "zh": [
+          "狗"
+        ],
+        "en": [
+          "dog"
+        ]
+      },
+      "aliases": [
+        "狗",
+        "dog",
+        "小狗",
+        "家犬"
+      ],
+      "group": "animal",
+      "file": "seed/dog-phylopic.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/1a9332fc-aeac-43ae-a318-80acbf89b662",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      },
+      "scientificName": "Canis familiaris familiaris",
+      "notes": "PhyloPic 矢量剪影（Canis familiaris familiaris）。",
+      "sha256": "39f86b25f1550cffb30eb5f06a3f13b2b7607519474fbe62af47612cffda98a5",
+      "tags": [
+        "长毛",
+        "行走"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "39f86b25f1550cffb30eb5f06a3f13b2b7607519474fbe62af47612cffda98a5"
+      }
+    },
+    {
+      "id": "human-phylopic",
+      "names": {
+        "zh": [
+          "人"
+        ],
+        "en": [
+          "human",
+          "person"
+        ]
+      },
+      "aliases": [
+        "人",
+        "human",
+        "person",
+        "人类",
+        "人形"
+      ],
+      "group": "animal",
+      "file": "seed/human-phylopic.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/a146bf1b-c94d-46e1-9cd8-a0ac52a1e0a9",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "T. Michael Keesey"
+      },
+      "scientificName": "Homo sapiens njarasensis",
+      "notes": "PhyloPic 矢量剪影（Homo sapiens njarasensis），行走姿态。",
+      "sha256": "87d5224b4d294fe45059aaaf7d1d980062e1899a3959a8c49586b10edc77f0ac",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "87d5224b4d294fe45059aaaf7d1d980062e1899a3959a8c49586b10edc77f0ac"
+      }
+    },
+    {
+      "id": "pigeon-phylopic",
+      "names": {
+        "zh": [
+          "鸽子"
+        ],
+        "en": [
+          "pigeon",
+          "rock dove"
+        ]
+      },
+      "aliases": [
+        "鸽子",
+        "pigeon",
+        "rock dove",
+        "鸽"
+      ],
+      "group": "animal",
+      "file": "seed/pigeon-phylopic.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/310b4994-af54-4d7b-93ac-27bbf80f7706",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Amy Beauvois"
+      },
+      "scientificName": "Columba livia",
+      "notes": "PhyloPic 矢量剪影（Columba livia）。",
+      "sha256": "065e071ec8d669d157b3f17c713e8374632facefcabe8354eba6159487f05061",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "065e071ec8d669d157b3f17c713e8374632facefcabe8354eba6159487f05061"
+      }
+    },
+    {
+      "id": "horse-openclipart",
+      "names": {
+        "zh": [
+          "马"
+        ],
+        "en": [
+          "horse"
+        ]
+      },
+      "aliases": [
+        "马",
+        "horse",
+        "剪影马"
+      ],
+      "group": "animal",
+      "file": "seed/horse-openclipart.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/282999/left-facing-horse-silhouette",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/share",
+        "attribution": "GDJ"
+      },
+      "scientificName": null,
+      "notes": "Openclipart 公有领域剪影（GDJ，源自 Pixabay）。",
+      "sha256": "90ec9465bcc47ce502730ab34bfaf7cdc1b014907666b7662b014faf3ae1479a",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "90ec9465bcc47ce502730ab34bfaf7cdc1b014907666b7662b014faf3ae1479a"
+      }
+    },
+    {
+      "id": "dog-openclipart",
+      "names": {
+        "zh": [
+          "狗"
+        ],
+        "en": [
+          "dog"
+        ]
+      },
+      "aliases": [
+        "狗",
+        "dog",
+        "站狗"
+      ],
+      "group": "animal",
+      "file": "seed/dog-openclipart.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/169096/standing-dog-silhouette",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/share",
+        "attribution": "nehtaeh79"
+      },
+      "scientificName": null,
+      "notes": "Openclipart 公有领域剪影（nehtaeh79），站姿。",
+      "sha256": "bf37acfcb8bc8dedfdb0b775ba791be0cd4ebc76858e3a5c7ceffbdb084fb6f0",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "bf37acfcb8bc8dedfdb0b775ba791be0cd4ebc76858e3a5c7ceffbdb084fb6f0"
+      }
+    },
+    {
+      "id": "horse",
+      "names": {
+        "zh": [
+          "马"
+        ],
+        "en": [
+          "horse"
+        ]
+      },
+      "aliases": [
+        "马",
+        "horse"
+      ],
+      "group": "animal",
+      "file": "library/horse.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/b302ceef-072c-471c-bc7d-164c428dd57a",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "4e1502fdc8f43bdbeb7ddf76df721d2e0b90161125115e42b4c109776989911f",
+      "tags": [
+        "抬前腿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "4e1502fdc8f43bdbeb7ddf76df721d2e0b90161125115e42b4c109776989911f"
+      }
+    },
+    {
+      "id": "dog",
+      "names": {
+        "zh": [
+          "狗"
+        ],
+        "en": [
+          "dog"
+        ]
+      },
+      "aliases": [
+        "狗",
+        "dog"
+      ],
+      "group": "animal",
+      "file": "library/dog.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/6f3ebbc6-be53-4216-b45b-946f7984669b",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "e67e3233734c5fb735d19073f1814400d3c0ea411cb67b6ea4b41a69716f1a74",
+      "tags": [
+        "卷尾",
+        "站姿"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "e67e3233734c5fb735d19073f1814400d3c0ea411cb67b6ea4b41a69716f1a74"
+      }
+    },
+    {
+      "id": "cat",
+      "names": {
+        "zh": [
+          "猫"
+        ],
+        "en": [
+          "cat"
+        ]
+      },
+      "aliases": [
+        "猫",
+        "cat"
+      ],
+      "group": "animal",
+      "file": "library/cat.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/481a9659-5cbb-4087-b8a7-9eb85c8311d2",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "ee3f860e096a1106cb24ad4d7587b93eca0f956ba6ee2849ce8343907c0a6c56",
+      "tags": [
+        "奔跑",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "ee3f860e096a1106cb24ad4d7587b93eca0f956ba6ee2849ce8343907c0a6c56"
+      }
+    },
+    {
+      "id": "chicken",
+      "names": {
+        "zh": [
+          "鸡"
+        ],
+        "en": [
+          "chicken"
+        ]
+      },
+      "aliases": [
+        "鸡",
+        "chicken"
+      ],
+      "group": "animal",
+      "file": "library/chicken.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/2de1c95c-7e1f-429b-9c08-17f0a27d176f",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Steven Traver"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "bc7880ee1029ce5c93c94f8c70a493dc1dd666eaf79785f46bcd6eeb6b2caf34",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "bc7880ee1029ce5c93c94f8c70a493dc1dd666eaf79785f46bcd6eeb6b2caf34"
+      }
+    },
+    {
+      "id": "duck",
+      "names": {
+        "zh": [
+          "鸭"
+        ],
+        "en": [
+          "duck"
+        ]
+      },
+      "aliases": [
+        "鸭",
+        "duck",
+        "鸭子"
+      ],
+      "group": "animal",
+      "file": "library/duck.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/f562234a-9b05-439c-aad5-0ea83ed4c553",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Caleb M. Gordon"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "611ba218ef89745b0b639743bf11a339e7462c7551d4d0c38cba85cd414fd5e9",
+      "tags": [],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "611ba218ef89745b0b639743bf11a339e7462c7551d4d0c38cba85cd414fd5e9"
+      }
+    },
+    {
+      "id": "goose",
+      "names": {
+        "zh": [
+          "鹅"
+        ],
+        "en": [
+          "goose"
+        ]
+      },
+      "aliases": [
+        "鹅",
+        "goose"
+      ],
+      "group": "animal",
+      "file": "library/goose.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/1d7e3c02-e1c6-4f94-9568-e3cd6b01b854",
+        "license": "PDM-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "attribution": ""
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "307e2e1856ccbf57c7b79a5d7cf13a00879a1cb103202385ba892ca8a84f3984",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "307e2e1856ccbf57c7b79a5d7cf13a00879a1cb103202385ba892ca8a84f3984"
+      }
+    },
+    {
+      "id": "eagle",
+      "names": {
+        "zh": [
+          "鹰"
+        ],
+        "en": [
+          "eagle"
+        ]
+      },
+      "aliases": [
+        "鹰",
+        "eagle",
+        "老鹰"
+      ],
+      "group": "animal",
+      "file": "library/eagle.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/7779e472-9159-4219-8e8e-68197bb73557",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Andy Wilson"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "78f80f3bfad833f92c892e0010653b584c35fd026646d303d90ed34f58b4d33b",
+      "tags": [
+        "展翅",
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "78f80f3bfad833f92c892e0010653b584c35fd026646d303d90ed34f58b4d33b"
+      }
+    },
+    {
+      "id": "owl",
+      "names": {
+        "zh": [
+          "猫头鹰"
+        ],
+        "en": [
+          "owl"
+        ]
+      },
+      "aliases": [
+        "猫头鹰",
+        "owl"
+      ],
+      "group": "animal",
+      "file": "library/owl.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/d7d457c1-4c08-4e7e-9af4-f537020c2775",
+        "license": "PDM-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "attribution": "the von Wright brothers"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "21ca363b251fdcac73ddd993ed8067ba7fbed9846b731c542e32229d55d23c0a",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "21ca363b251fdcac73ddd993ed8067ba7fbed9846b731c542e32229d55d23c0a"
+      }
+    },
+    {
+      "id": "penguin",
+      "names": {
+        "zh": [
+          "企鹅"
+        ],
+        "en": [
+          "penguin"
+        ]
+      },
+      "aliases": [
+        "企鹅",
+        "penguin"
+      ],
+      "group": "animal",
+      "file": "library/penguin.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/f2e02022-2700-484d-a66d-b2a900030371",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "abea39e596d61a1aceb1614ef636cb67f446f36bd5ee7d0c319baae7d26aeeff",
+      "tags": [
+        "站姿",
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "abea39e596d61a1aceb1614ef636cb67f446f36bd5ee7d0c319baae7d26aeeff"
+      }
+    },
+    {
+      "id": "swan",
+      "names": {
+        "zh": [
+          "天鹅"
+        ],
+        "en": [
+          "swan"
+        ]
+      },
+      "aliases": [
+        "天鹅",
+        "swan"
+      ],
+      "group": "animal",
+      "file": "library/swan.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/5fa31c76-161d-4f37-91d4-57c389dee1ae",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Andy Wilson"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "a99849d08963396108565bd48ee88d0de1d30805b9f89126542eac05fb7b954a",
+      "tags": [
+        "游姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "a99849d08963396108565bd48ee88d0de1d30805b9f89126542eac05fb7b954a"
+      }
+    },
+    {
+      "id": "peacock",
+      "names": {
+        "zh": [
+          "孔雀"
+        ],
+        "en": [
+          "peacock"
+        ]
+      },
+      "aliases": [
+        "孔雀",
+        "peacock"
+      ],
+      "group": "animal",
+      "file": "library/peacock.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/2928641d-32f3-4543-889e-dd891c1a7783",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "af220361464cf5d7a926fbfe6a9d9552ee617e42ad3fabc4b44989d10ec1da9e",
+      "tags": [
+        "飞姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "af220361464cf5d7a926fbfe6a9d9552ee617e42ad3fabc4b44989d10ec1da9e"
+      }
+    },
+    {
+      "id": "triceratops",
+      "names": {
+        "zh": [
+          "三角龙"
+        ],
+        "en": [
+          "triceratops"
+        ]
+      },
+      "aliases": [
+        "三角龙",
+        "triceratops"
+      ],
+      "group": "animal",
+      "file": "library/triceratops.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/1ef8f3a2-6c8b-400e-ab01-cc26ed9d1a4d",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Jagged Fang Designs"
+      },
+      "scientificName": "Triceratops",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "79999fd215bc15dcc442e7a034cabd3f08116f038fb9c88da3a629b9d245777e",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "79999fd215bc15dcc442e7a034cabd3f08116f038fb9c88da3a629b9d245777e"
+      }
+    },
+    {
+      "id": "stegosaurus",
+      "names": {
+        "zh": [
+          "剑龙"
+        ],
+        "en": [
+          "stegosaurus"
+        ]
+      },
+      "aliases": [
+        "剑龙",
+        "stegosaurus"
+      ],
+      "group": "animal",
+      "file": "library/stegosaurus.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/8c4e6e33-bf09-465a-b46d-fdf85fdd7728",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Connor Ashbridge"
+      },
+      "scientificName": "Stegosaurus",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "9ee86ed1589f6a220dcf67af991294fee80eb92a361d59447e4b326975eb432c",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "9ee86ed1589f6a220dcf67af991294fee80eb92a361d59447e4b326975eb432c"
+      }
+    },
+    {
+      "id": "zebrafish",
+      "names": {
+        "zh": [
+          "鱼"
+        ],
+        "en": [
+          "fish"
+        ]
+      },
+      "aliases": [
+        "鱼",
+        "fish"
+      ],
+      "group": "animal",
+      "file": "library/zebrafish.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/591e0439-e61c-4a4a-8dba-ab2de87091d0",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Chuanixn Yu"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "0dd7f767df6ec33f67be081e87f9e578be308649e32943105252ad7de4c69ae5",
+      "tags": [
+        "游姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "0dd7f767df6ec33f67be081e87f9e578be308649e32943105252ad7de4c69ae5"
+      }
+    },
+    {
+      "id": "shark",
+      "names": {
+        "zh": [
+          "鲨鱼"
+        ],
+        "en": [
+          "shark"
+        ]
+      },
+      "aliases": [
+        "鲨鱼",
+        "shark"
+      ],
+      "group": "animal",
+      "file": "library/shark.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/07eeaf0e-0284-4c1d-8415-ddd65a736232",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "74b2538c33de8700e73c07f976cc822d18d54d39710a0ecbebee97b381f450e4",
+      "tags": [
+        "游姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "74b2538c33de8700e73c07f976cc822d18d54d39710a0ecbebee97b381f450e4"
+      }
+    },
+    {
+      "id": "whale",
+      "names": {
+        "zh": [
+          "鲸"
+        ],
+        "en": [
+          "whale"
+        ]
+      },
+      "aliases": [
+        "鲸",
+        "whale",
+        "鲸鱼"
+      ],
+      "group": "animal",
+      "file": "library/whale.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/e68270c1-3091-4aee-92ae-51341a40e94a",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Scott Hartman"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "50b8f288c800f3e1468603b382062adb17f1ef8cb9005a155030f424c5c0b3f3",
+      "tags": [
+        "游姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "50b8f288c800f3e1468603b382062adb17f1ef8cb9005a155030f424c5c0b3f3"
+      }
+    },
+    {
+      "id": "dolphin",
+      "names": {
+        "zh": [
+          "海豚"
+        ],
+        "en": [
+          "dolphin"
+        ]
+      },
+      "aliases": [
+        "海豚",
+        "dolphin"
+      ],
+      "group": "animal",
+      "file": "library/dolphin.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/19bdf10a-42b4-4736-9da8-c3171175fb0e",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "ef77c9ca2588e7f693ed8f029e8562c69809a1ee3a05f037d081ac0a70d3f9c5",
+      "tags": [
+        "跃姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "ef77c9ca2588e7f693ed8f029e8562c69809a1ee3a05f037d081ac0a70d3f9c5"
+      }
+    },
+    {
+      "id": "elephant",
+      "names": {
+        "zh": [
+          "大象"
+        ],
+        "en": [
+          "elephant"
+        ]
+      },
+      "aliases": [
+        "大象",
+        "elephant"
+      ],
+      "group": "animal",
+      "file": "library/elephant.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/2a070808-0874-409d-81c0-d0c1995e54bb",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "96eee167245da76d6c5f5c4922224c2726777b10b2dbfd356cab03f5a052a756",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "96eee167245da76d6c5f5c4922224c2726777b10b2dbfd356cab03f5a052a756"
+      }
+    },
+    {
+      "id": "lion",
+      "names": {
+        "zh": [
+          "狮子"
+        ],
+        "en": [
+          "lion"
+        ]
+      },
+      "aliases": [
+        "狮子",
+        "lion"
+      ],
+      "group": "animal",
+      "file": "library/lion.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/dd7c7bc6-2c6d-48e4-860b-02bf37886b5b",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "4abc60c71d85e55210b6f67cbf338727d0981154e81509de808b6290bc0ee8e4",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "4abc60c71d85e55210b6f67cbf338727d0981154e81509de808b6290bc0ee8e4"
+      }
+    },
+    {
+      "id": "tiger",
+      "names": {
+        "zh": [
+          "老虎"
+        ],
+        "en": [
+          "tiger"
+        ]
+      },
+      "aliases": [
+        "老虎",
+        "tiger"
+      ],
+      "group": "animal",
+      "file": "library/tiger.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/2d866913-d59f-4e48-93d8-19a0ce8201cb",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Andy Wilson"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "3b967e2482b5b42722ef99eba515cc1593e720742e18beb0f1a7db17601f10b2",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "3b967e2482b5b42722ef99eba515cc1593e720742e18beb0f1a7db17601f10b2"
+      }
+    },
+    {
+      "id": "bear",
+      "names": {
+        "zh": [
+          "熊"
+        ],
+        "en": [
+          "bear"
+        ]
+      },
+      "aliases": [
+        "熊",
+        "bear"
+      ],
+      "group": "animal",
+      "file": "library/bear.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/5629fae2-1da6-479d-bfeb-08a59a58121a",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "d7273ef322caac5043f3775d235163a248fc76ef2c635ada33de75f147fc98bb",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "d7273ef322caac5043f3775d235163a248fc76ef2c635ada33de75f147fc98bb"
+      }
+    },
+    {
+      "id": "wolf",
+      "names": {
+        "zh": [
+          "狼"
+        ],
+        "en": [
+          "wolf"
+        ]
+      },
+      "aliases": [
+        "狼",
+        "wolf"
+      ],
+      "group": "animal",
+      "file": "library/wolf.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/b625de9c-f1c1-4641-8ab7-ef67b3bb1b1f",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "François-Louis PELISSIER"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "232a29c276270933964bf6d357f5927507fd6076360f3a86077efc5ecf7bb8e1",
+      "tags": [
+        "低头",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "232a29c276270933964bf6d357f5927507fd6076360f3a86077efc5ecf7bb8e1"
+      }
+    },
+    {
+      "id": "fox",
+      "names": {
+        "zh": [
+          "狐狸"
+        ],
+        "en": [
+          "fox"
+        ]
+      },
+      "aliases": [
+        "狐狸",
+        "fox"
+      ],
+      "group": "animal",
+      "file": "library/fox.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/9b3e3567-2238-40bf-ab5d-bcb6ce7b32d5",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Ferran Sayol"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "ce1117e2768f93f36435bcd7945315b9439980ec8bb1a2c5ba60b7503b8d7540",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "ce1117e2768f93f36435bcd7945315b9439980ec8bb1a2c5ba60b7503b8d7540"
+      }
+    },
+    {
+      "id": "deer",
+      "names": {
+        "zh": [
+          "鹿"
+        ],
+        "en": [
+          "deer"
+        ]
+      },
+      "aliases": [
+        "鹿",
+        "deer"
+      ],
+      "group": "animal",
+      "file": "library/deer.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/cc03f5c2-933f-4c40-9c64-7f8727556fdb",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Ferran Sayol"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "ea482583a439a40af505e617c5452134728defec7e7914e8d67bb25b2b2f2489",
+      "tags": [
+        "长角",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "ea482583a439a40af505e617c5452134728defec7e7914e8d67bb25b2b2f2489"
+      }
+    },
+    {
+      "id": "giraffe",
+      "names": {
+        "zh": [
+          "长颈鹿"
+        ],
+        "en": [
+          "giraffe"
+        ]
+      },
+      "aliases": [
+        "长颈鹿",
+        "giraffe"
+      ],
+      "group": "animal",
+      "file": "library/giraffe.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/a0b3548c-3757-48e5-8b3f-5c42d212a4a8",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Steven Traver"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "d9830ded742d7ce54affcb9726bd68e48563d614db157c9f2ca6749bffbcf29f",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "d9830ded742d7ce54affcb9726bd68e48563d614db157c9f2ca6749bffbcf29f"
+      }
+    },
+    {
+      "id": "zebra",
+      "names": {
+        "zh": [
+          "斑马"
+        ],
+        "en": [
+          "zebra"
+        ]
+      },
+      "aliases": [
+        "斑马",
+        "zebra"
+      ],
+      "group": "animal",
+      "file": "library/zebra.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/f7d817d0-d733-493d-bd4a-3f178e0760a8",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Andy Wilson"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "b9d1d5d0c89554c03d718fca6857b40b3a2f1d3b7083ba605c1b668be44d539e",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "b9d1d5d0c89554c03d718fca6857b40b3a2f1d3b7083ba605c1b668be44d539e"
+      }
+    },
+    {
+      "id": "rhinoceros",
+      "names": {
+        "zh": [
+          "犀牛"
+        ],
+        "en": [
+          "rhinoceros"
+        ]
+      },
+      "aliases": [
+        "犀牛",
+        "rhinoceros"
+      ],
+      "group": "animal",
+      "file": "library/rhinoceros.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/55b24c01-3552-4c09-a485-087e4d2c4889",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Christophe Mallet"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "cc843c3ab5998ee52420fdfb4cc1b1f157d5a01a8f79efdd73159831bbf70dad",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "cc843c3ab5998ee52420fdfb4cc1b1f157d5a01a8f79efdd73159831bbf70dad"
+      }
+    },
+    {
+      "id": "hippopotamus",
+      "names": {
+        "zh": [
+          "河马"
+        ],
+        "en": [
+          "hippopotamus"
+        ]
+      },
+      "aliases": [
+        "河马",
+        "hippopotamus"
+      ],
+      "group": "animal",
+      "file": "library/hippopotamus.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/bab03f09-73ba-45ea-8534-ea176c82a1a0",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Steven Traver"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "23d4d4493109e262b9c94b65c2dc721643115870a7f0a099cae9a74004fc697d",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "23d4d4493109e262b9c94b65c2dc721643115870a7f0a099cae9a74004fc697d"
+      }
+    },
+    {
+      "id": "camel",
+      "names": {
+        "zh": [
+          "骆驼"
+        ],
+        "en": [
+          "camel"
+        ]
+      },
+      "aliases": [
+        "骆驼",
+        "camel"
+      ],
+      "group": "animal",
+      "file": "library/camel.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/93c5e5b0-6606-4e10-97e8-699156c57042",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Katy Lawler"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "5941c01e3f83cd6b18c0bd79f0622c57246fc934dfe1d1feb9ecf1a88c36f038",
+      "tags": [
+        "双峰",
+        "站姿"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "5941c01e3f83cd6b18c0bd79f0622c57246fc934dfe1d1feb9ecf1a88c36f038"
+      }
+    },
+    {
+      "id": "kangaroo",
+      "names": {
+        "zh": [
+          "袋鼠"
+        ],
+        "en": [
+          "kangaroo"
+        ]
+      },
+      "aliases": [
+        "袋鼠",
+        "kangaroo"
+      ],
+      "group": "animal",
+      "file": "library/kangaroo.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/624e3d80-cba2-4465-8f3a-c9ae4025198b",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Michael Scroggie"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "1f87ec38cf52a5f3ca0b08073ee3eea72adec21602c146e60f4890918c8eb219",
+      "tags": [
+        "跳跃",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "1f87ec38cf52a5f3ca0b08073ee3eea72adec21602c146e60f4890918c8eb219"
+      }
+    },
+    {
+      "id": "koala",
+      "names": {
+        "zh": [
+          "考拉"
+        ],
+        "en": [
+          "koala"
+        ]
+      },
+      "aliases": [
+        "考拉",
+        "koala"
+      ],
+      "group": "animal",
+      "file": "library/koala.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/132e695c-a23a-4e82-93c0-5ca8e8982844",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "18f2bb7f5795b5abb60dcd88b7ba38010a7792a63a1767d18f9cdf3649b2d1aa",
+      "tags": [
+        "抱树",
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "18f2bb7f5795b5abb60dcd88b7ba38010a7792a63a1767d18f9cdf3649b2d1aa"
+      }
+    },
+    {
+      "id": "panda",
+      "names": {
+        "zh": [
+          "熊猫"
+        ],
+        "en": [
+          "panda"
+        ]
+      },
+      "aliases": [
+        "熊猫",
+        "panda"
+      ],
+      "group": "animal",
+      "file": "library/panda.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/887ea34b-b62a-4126-9e98-434d6000dd0c",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "6dfea2039431a875a2e09efb38c2d19be07ab66c40cfd3aafbb4c41d188a5b85",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "6dfea2039431a875a2e09efb38c2d19be07ab66c40cfd3aafbb4c41d188a5b85"
+      }
+    },
+    {
+      "id": "monkey",
+      "names": {
+        "zh": [
+          "猴"
+        ],
+        "en": [
+          "monkey"
+        ]
+      },
+      "aliases": [
+        "猴",
+        "monkey",
+        "猴子"
+      ],
+      "group": "animal",
+      "file": "library/monkey.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/4e9c5666-79cc-4766-a7d3-d547514b0d77",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Matthew Schmitz"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "41693394b929376d079b5c400f883a77d69296d1292f9fbb9c99f63953ce9e73",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "41693394b929376d079b5c400f883a77d69296d1292f9fbb9c99f63953ce9e73"
+      }
+    },
+    {
+      "id": "rabbit",
+      "names": {
+        "zh": [
+          "兔"
+        ],
+        "en": [
+          "rabbit"
+        ]
+      },
+      "aliases": [
+        "兔",
+        "rabbit",
+        "兔子"
+      ],
+      "group": "animal",
+      "file": "library/rabbit.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/ad7d2a9d-ef0d-46f2-895d-7c67bb8e6355",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Ferran Sayol"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "7c384d1b431bff0be33a05cd1f3f5132eb566baeb958b907c8e40c9412d04967",
+      "tags": [
+        "坐姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "7c384d1b431bff0be33a05cd1f3f5132eb566baeb958b907c8e40c9412d04967"
+      }
+    },
+    {
+      "id": "mouse",
+      "names": {
+        "zh": [
+          "鼠"
+        ],
+        "en": [
+          "mouse"
+        ]
+      },
+      "aliases": [
+        "鼠",
+        "mouse",
+        "老鼠"
+      ],
+      "group": "animal",
+      "file": "library/mouse.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/11ccace5-9ad4-409b-97fe-9320058280c7",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Matthew Schmitz"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "9f60d1c6f21263f09d31835443c103f2fadbd8b0c5ba2c5e616a2c47e55ea7c5",
+      "tags": [
+        "坐姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "9f60d1c6f21263f09d31835443c103f2fadbd8b0c5ba2c5e616a2c47e55ea7c5"
+      }
+    },
+    {
+      "id": "cattle",
+      "names": {
+        "zh": [
+          "牛"
+        ],
+        "en": [
+          "cattle"
+        ]
+      },
+      "aliases": [
+        "牛",
+        "cattle"
+      ],
+      "group": "animal",
+      "file": "library/cattle.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/b2d6bc6c-bda4-4450-8566-cab6065aca66",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Alfonso Arribas, Guiomar Garrido, César Viseras, Jesús M. Soria, Sila Pla, José G. Solano, Miguel Garcés, Elisabet Beamud & José S. Carrión"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "7e4b134c0a1fb2a1d7fd41ca792257925830edf407f5b0f0628971e3e424eb10",
+      "tags": [
+        "长角",
+        "站姿"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "7e4b134c0a1fb2a1d7fd41ca792257925830edf407f5b0f0628971e3e424eb10"
+      }
+    },
+    {
+      "id": "sheep",
+      "names": {
+        "zh": [
+          "羊"
+        ],
+        "en": [
+          "sheep"
+        ]
+      },
+      "aliases": [
+        "羊",
+        "sheep"
+      ],
+      "group": "animal",
+      "file": "library/sheep.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/d9c0cddb-6f19-4570-94f4-60316d3f3051",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "a81fb8550c93d8835e75e04539bf369bb6cc335139cf1a1bea127df850f70465",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "a81fb8550c93d8835e75e04539bf369bb6cc335139cf1a1bea127df850f70465"
+      }
+    },
+    {
+      "id": "pig",
+      "names": {
+        "zh": [
+          "猪"
+        ],
+        "en": [
+          "pig"
+        ]
+      },
+      "aliases": [
+        "猪",
+        "pig"
+      ],
+      "group": "animal",
+      "file": "library/pig.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/5cf39625-0de7-4ffe-a28f-9c88670af448",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Kai Caspar"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "eda3df308cc0cacd4586d1bad70fe6d58c6baff820e7fb5f579e6003a0423d48",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "eda3df308cc0cacd4586d1bad70fe6d58c6baff820e7fb5f579e6003a0423d48"
+      }
+    },
+    {
+      "id": "butterfly",
+      "names": {
+        "zh": [
+          "蝴蝶"
+        ],
+        "en": [
+          "butterfly"
+        ]
+      },
+      "aliases": [
+        "蝴蝶",
+        "butterfly"
+      ],
+      "group": "animal",
+      "file": "library/butterfly.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/0fde2bb6-0472-4273-bf46-2d6073fa8fbc",
+        "license": "PDM-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "attribution": "Curtis (modified by T. Michael Keesey)"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "2a4c09af1e2165ac48291147e55b0e47739b4ea8a3e674ca0476bba5388823db",
+      "tags": [
+        "展翅",
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "2a4c09af1e2165ac48291147e55b0e47739b4ea8a3e674ca0476bba5388823db"
+      }
+    },
+    {
+      "id": "bee",
+      "names": {
+        "zh": [
+          "蜜蜂"
+        ],
+        "en": [
+          "bee"
+        ]
+      },
+      "aliases": [
+        "蜜蜂",
+        "bee"
+      ],
+      "group": "animal",
+      "file": "library/bee.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/956cf95f-9cbd-459b-a457-c80ba19877a4",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Adrian Reich"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "0257bb9fc5baf84f1dee1497aca3dcda60f179c25d0fa295156e3b03f0dd4a03",
+      "tags": [
+        "飞姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "0257bb9fc5baf84f1dee1497aca3dcda60f179c25d0fa295156e3b03f0dd4a03"
+      }
+    },
+    {
+      "id": "spider",
+      "names": {
+        "zh": [
+          "蜘蛛"
+        ],
+        "en": [
+          "spider"
+        ]
+      },
+      "aliases": [
+        "蜘蛛",
+        "spider"
+      ],
+      "group": "animal",
+      "file": "library/spider.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/882a9d18-5724-44a9-b439-1b2686339a00",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "a5fd2e77bdf6061c8411842c41bd04b84d8358827e949d3dd71212523369c756",
+      "tags": [
+        "俯视"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "a5fd2e77bdf6061c8411842c41bd04b84d8358827e949d3dd71212523369c756"
+      }
+    },
+    {
+      "id": "snake",
+      "names": {
+        "zh": [
+          "蛇"
+        ],
+        "en": [
+          "snake"
+        ]
+      },
+      "aliases": [
+        "蛇",
+        "snake"
+      ],
+      "group": "animal",
+      "file": "library/snake.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/68721107-d9ec-4ff0-9747-07e0d098b10f",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Jessica Tingle"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "8ea900976f7e695365571a1548bc2b208fe6994b05b20b48997364a22147d84d",
+      "tags": [
+        "盘绕",
+        "俯视"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "8ea900976f7e695365571a1548bc2b208fe6994b05b20b48997364a22147d84d"
+      }
+    },
+    {
+      "id": "frog",
+      "names": {
+        "zh": [
+          "青蛙"
+        ],
+        "en": [
+          "frog"
+        ]
+      },
+      "aliases": [
+        "青蛙",
+        "frog"
+      ],
+      "group": "animal",
+      "file": "library/frog.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/c387bde8-a9de-4101-928b-e99f2a7a33e5",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Jose Carlos Arenas-Monroy"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "c89b61a0450835f61b06426a9ecbfc8a567ea482d4714136a82fa490d46d0ee4",
+      "tags": [
+        "坐姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "c89b61a0450835f61b06426a9ecbfc8a567ea482d4714136a82fa490d46d0ee4"
+      }
+    },
+    {
+      "id": "crab",
+      "names": {
+        "zh": [
+          "螃蟹"
+        ],
+        "en": [
+          "crab"
+        ]
+      },
+      "aliases": [
+        "螃蟹",
+        "crab"
+      ],
+      "group": "animal",
+      "file": "library/crab.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/fbb93c22-618f-4901-aade-2d07a9797e02",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Carter Johnson"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "76bda210aeb3cbdd5add0367b22fd3c4db1e3128ad9acba46ee96618112199f0",
+      "tags": [
+        "俯视"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "76bda210aeb3cbdd5add0367b22fd3c4db1e3128ad9acba46ee96618112199f0"
+      }
+    },
+    {
+      "id": "snail",
+      "names": {
+        "zh": [
+          "蜗牛"
+        ],
+        "en": [
+          "snail"
+        ]
+      },
+      "aliases": [
+        "蜗牛",
+        "snail"
+      ],
+      "group": "animal",
+      "file": "library/snail.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/3244258c-e93a-497b-8f37-ac008e574c44",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Alexandra Hahn"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "cd2241a7c31f606a25da1963b0e7d26ed1ba95aec83fdf47c6f9ba53ea4deeaa",
+      "tags": [
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "cd2241a7c31f606a25da1963b0e7d26ed1ba95aec83fdf47c6f9ba53ea4deeaa"
+      }
+    },
+    {
+      "id": "oak",
+      "names": {
+        "zh": [
+          "树"
+        ],
+        "en": [
+          "tree"
+        ]
+      },
+      "aliases": [
+        "树",
+        "tree"
+      ],
+      "group": "plant",
+      "file": "library/oak.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/43afe2df-ab6c-47e6-a105-c0a82b8af1c5",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "1beae5c96a81067d3e7bc00783b2d6cdf6e213215a2cc5c009c2e83f51b76c74",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "1beae5c96a81067d3e7bc00783b2d6cdf6e213215a2cc5c009c2e83f51b76c74"
+      }
+    },
+    {
+      "id": "mushroom",
+      "names": {
+        "zh": [
+          "蘑菇"
+        ],
+        "en": [
+          "mushroom"
+        ]
+      },
+      "aliases": [
+        "蘑菇",
+        "mushroom"
+      ],
+      "group": "fungus",
+      "file": "library/mushroom.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/afd875a3-815f-443b-9b93-3e5bedd9a7a3",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "6ff25e4e05d9ba7a0506b9f03d189ecb2f45a93e6fad5434ec1ca5bf001d1cf8",
+      "tags": [
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "6ff25e4e05d9ba7a0506b9f03d189ecb2f45a93e6fad5434ec1ca5bf001d1cf8"
+      }
+    },
+    {
+      "id": "bivalve",
+      "names": {
+        "zh": [
+          "贝壳"
+        ],
+        "en": [
+          "shell"
+        ]
+      },
+      "aliases": [
+        "贝壳",
+        "shell"
+      ],
+      "group": "animal",
+      "file": "library/bivalve.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/183f29c5-acd2-4315-b45f-b3b7e3941c11",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Katie S. Collins"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "0a91917d3bf26b6a0a3ab37c0119343f94b7c45a6ef5dc133dd714c9404bc267",
+      "tags": [
+        "闭合",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "0a91917d3bf26b6a0a3ab37c0119343f94b7c45a6ef5dc133dd714c9404bc267"
+      }
+    },
+    {
+      "id": "octopus",
+      "names": {
+        "zh": [
+          "章鱼"
+        ],
+        "en": [
+          "octopus"
+        ]
+      },
+      "aliases": [
+        "章鱼",
+        "octopus"
+      ],
+      "group": "animal",
+      "file": "library/octopus.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/f400b519-3564-4183-b4bd-c3b922cc7c5e",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "23cab7a8a3e49224b7f1f27c4c4cd3ac7050f8e9d1a83ba5f3b8220ac7cc1de8",
+      "tags": [
+        "俯视"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "23cab7a8a3e49224b7f1f27c4c4cd3ac7050f8e9d1a83ba5f3b8220ac7cc1de8"
+      }
+    },
+    {
+      "id": "crocodile",
+      "names": {
+        "zh": [
+          "鳄鱼"
+        ],
+        "en": [
+          "crocodile"
+        ]
+      },
+      "aliases": [
+        "鳄鱼",
+        "crocodile"
+      ],
+      "group": "animal",
+      "file": "library/crocodile.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/b43ea475-18b3-44d5-8ab9-7a08266e6d62",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Ananth Srinivas"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "fb1090037be39fd4e6343f08128b690253d361287fe931f4b629fb45ef7ebe71",
+      "tags": [
+        "爬行",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "fb1090037be39fd4e6343f08128b690253d361287fe931f4b629fb45ef7ebe71"
+      }
+    },
+    {
+      "id": "turtle",
+      "names": {
+        "zh": [
+          "龟"
+        ],
+        "en": [
+          "turtle"
+        ]
+      },
+      "aliases": [
+        "龟",
+        "turtle",
+        "乌龟"
+      ],
+      "group": "animal",
+      "file": "library/turtle.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/b76ae98d-894d-4490-a587-edf66650bc25",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "1022bc7098bb43c1d145ca7685e6875b9c5d3865bc40e5b90b786d2101ab564f",
+      "tags": [
+        "爬行",
+        "俯视"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "1022bc7098bb43c1d145ca7685e6875b9c5d3865bc40e5b90b786d2101ab564f"
+      }
+    },
+    {
+      "id": "goat",
+      "names": {
+        "zh": [
+          "山羊"
+        ],
+        "en": [
+          "goat"
+        ]
+      },
+      "aliases": [
+        "山羊",
+        "goat"
+      ],
+      "group": "animal",
+      "file": "library/goat.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/c39a1d31-eb36-4b62-ba4d-32e29e0e5a8d",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Steven Traver"
+      },
+      "scientificName": "Capra hircus",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "7940b62a767b732a1d5072bb6633956991ec267cd5460f4f34de78555f228fe7",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "7940b62a767b732a1d5072bb6633956991ec267cd5460f4f34de78555f228fe7"
+      }
+    },
+    {
+      "id": "donkey",
+      "names": {
+        "zh": [
+          "驴"
+        ],
+        "en": [
+          "donkey"
+        ]
+      },
+      "aliases": [
+        "驴",
+        "donkey"
+      ],
+      "group": "animal",
+      "file": "library/donkey.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/eed9512e-fb13-46b2-a846-8b149cea7288",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Mathew Stewart"
+      },
+      "scientificName": "Equus asinus",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "cc2ef32b0a3cacb2f01c9a9ee21b89bf07180a3226d996bde039bb22b6cf6ab3",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "cc2ef32b0a3cacb2f01c9a9ee21b89bf07180a3226d996bde039bb22b6cf6ab3"
+      }
+    },
+    {
+      "id": "squirrel",
+      "names": {
+        "zh": [
+          "松鼠"
+        ],
+        "en": [
+          "squirrel"
+        ]
+      },
+      "aliases": [
+        "松鼠",
+        "squirrel"
+      ],
+      "group": "animal",
+      "file": "library/squirrel.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/23c700c9-e695-404a-8d0c-146e1fc4bada",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Ferran Sayol"
+      },
+      "scientificName": "Sciurus vulgaris",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "e776dcadc861ff0b3926bbddf829238f82ca9226d0d10c7d802ce87d1ab9aa5f",
+      "tags": [
+        "坐姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "e776dcadc861ff0b3926bbddf829238f82ca9226d0d10c7d802ce87d1ab9aa5f"
+      }
+    },
+    {
+      "id": "hedgehog",
+      "names": {
+        "zh": [
+          "刺猬"
+        ],
+        "en": [
+          "hedgehog"
+        ]
+      },
+      "aliases": [
+        "刺猬",
+        "hedgehog"
+      ],
+      "group": "animal",
+      "file": "library/hedgehog.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/6ecff71e-fcfc-4cb9-b773-9e6e21607587",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Steven Traver"
+      },
+      "scientificName": "Erinaceus europaeus",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "dec252eb29315c7da49858d1e5d90c25e91c18f8d33046d1150660744dcf7e2a",
+      "tags": [
+        "行走",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "dec252eb29315c7da49858d1e5d90c25e91c18f8d33046d1150660744dcf7e2a"
+      }
+    },
+    {
+      "id": "bat",
+      "names": {
+        "zh": [
+          "蝙蝠"
+        ],
+        "en": [
+          "bat"
+        ]
+      },
+      "aliases": [
+        "蝙蝠",
+        "bat"
+      ],
+      "group": "animal",
+      "file": "library/bat.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/bfe2f90b-136c-4199-9552-9f85287df468",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Lucas Damásio"
+      },
+      "scientificName": "Pteropus vampyrus",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "bba7c4fa7ad5113b824232c5288e5df12fdef9049d03080d7c8a56679cc25bdd",
+      "tags": [
+        "展翅",
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "bba7c4fa7ad5113b824232c5288e5df12fdef9049d03080d7c8a56679cc25bdd"
+      }
+    },
+    {
+      "id": "seal",
+      "names": {
+        "zh": [
+          "海豹"
+        ],
+        "en": [
+          "seal"
+        ]
+      },
+      "aliases": [
+        "海豹",
+        "seal"
+      ],
+      "group": "animal",
+      "file": "library/seal.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/1925a9aa-bf33-4270-824c-b8f781f8ec82",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Andy Wilson"
+      },
+      "scientificName": "Phoca vitulina",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "420ca291a6c7a890de550a6929e9163af4d841edc8f510b36d9ed4f5b8e70ef5",
+      "tags": [
+        "坐姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "420ca291a6c7a890de550a6929e9163af4d841edc8f510b36d9ed4f5b8e70ef5"
+      }
+    },
+    {
+      "id": "otter",
+      "names": {
+        "zh": [
+          "水獭"
+        ],
+        "en": [
+          "otter"
+        ]
+      },
+      "aliases": [
+        "水獭",
+        "otter"
+      ],
+      "group": "animal",
+      "file": "library/otter.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/3cdae098-058b-4ce2-8f46-ad3101b624db",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      },
+      "scientificName": "Lutra lutra",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "4bf9ee1632a3f2a3abc19e70d6f28f109aa09407ee4f0f1dd93c36830a8efddf",
+      "tags": [
+        "游姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "4bf9ee1632a3f2a3abc19e70d6f28f109aa09407ee4f0f1dd93c36830a8efddf"
+      }
+    },
+    {
+      "id": "flamingo",
+      "names": {
+        "zh": [
+          "火烈鸟"
+        ],
+        "en": [
+          "flamingo"
+        ]
+      },
+      "aliases": [
+        "火烈鸟",
+        "flamingo"
+      ],
+      "group": "animal",
+      "file": "library/flamingo.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/0fd55b33-e756-4b66-bb60-a917ddeb56a8",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Kai Caspar"
+      },
+      "scientificName": "Phoenicopterus roseus",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "4a36c95b522a3f745decdc8a390b90d7e8ca796b75b99dbd9e74c5780b737efc",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "4a36c95b522a3f745decdc8a390b90d7e8ca796b75b99dbd9e74c5780b737efc"
+      }
+    },
+    {
+      "id": "parrot",
+      "names": {
+        "zh": [
+          "鹦鹉"
+        ],
+        "en": [
+          "parrot"
+        ]
+      },
+      "aliases": [
+        "鹦鹉",
+        "parrot"
+      ],
+      "group": "animal",
+      "file": "library/parrot.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/6c7791bf-88fd-4077-bca1-1b5d0d7786c3",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Matías Muñoz"
+      },
+      "scientificName": "Psittaciformes",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "a8d1b57c7f92bfe42dfd18c321af8ebfa28d991ea66da0978cc8fc5ab3785371",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "a8d1b57c7f92bfe42dfd18c321af8ebfa28d991ea66da0978cc8fc5ab3785371"
+      }
+    },
+    {
+      "id": "lizard",
+      "names": {
+        "zh": [
+          "蜥蜴"
+        ],
+        "en": [
+          "lizard"
+        ]
+      },
+      "aliases": [
+        "蜥蜴",
+        "lizard"
+      ],
+      "group": "animal",
+      "file": "library/lizard.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/ce6a78bc-3ef1-4d60-ab40-113eb84c7802",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Steven Traver"
+      },
+      "scientificName": "Lacertilia",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "e75ed037c288403ba7ce1018b350360aa2dba6871769c97786eb630cd4254e77",
+      "tags": [
+        "爬行",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "e75ed037c288403ba7ce1018b350360aa2dba6871769c97786eb630cd4254e77"
+      }
+    },
+    {
+      "id": "jellyfish",
+      "names": {
+        "zh": [
+          "水母"
+        ],
+        "en": [
+          "jellyfish"
+        ]
+      },
+      "aliases": [
+        "水母",
+        "jellyfish"
+      ],
+      "group": "animal",
+      "file": "library/jellyfish.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/f0494167-77f6-46eb-841d-c4cefb683bbd",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      },
+      "scientificName": "Medusozoa",
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "2328aa408f05f28ae8ca38e3881fc77e4fa92f98788277edc74832c35a3b7c4a",
+      "tags": [
+        "游姿",
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "2328aa408f05f28ae8ca38e3881fc77e4fa92f98788277edc74832c35a3b7c4a"
+      }
+    },
+    {
+      "id": "car",
+      "names": {
+        "zh": [
+          "汽车"
+        ],
+        "en": [
+          "car"
+        ]
+      },
+      "aliases": [
+        "汽车",
+        "car"
+      ],
+      "group": "vehicle",
+      "file": "library/car.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/327743/car",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "85519210ae7562cca6d37f548dea83a9c94a7ae59326e7bda0dbf99c9f513dd2",
+      "tags": [
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "85519210ae7562cca6d37f548dea83a9c94a7ae59326e7bda0dbf99c9f513dd2"
+      }
+    },
+    {
+      "id": "airplane",
+      "names": {
+        "zh": [
+          "飞机"
+        ],
+        "en": [
+          "airplane"
+        ]
+      },
+      "aliases": [
+        "飞机",
+        "airplane"
+      ],
+      "group": "vehicle",
+      "file": "library/airplane.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/323341/airplane",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "56e14fb9e1c1007aa3a958cc9daad992e7eb2c983e0e6e1d28f2a8c7a2b59313",
+      "tags": [
+        "飞行",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "56e14fb9e1c1007aa3a958cc9daad992e7eb2c983e0e6e1d28f2a8c7a2b59313"
+      }
+    },
+    {
+      "id": "motorcycle",
+      "names": {
+        "zh": [
+          "摩托车"
+        ],
+        "en": [
+          "motorcycle"
+        ]
+      },
+      "aliases": [
+        "摩托车",
+        "motorcycle"
+      ],
+      "group": "vehicle",
+      "file": "library/motorcycle.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/337502/motorcycle-silhouette",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "liftarn"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "d18b5c7c1bfe2c62cedaa6b2cc9cb3a19f5b289a87bb6891cdf6915076090ab6",
+      "tags": [
+        "骑行",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "d18b5c7c1bfe2c62cedaa6b2cc9cb3a19f5b289a87bb6891cdf6915076090ab6"
+      }
+    },
+    {
+      "id": "castle",
+      "names": {
+        "zh": [
+          "城堡"
+        ],
+        "en": [
+          "castle"
+        ]
+      },
+      "aliases": [
+        "城堡",
+        "castle"
+      ],
+      "group": "building",
+      "file": "library/castle.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/323776/castle",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "c311d6d7f5b78f1c3f17d1b48b3012469fa1a2ed880858ae365a4bea0e2616e2",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "c311d6d7f5b78f1c3f17d1b48b3012469fa1a2ed880858ae365a4bea0e2616e2"
+      }
+    },
+    {
+      "id": "key",
+      "names": {
+        "zh": [
+          "钥匙"
+        ],
+        "en": [
+          "key"
+        ]
+      },
+      "aliases": [
+        "钥匙",
+        "key"
+      ],
+      "group": "object",
+      "file": "library/key.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/63961/key",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "laobc"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "1681fff46955a90442e36e14c547b651e33e9ea9371e765eee852ad63a816462",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "1681fff46955a90442e36e14c547b651e33e9ea9371e765eee852ad63a816462"
+      }
+    },
+    {
+      "id": "book",
+      "names": {
+        "zh": [
+          "书"
+        ],
+        "en": [
+          "book"
+        ]
+      },
+      "aliases": [
+        "书",
+        "book"
+      ],
+      "group": "object",
+      "file": "library/book.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/323495/book",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "25ee73b030ae6b4e2e5e5bd5dd89df8fa613dce02e6b8826ba71e1aff1284831",
+      "tags": [
+        "摊开",
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "25ee73b030ae6b4e2e5e5bd5dd89df8fa613dce02e6b8826ba71e1aff1284831"
+      }
+    },
+    {
+      "id": "glasses",
+      "names": {
+        "zh": [
+          "眼镜"
+        ],
+        "en": [
+          "glasses"
+        ]
+      },
+      "aliases": [
+        "眼镜",
+        "glasses"
+      ],
+      "group": "object",
+      "file": "library/glasses.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/323793/glasses",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "0e5f1edc313ef146ee1ffe743c1de6c4fa2159659a6971a3d0e861670fdfb06a",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "0e5f1edc313ef146ee1ffe743c1de6c4fa2159659a6971a3d0e861670fdfb06a"
+      }
+    },
+    {
+      "id": "apple",
+      "names": {
+        "zh": [
+          "苹果"
+        ],
+        "en": [
+          "apple"
+        ]
+      },
+      "aliases": [
+        "苹果",
+        "apple"
+      ],
+      "group": "food",
+      "file": "library/apple.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/327590/apple",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "110e400772bcc86fae4fc94ad2b70718743eccbe1494ff645fb65d102c52795e",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "110e400772bcc86fae4fc94ad2b70718743eccbe1494ff645fb65d102c52795e"
+      }
+    },
+    {
+      "id": "moon",
+      "names": {
+        "zh": [
+          "月亮"
+        ],
+        "en": [
+          "moon"
+        ]
+      },
+      "aliases": [
+        "月亮",
+        "moon"
+      ],
+      "group": "nature",
+      "file": "library/moon.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/327768/moon",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "7784fe928ca642e7a49cd790674834ed8848a210a773ec48c7b50a5ae8681838",
+      "tags": [
+        "月牙"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "7784fe928ca642e7a49cd790674834ed8848a210a773ec48c7b50a5ae8681838"
+      }
+    },
+    {
+      "id": "fire",
+      "names": {
+        "zh": [
+          "火焰"
+        ],
+        "en": [
+          "fire"
+        ]
+      },
+      "aliases": [
+        "火焰",
+        "fire"
+      ],
+      "group": "nature",
+      "file": "library/fire.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/323295/fire",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "98d8c42721e867f75ca9e58f230e7388add5cb5502f659bfb0ad2a8d67ed7fdf",
+      "tags": [
+        "篝火",
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "98d8c42721e867f75ca9e58f230e7388add5cb5502f659bfb0ad2a8d67ed7fdf"
+      }
+    },
+    {
+      "id": "leaf",
+      "names": {
+        "zh": [
+          "叶子"
+        ],
+        "en": [
+          "leaf"
+        ]
+      },
+      "aliases": [
+        "叶子",
+        "leaf"
+      ],
+      "group": "nature",
+      "file": "library/leaf.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/327629/leaf",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "ca4937fe19abb45ec1b848c9f086144a66a929a4b2cdfcd17ea44f321cb24858",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "ca4937fe19abb45ec1b848c9f086144a66a929a4b2cdfcd17ea44f321cb24858"
+      }
+    },
+    {
+      "id": "arrow",
+      "names": {
+        "zh": [
+          "箭头"
+        ],
+        "en": [
+          "arrow"
+        ]
+      },
+      "aliases": [
+        "箭头",
+        "arrow"
+      ],
+      "group": "symbol",
+      "file": "library/arrow.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/322449/arrow",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "e47a93b5507fd79c4bfad37a5893d137a994660f2b0a189c2d428fbc38901095",
+      "tags": [
+        "向右"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "e47a93b5507fd79c4bfad37a5893d137a994660f2b0a189c2d428fbc38901095"
+      }
+    },
+    {
+      "id": "hammer",
+      "names": {
+        "zh": [
+          "锤子"
+        ],
+        "en": [
+          "hammer"
+        ]
+      },
+      "aliases": [
+        "锤子",
+        "hammer"
+      ],
+      "group": "tool",
+      "file": "library/hammer.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/3619/hammer",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "alst"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "0cb7e7c019181659e49542f2548233069fbbee970a56435c19952adae6964577",
+      "tags": [
+        "斜置"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "0cb7e7c019181659e49542f2548233069fbbee970a56435c19952adae6964577"
+      }
+    },
+    {
+      "id": "dragon",
+      "names": {
+        "zh": [
+          "龙"
+        ],
+        "en": [
+          "dragon"
+        ]
+      },
+      "aliases": [
+        "龙",
+        "dragon"
+      ],
+      "group": "character",
+      "file": "library/dragon.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/319538/chinese-dragon",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "liftarn"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "22cd6423dbba98f0f31773db3bb97fe3b90e7a257c9331323b613b064b3cd88d",
+      "tags": [
+        "盘旋",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "22cd6423dbba98f0f31773db3bb97fe3b90e7a257c9331323b613b064b3cd88d"
+      }
+    },
+    {
+      "id": "pagoda",
+      "names": {
+        "zh": [
+          "宝塔"
+        ],
+        "en": [
+          "pagoda"
+        ]
+      },
+      "aliases": [
+        "宝塔",
+        "pagoda"
+      ],
+      "group": "culture",
+      "file": "library/pagoda.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/174924/pagoda-silhouette",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "Silveira"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "6d50d407b6ff70e7c156ced8661957cf19f10a5027419aabf0f6264fdf16dced",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "6d50d407b6ff70e7c156ced8661957cf19f10a5027419aabf0f6264fdf16dced"
+      }
+    },
+    {
+      "id": "piano",
+      "names": {
+        "zh": [
+          "钢琴"
+        ],
+        "en": [
+          "piano"
+        ]
+      },
+      "aliases": [
+        "钢琴",
+        "piano"
+      ],
+      "group": "music-sport",
+      "file": "library/piano.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/151849/piano",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "Moini"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "0a027a57d36a5c299f2929a24bf03ba3d5d686af1113e56b0320a11c849151d5",
+      "tags": [
+        "三角钢琴",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "0a027a57d36a5c299f2929a24bf03ba3d5d686af1113e56b0320a11c849151d5"
+      }
+    },
+    {
+      "id": "guitar",
+      "names": {
+        "zh": [
+          "吉他"
+        ],
+        "en": [
+          "guitar"
+        ]
+      },
+      "aliases": [
+        "吉他",
+        "guitar"
+      ],
+      "group": "music-sport",
+      "file": "library/guitar.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/323478/guitar",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "ff97e807a39f660bdfc385ff1c4e986629a91a40ae3cd6f86610bcb01e294534",
+      "tags": [
+        "斜置",
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "ff97e807a39f660bdfc385ff1c4e986629a91a40ae3cd6f86610bcb01e294534"
+      }
+    },
+    {
+      "id": "fa-house",
+      "names": {
+        "zh": [
+          "房子"
+        ],
+        "en": [
+          "house"
+        ]
+      },
+      "aliases": [
+        "房子",
+        "house"
+      ],
+      "group": "building",
+      "file": "library/fa-house.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/house?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "a2f39593246f7bd7dfcecbe8cf4a0b93926756bbabdd6089b1326545d9389391",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "a2f39593246f7bd7dfcecbe8cf4a0b93926756bbabdd6089b1326545d9389391"
+      }
+    },
+    {
+      "id": "fa-rocket",
+      "names": {
+        "zh": [
+          "火箭"
+        ],
+        "en": [
+          "rocket"
+        ]
+      },
+      "aliases": [
+        "火箭",
+        "rocket"
+      ],
+      "group": "vehicle",
+      "file": "library/fa-rocket.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/rocket?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "f193c820afaf6b9673dedab46020659343c20dd975f3e22d3eba80af9352d4e0",
+      "tags": [
+        "斜向"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "f193c820afaf6b9673dedab46020659343c20dd975f3e22d3eba80af9352d4e0"
+      }
+    },
+    {
+      "id": "fa-cloud",
+      "names": {
+        "zh": [
+          "云"
+        ],
+        "en": [
+          "cloud"
+        ]
+      },
+      "aliases": [
+        "云",
+        "cloud"
+      ],
+      "group": "nature",
+      "file": "library/fa-cloud.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/cloud?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "39fcf01dd126f744c509e8b6295a5c91715db08e47b2eae812f7a89582c84085",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "39fcf01dd126f744c509e8b6295a5c91715db08e47b2eae812f7a89582c84085"
+      }
+    },
+    {
+      "id": "fa-anchor",
+      "names": {
+        "zh": [
+          "锚"
+        ],
+        "en": [
+          "anchor"
+        ]
+      },
+      "aliases": [
+        "锚",
+        "anchor"
+      ],
+      "group": "object",
+      "file": "library/fa-anchor.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/anchor?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "b53f9a2d5f3ca4962c2fd31336e0a2e254d2e4ebedea0df9129f5c1a325580fd",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "b53f9a2d5f3ca4962c2fd31336e0a2e254d2e4ebedea0df9129f5c1a325580fd"
+      }
+    },
+    {
+      "id": "fa-bone",
+      "names": {
+        "zh": [
+          "骨头"
+        ],
+        "en": [
+          "bone"
+        ]
+      },
+      "aliases": [
+        "骨头",
+        "bone"
+      ],
+      "group": "object",
+      "file": "library/fa-bone.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/bone?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "6adae49ddceb0e3a2b056adb56cdb8c8387d9fd8db7ba86b06abcfab6dee3202",
+      "tags": [
+        "横向"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "6adae49ddceb0e3a2b056adb56cdb8c8387d9fd8db7ba86b06abcfab6dee3202"
+      }
+    },
+    {
+      "id": "fa-crown",
+      "names": {
+        "zh": [
+          "皇冠"
+        ],
+        "en": [
+          "crown"
+        ]
+      },
+      "aliases": [
+        "皇冠",
+        "crown"
+      ],
+      "group": "object",
+      "file": "library/fa-crown.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/crown?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "3966f1b483a26c1d7334813db7fe1f25fd18d0ccba9fb2994b1948ea4cff8026",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "3966f1b483a26c1d7334813db7fe1f25fd18d0ccba9fb2994b1948ea4cff8026"
+      }
+    },
+    {
+      "id": "fa-feather",
+      "names": {
+        "zh": [
+          "羽毛"
+        ],
+        "en": [
+          "feather"
+        ]
+      },
+      "aliases": [
+        "羽毛",
+        "feather"
+      ],
+      "group": "nature",
+      "file": "library/fa-feather.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/feather?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "0174fb4ecf3fef5556b226e033f1eefa0ece20694fe15509f96b7309cccf5d01",
+      "tags": [
+        "斜置"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "0174fb4ecf3fef5556b226e033f1eefa0ece20694fe15509f96b7309cccf5d01"
+      }
+    },
+    {
+      "id": "fa-snowflake",
+      "names": {
+        "zh": [
+          "雪花"
+        ],
+        "en": [
+          "snowflake"
+        ]
+      },
+      "aliases": [
+        "雪花",
+        "snowflake"
+      ],
+      "group": "nature",
+      "file": "library/fa-snowflake.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/snowflake?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "f8f5d64fcb2416837503e2b51f3dd2fd366ee5b40b99e98fdc528ad7ee71b9db",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "f8f5d64fcb2416837503e2b51f3dd2fd366ee5b40b99e98fdc528ad7ee71b9db"
+      }
+    },
+    {
+      "id": "fa-lemon",
+      "names": {
+        "zh": [
+          "柠檬"
+        ],
+        "en": [
+          "lemon"
+        ]
+      },
+      "aliases": [
+        "柠檬",
+        "lemon"
+      ],
+      "group": "food",
+      "file": "library/fa-lemon.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/lemon?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "d62e99256337838872e006ddaafea54970fbe4bda5ddc2b176d4d282712fb68a",
+      "tags": [
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "d62e99256337838872e006ddaafea54970fbe4bda5ddc2b176d4d282712fb68a"
+      }
+    },
+    {
+      "id": "fa-drumstick-bite",
+      "names": {
+        "zh": [
+          "鸡腿"
+        ],
+        "en": [
+          "drumstick-bite"
+        ]
+      },
+      "aliases": [
+        "鸡腿",
+        "drumstick-bite"
+      ],
+      "group": "food",
+      "file": "library/fa-drumstick-bite.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/drumstick-bite?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "fdf199b77dddeb42d3cb115783000034bb5355cab663bc437b18fe61c80f9640",
+      "tags": [
+        "斜置"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "fdf199b77dddeb42d3cb115783000034bb5355cab663bc437b18fe61c80f9640"
+      }
+    },
+    {
+      "id": "fa-ghost",
+      "names": {
+        "zh": [
+          "幽灵"
+        ],
+        "en": [
+          "ghost"
+        ]
+      },
+      "aliases": [
+        "幽灵",
+        "ghost"
+      ],
+      "group": "character",
+      "file": "library/fa-ghost.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/ghost?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "ae46300c954d2e2dc787dcff7b3e5846f546faa57144b96d6c95ff60e10ae59e",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "ae46300c954d2e2dc787dcff7b3e5846f546faa57144b96d6c95ff60e10ae59e"
+      }
+    },
+    {
+      "id": "fa-bolt",
+      "names": {
+        "zh": [
+          "闪电"
+        ],
+        "en": [
+          "bolt"
+        ]
+      },
+      "aliases": [
+        "闪电",
+        "bolt"
+      ],
+      "group": "nature",
+      "file": "library/fa-bolt.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/bolt?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "c23816fcca202a690a4b6fdcc4f807965b2697dafdd2d3b67e0696cff250b774",
+      "tags": [
+        "斜向"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "c23816fcca202a690a4b6fdcc4f807965b2697dafdd2d3b67e0696cff250b774"
+      }
+    },
+    {
+      "id": "fa-droplet",
+      "names": {
+        "zh": [
+          "水滴"
+        ],
+        "en": [
+          "droplet"
+        ]
+      },
+      "aliases": [
+        "水滴",
+        "droplet"
+      ],
+      "group": "nature",
+      "file": "library/fa-droplet.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/droplet?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "c37fb116b0886c477634b52493abf7eba88ac7da82e5588cb2c1a06b2d72e987",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "c37fb116b0886c477634b52493abf7eba88ac7da82e5588cb2c1a06b2d72e987"
+      }
+    },
+    {
+      "id": "fa-wrench",
+      "names": {
+        "zh": [
+          "扳手"
+        ],
+        "en": [
+          "wrench"
+        ]
+      },
+      "aliases": [
+        "扳手",
+        "wrench"
+      ],
+      "group": "tool",
+      "file": "library/fa-wrench.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/wrench?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "d7be3a4062ed7a7bc86c3ea92672f8e814bd75de095630396eaecd63e5dc24e1",
+      "tags": [
+        "斜置"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "d7be3a4062ed7a7bc86c3ea92672f8e814bd75de095630396eaecd63e5dc24e1"
+      }
+    },
+    {
+      "id": "fa-crow",
+      "names": {
+        "zh": [
+          "乌鸦"
+        ],
+        "en": [
+          "crow"
+        ]
+      },
+      "aliases": [
+        "乌鸦",
+        "crow"
+      ],
+      "group": "animal",
+      "file": "library/fa-crow.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/crow?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "d08ea3d2e403977eab1efb17b910280fed8e6518aaa25b19b1798c4fec9d2238",
+      "tags": [
+        "站姿",
+        "侧面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "d08ea3d2e403977eab1efb17b910280fed8e6518aaa25b19b1798c4fec9d2238"
+      }
+    },
+    {
+      "id": "fa-cross",
+      "names": {
+        "zh": [
+          "十字架"
+        ],
+        "en": [
+          "cross"
+        ]
+      },
+      "aliases": [
+        "十字架",
+        "cross"
+      ],
+      "group": "symbol",
+      "file": "library/fa-cross.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/cross?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      },
+      "notes": "2026-11-01 审核批次：由 E2E 素材库（test/fixtures/e2e-shapes）合并入正式库。",
+      "sha256": "622118a361b9a2c2f0b8b83459e595e703843d23a5744360ae87482ac95d4a9e",
+      "tags": [
+        "正面"
+      ],
+      "review": {
+        "status": "approved",
+        "visual": "like",
+        "reviewedAt": "2026-11-01",
+        "sha256": "622118a361b9a2c2f0b8b83459e595e703843d23a5744360ae87482ac95d4a9e"
+      }
+    }
+  ]
+}

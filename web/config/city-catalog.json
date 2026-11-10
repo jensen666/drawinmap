@@ -1,0 +1,4465 @@
+{
+  "version": 1,
+  "presetCityId": "guangzhou",
+  "fetchHalfSpanDeg": {
+    "lat": 0.055,
+    "lng": 0.07
+  },
+  "cities": [
+    {
+      "id": "beijing",
+      "label": "北京",
+      "fullName": "北京",
+      "names": [
+        "北京",
+        "北京市"
+      ],
+      "province": "直辖市",
+      "preset": false,
+      "center": {
+        "lat": 39.9092,
+        "lng": 116.3975
+      }
+    },
+    {
+      "id": "shanghai",
+      "label": "上海",
+      "fullName": "上海",
+      "names": [
+        "上海",
+        "上海市"
+      ],
+      "province": "直辖市",
+      "preset": false,
+      "center": {
+        "lat": 31.2317,
+        "lng": 121.4693
+      }
+    },
+    {
+      "id": "tianjin",
+      "label": "天津",
+      "fullName": "天津",
+      "names": [
+        "天津",
+        "天津市"
+      ],
+      "province": "直辖市",
+      "preset": false,
+      "center": {
+        "lat": 39.1166,
+        "lng": 117.2007
+      }
+    },
+    {
+      "id": "chongqing",
+      "label": "重庆",
+      "fullName": "重庆",
+      "names": [
+        "重庆",
+        "重庆市"
+      ],
+      "province": "直辖市",
+      "preset": false,
+      "center": {
+        "lat": 29.5628,
+        "lng": 106.5516
+      }
+    },
+    {
+      "id": "shijiazhuang",
+      "label": "石家庄",
+      "fullName": "石家庄市",
+      "names": [
+        "石家庄市",
+        "石家庄"
+      ],
+      "province": "河北省",
+      "preset": false,
+      "center": {
+        "lat": 38.0433,
+        "lng": 114.5113
+      }
+    },
+    {
+      "id": "tangshan",
+      "label": "唐山",
+      "fullName": "唐山市",
+      "names": [
+        "唐山市",
+        "唐山"
+      ],
+      "province": "河北省",
+      "preset": false,
+      "center": {
+        "lat": 39.6345,
+        "lng": 118.1786
+      }
+    },
+    {
+      "id": "qinhuangdao",
+      "label": "秦皇岛",
+      "fullName": "秦皇岛市",
+      "names": [
+        "秦皇岛市",
+        "秦皇岛"
+      ],
+      "province": "河北省",
+      "preset": false,
+      "center": {
+        "lat": 39.9434,
+        "lng": 119.6005
+      }
+    },
+    {
+      "id": "handan",
+      "label": "邯郸",
+      "fullName": "邯郸市",
+      "names": [
+        "邯郸市",
+        "邯郸"
+      ],
+      "province": "河北省",
+      "preset": false,
+      "center": {
+        "lat": 36.6123,
+        "lng": 114.4914
+      }
+    },
+    {
+      "id": "xingtai",
+      "label": "邢台",
+      "fullName": "邢台市",
+      "names": [
+        "邢台市",
+        "邢台"
+      ],
+      "province": "河北省",
+      "preset": false,
+      "center": {
+        "lat": 37.0698,
+        "lng": 114.5046
+      }
+    },
+    {
+      "id": "baoding",
+      "label": "保定",
+      "fullName": "保定市",
+      "names": [
+        "保定市",
+        "保定"
+      ],
+      "province": "河北省",
+      "preset": false,
+      "center": {
+        "lat": 38.8744,
+        "lng": 115.4655
+      }
+    },
+    {
+      "id": "zhangjiakou",
+      "label": "张家口",
+      "fullName": "张家口市",
+      "names": [
+        "张家口市",
+        "张家口"
+      ],
+      "province": "河北省",
+      "preset": false,
+      "center": {
+        "lat": 40.7683,
+        "lng": 114.8857
+      }
+    },
+    {
+      "id": "chengde",
+      "label": "承德",
+      "fullName": "承德市",
+      "names": [
+        "承德市",
+        "承德"
+      ],
+      "province": "河北省",
+      "preset": false,
+      "center": {
+        "lat": 40.9551,
+        "lng": 117.9634
+      }
+    },
+    {
+      "id": "cangzhou",
+      "label": "沧州",
+      "fullName": "沧州市",
+      "names": [
+        "沧州市",
+        "沧州"
+      ],
+      "province": "河北省",
+      "preset": false,
+      "center": {
+        "lat": 38.3044,
+        "lng": 116.8387
+      }
+    },
+    {
+      "id": "langfang",
+      "label": "廊坊",
+      "fullName": "廊坊市",
+      "names": [
+        "廊坊市",
+        "廊坊"
+      ],
+      "province": "河北省",
+      "preset": false,
+      "center": {
+        "lat": 39.5383,
+        "lng": 116.6822
+      }
+    },
+    {
+      "id": "hengshui",
+      "label": "衡水",
+      "fullName": "衡水市",
+      "names": [
+        "衡水市",
+        "衡水"
+      ],
+      "province": "河北省",
+      "preset": false,
+      "center": {
+        "lat": 37.7373,
+        "lng": 115.6699
+      }
+    },
+    {
+      "id": "taiyuan",
+      "label": "太原",
+      "fullName": "太原市",
+      "names": [
+        "太原市",
+        "太原"
+      ],
+      "province": "山西省",
+      "preset": false,
+      "center": {
+        "lat": 37.8702,
+        "lng": 112.5487
+      }
+    },
+    {
+      "id": "datong",
+      "label": "大同",
+      "fullName": "大同市",
+      "names": [
+        "大同市",
+        "大同"
+      ],
+      "province": "山西省",
+      "preset": false,
+      "center": {
+        "lat": 40.0768,
+        "lng": 113.3001
+      }
+    },
+    {
+      "id": "yangquan",
+      "label": "阳泉",
+      "fullName": "阳泉市",
+      "names": [
+        "阳泉市",
+        "阳泉"
+      ],
+      "province": "山西省",
+      "preset": false,
+      "center": {
+        "lat": 37.8567,
+        "lng": 113.5834
+      }
+    },
+    {
+      "id": "changzhi",
+      "label": "长治",
+      "fullName": "长治市",
+      "names": [
+        "长治市",
+        "长治"
+      ],
+      "province": "山西省",
+      "preset": false,
+      "center": {
+        "lat": 36.1953,
+        "lng": 113.1163
+      }
+    },
+    {
+      "id": "jincheng",
+      "label": "晋城",
+      "fullName": "晋城市",
+      "names": [
+        "晋城市",
+        "晋城"
+      ],
+      "province": "山西省",
+      "preset": false,
+      "center": {
+        "lat": 35.4907,
+        "lng": 112.8527
+      }
+    },
+    {
+      "id": "shuozhou",
+      "label": "朔州",
+      "fullName": "朔州市",
+      "names": [
+        "朔州市",
+        "朔州"
+      ],
+      "province": "山西省",
+      "preset": false,
+      "center": {
+        "lat": 39.3312,
+        "lng": 112.4334
+      }
+    },
+    {
+      "id": "jinzhong",
+      "label": "晋中",
+      "fullName": "晋中市",
+      "names": [
+        "晋中市",
+        "晋中"
+      ],
+      "province": "山西省",
+      "preset": false,
+      "center": {
+        "lat": 37.6871,
+        "lng": 112.7525
+      }
+    },
+    {
+      "id": "yuncheng",
+      "label": "运城",
+      "fullName": "运城市",
+      "names": [
+        "运城市",
+        "运城"
+      ],
+      "province": "山西省",
+      "preset": false,
+      "center": {
+        "lat": 35.0242,
+        "lng": 111.0033
+      }
+    },
+    {
+      "id": "xinzhou",
+      "label": "忻州",
+      "fullName": "忻州市",
+      "names": [
+        "忻州市",
+        "忻州"
+      ],
+      "province": "山西省",
+      "preset": false,
+      "center": {
+        "lat": 38.4159,
+        "lng": 112.7339
+      }
+    },
+    {
+      "id": "linfen",
+      "label": "临汾",
+      "fullName": "临汾市",
+      "names": [
+        "临汾市",
+        "临汾"
+      ],
+      "province": "山西省",
+      "preset": false,
+      "center": {
+        "lat": 36.0881,
+        "lng": 111.519
+      }
+    },
+    {
+      "id": "lvliang",
+      "label": "吕梁",
+      "fullName": "吕梁市",
+      "names": [
+        "吕梁市",
+        "吕梁"
+      ],
+      "province": "山西省",
+      "preset": false,
+      "center": {
+        "lat": 37.5245,
+        "lng": 111.1415
+      }
+    },
+    {
+      "id": "huhehaote",
+      "label": "呼和浩特",
+      "fullName": "呼和浩特市",
+      "names": [
+        "呼和浩特市",
+        "呼和浩特"
+      ],
+      "province": "内蒙古自治区",
+      "preset": false,
+      "center": {
+        "lat": 40.8424,
+        "lng": 111.7491
+      }
+    },
+    {
+      "id": "baotou",
+      "label": "包头",
+      "fullName": "包头市",
+      "names": [
+        "包头市",
+        "包头"
+      ],
+      "province": "内蒙古自治区",
+      "preset": false,
+      "center": {
+        "lat": 40.6572,
+        "lng": 109.8403
+      }
+    },
+    {
+      "id": "wuhai",
+      "label": "乌海",
+      "fullName": "乌海市",
+      "names": [
+        "乌海市",
+        "乌海"
+      ],
+      "province": "内蒙古自治区",
+      "preset": false,
+      "center": {
+        "lat": 39.6553,
+        "lng": 106.7946
+      }
+    },
+    {
+      "id": "chifeng",
+      "label": "赤峰",
+      "fullName": "赤峰市",
+      "names": [
+        "赤峰市",
+        "赤峰"
+      ],
+      "province": "内蒙古自治区",
+      "preset": false,
+      "center": {
+        "lat": 42.2585,
+        "lng": 118.8881
+      }
+    },
+    {
+      "id": "tongliao",
+      "label": "通辽",
+      "fullName": "通辽市",
+      "names": [
+        "通辽市",
+        "通辽"
+      ],
+      "province": "内蒙古自治区",
+      "preset": false,
+      "center": {
+        "lat": 43.6527,
+        "lng": 122.2632
+      }
+    },
+    {
+      "id": "eerduosi",
+      "label": "鄂尔多斯",
+      "fullName": "鄂尔多斯市",
+      "names": [
+        "鄂尔多斯市",
+        "鄂尔多斯"
+      ],
+      "province": "内蒙古自治区",
+      "preset": false,
+      "center": {
+        "lat": 39.6092,
+        "lng": 109.7811
+      }
+    },
+    {
+      "id": "hulunbeier",
+      "label": "呼伦贝尔",
+      "fullName": "呼伦贝尔市",
+      "names": [
+        "呼伦贝尔市",
+        "呼伦贝尔"
+      ],
+      "province": "内蒙古自治区",
+      "preset": false,
+      "center": {
+        "lat": 49.2122,
+        "lng": 119.7656
+      }
+    },
+    {
+      "id": "bayannaoer",
+      "label": "巴彦淖尔",
+      "fullName": "巴彦淖尔市",
+      "names": [
+        "巴彦淖尔市",
+        "巴彦淖尔"
+      ],
+      "province": "内蒙古自治区",
+      "preset": false,
+      "center": {
+        "lat": 40.7437,
+        "lng": 107.3873
+      }
+    },
+    {
+      "id": "wulanchabu",
+      "label": "乌兰察布",
+      "fullName": "乌兰察布市",
+      "names": [
+        "乌兰察布市",
+        "乌兰察布"
+      ],
+      "province": "内蒙古自治区",
+      "preset": false,
+      "center": {
+        "lat": 40.9925,
+        "lng": 113.1326
+      }
+    },
+    {
+      "id": "shenyang",
+      "label": "沈阳",
+      "fullName": "沈阳市",
+      "names": [
+        "沈阳市",
+        "沈阳"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 41.8057,
+        "lng": 123.4315
+      }
+    },
+    {
+      "id": "dalian",
+      "label": "大连",
+      "fullName": "大连市",
+      "names": [
+        "大连市",
+        "大连"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 38.9144,
+        "lng": 121.6149
+      }
+    },
+    {
+      "id": "anshan",
+      "label": "鞍山",
+      "fullName": "鞍山市",
+      "names": [
+        "鞍山市",
+        "鞍山"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 41.1087,
+        "lng": 122.9956
+      }
+    },
+    {
+      "id": "fushun",
+      "label": "抚顺",
+      "fullName": "抚顺市",
+      "names": [
+        "抚顺市",
+        "抚顺"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 41.8819,
+        "lng": 123.9574
+      }
+    },
+    {
+      "id": "benxi",
+      "label": "本溪",
+      "fullName": "本溪市",
+      "names": [
+        "本溪市",
+        "本溪"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 41.2944,
+        "lng": 123.7706
+      }
+    },
+    {
+      "id": "dandong",
+      "label": "丹东",
+      "fullName": "丹东市",
+      "names": [
+        "丹东市",
+        "丹东"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 40.0009,
+        "lng": 124.3547
+      }
+    },
+    {
+      "id": "jinzhou",
+      "label": "锦州",
+      "fullName": "锦州市",
+      "names": [
+        "锦州市",
+        "锦州"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 41.0952,
+        "lng": 121.127
+      }
+    },
+    {
+      "id": "yingkou",
+      "label": "营口",
+      "fullName": "营口市",
+      "names": [
+        "营口市",
+        "营口"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 40.6665,
+        "lng": 122.235
+      }
+    },
+    {
+      "id": "fuxin",
+      "label": "阜新",
+      "fullName": "阜新市",
+      "names": [
+        "阜新市",
+        "阜新"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 42.0122,
+        "lng": 121.6708
+      }
+    },
+    {
+      "id": "liaoyang",
+      "label": "辽阳",
+      "fullName": "辽阳市",
+      "names": [
+        "辽阳市",
+        "辽阳"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 41.2682,
+        "lng": 123.172
+      }
+    },
+    {
+      "id": "panjin",
+      "label": "盘锦",
+      "fullName": "盘锦市",
+      "names": [
+        "盘锦市",
+        "盘锦"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 41.1244,
+        "lng": 122.0707
+      }
+    },
+    {
+      "id": "tieling",
+      "label": "铁岭",
+      "fullName": "铁岭市",
+      "names": [
+        "铁岭市",
+        "铁岭"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 42.2902,
+        "lng": 123.8443
+      }
+    },
+    {
+      "id": "chaoyang",
+      "label": "朝阳",
+      "fullName": "朝阳市",
+      "names": [
+        "朝阳市",
+        "朝阳"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 41.5718,
+        "lng": 120.4508
+      }
+    },
+    {
+      "id": "huludao",
+      "label": "葫芦岛",
+      "fullName": "葫芦岛市",
+      "names": [
+        "葫芦岛市",
+        "葫芦岛"
+      ],
+      "province": "辽宁省",
+      "preset": false,
+      "center": {
+        "lat": 40.7118,
+        "lng": 120.837
+      }
+    },
+    {
+      "id": "changchun",
+      "label": "长春",
+      "fullName": "长春市",
+      "names": [
+        "长春市",
+        "长春"
+      ],
+      "province": "吉林省",
+      "preset": false,
+      "center": {
+        "lat": 43.8171,
+        "lng": 125.3235
+      }
+    },
+    {
+      "id": "jilin",
+      "label": "吉林",
+      "fullName": "吉林市",
+      "names": [
+        "吉林市",
+        "吉林"
+      ],
+      "province": "吉林省",
+      "preset": false,
+      "center": {
+        "lat": 43.8378,
+        "lng": 126.5496
+      }
+    },
+    {
+      "id": "siping",
+      "label": "四平",
+      "fullName": "四平市",
+      "names": [
+        "四平市",
+        "四平"
+      ],
+      "province": "吉林省",
+      "preset": false,
+      "center": {
+        "lat": 43.1666,
+        "lng": 124.3507
+      }
+    },
+    {
+      "id": "liaoyuan",
+      "label": "辽源",
+      "fullName": "辽源市",
+      "names": [
+        "辽源市",
+        "辽源"
+      ],
+      "province": "吉林省",
+      "preset": false,
+      "center": {
+        "lat": 42.8882,
+        "lng": 125.1437
+      }
+    },
+    {
+      "id": "tonghua",
+      "label": "通化",
+      "fullName": "通化市",
+      "names": [
+        "通化市",
+        "通化"
+      ],
+      "province": "吉林省",
+      "preset": false,
+      "center": {
+        "lat": 41.7277,
+        "lng": 125.9399
+      }
+    },
+    {
+      "id": "baishan",
+      "label": "白山",
+      "fullName": "白山市",
+      "names": [
+        "白山市",
+        "白山"
+      ],
+      "province": "吉林省",
+      "preset": false,
+      "center": {
+        "lat": 41.9455,
+        "lng": 126.4158
+      }
+    },
+    {
+      "id": "songyuan",
+      "label": "松原",
+      "fullName": "松原市",
+      "names": [
+        "松原市",
+        "松原"
+      ],
+      "province": "吉林省",
+      "preset": false,
+      "center": {
+        "lat": 45.1362,
+        "lng": 124.8255
+      }
+    },
+    {
+      "id": "baicheng",
+      "label": "白城",
+      "fullName": "白城市",
+      "names": [
+        "白城市",
+        "白城"
+      ],
+      "province": "吉林省",
+      "preset": false,
+      "center": {
+        "lat": 45.6195,
+        "lng": 122.8389
+      }
+    },
+    {
+      "id": "haerbin",
+      "label": "哈尔滨",
+      "fullName": "哈尔滨市",
+      "names": [
+        "哈尔滨市",
+        "哈尔滨"
+      ],
+      "province": "黑龙江省",
+      "preset": false,
+      "center": {
+        "lat": 45.8032,
+        "lng": 126.5349
+      }
+    },
+    {
+      "id": "qiqihaer",
+      "label": "齐齐哈尔",
+      "fullName": "齐齐哈尔市",
+      "names": [
+        "齐齐哈尔市",
+        "齐齐哈尔"
+      ],
+      "province": "黑龙江省",
+      "preset": false,
+      "center": {
+        "lat": 47.3542,
+        "lng": 123.9183
+      }
+    },
+    {
+      "id": "jixi",
+      "label": "鸡西",
+      "fullName": "鸡西市",
+      "names": [
+        "鸡西市",
+        "鸡西"
+      ],
+      "province": "黑龙江省",
+      "preset": false,
+      "center": {
+        "lat": 45.295,
+        "lng": 130.9697
+      }
+    },
+    {
+      "id": "hegang",
+      "label": "鹤岗",
+      "fullName": "鹤岗市",
+      "names": [
+        "鹤岗市",
+        "鹤岗"
+      ],
+      "province": "黑龙江省",
+      "preset": false,
+      "center": {
+        "lat": 47.3499,
+        "lng": 130.2977
+      }
+    },
+    {
+      "id": "shuangyashan",
+      "label": "双鸭山",
+      "fullName": "双鸭山市",
+      "names": [
+        "双鸭山市",
+        "双鸭山"
+      ],
+      "province": "黑龙江省",
+      "preset": false,
+      "center": {
+        "lat": 46.6466,
+        "lng": 131.1591
+      }
+    },
+    {
+      "id": "daqing",
+      "label": "大庆",
+      "fullName": "大庆市",
+      "names": [
+        "大庆市",
+        "大庆"
+      ],
+      "province": "黑龙江省",
+      "preset": false,
+      "center": {
+        "lat": 46.5907,
+        "lng": 125.1038
+      }
+    },
+    {
+      "id": "yichun",
+      "label": "伊春",
+      "fullName": "伊春市",
+      "names": [
+        "伊春市",
+        "伊春"
+      ],
+      "province": "黑龙江省",
+      "preset": false,
+      "center": {
+        "lat": 47.727,
+        "lng": 128.8421
+      }
+    },
+    {
+      "id": "jiamusi",
+      "label": "佳木斯",
+      "fullName": "佳木斯市",
+      "names": [
+        "佳木斯市",
+        "佳木斯"
+      ],
+      "province": "黑龙江省",
+      "preset": false,
+      "center": {
+        "lat": 46.7996,
+        "lng": 130.3179
+      }
+    },
+    {
+      "id": "qitaihe",
+      "label": "七台河",
+      "fullName": "七台河市",
+      "names": [
+        "七台河市",
+        "七台河"
+      ],
+      "province": "黑龙江省",
+      "preset": false,
+      "center": {
+        "lat": 45.7707,
+        "lng": 131.0031
+      }
+    },
+    {
+      "id": "mudanjiang",
+      "label": "牡丹江",
+      "fullName": "牡丹江市",
+      "names": [
+        "牡丹江市",
+        "牡丹江"
+      ],
+      "province": "黑龙江省",
+      "preset": false,
+      "center": {
+        "lat": 44.5526,
+        "lng": 129.6332
+      }
+    },
+    {
+      "id": "heihe",
+      "label": "黑河",
+      "fullName": "黑河市",
+      "names": [
+        "黑河市",
+        "黑河"
+      ],
+      "province": "黑龙江省",
+      "preset": false,
+      "center": {
+        "lat": 50.2454,
+        "lng": 127.5285
+      }
+    },
+    {
+      "id": "suihua",
+      "label": "绥化",
+      "fullName": "绥化市",
+      "names": [
+        "绥化市",
+        "绥化"
+      ],
+      "province": "黑龙江省",
+      "preset": false,
+      "center": {
+        "lat": 46.6539,
+        "lng": 126.9699
+      }
+    },
+    {
+      "id": "nanjing",
+      "label": "南京",
+      "fullName": "南京市",
+      "names": [
+        "南京市",
+        "南京"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 32.0412,
+        "lng": 118.797
+      }
+    },
+    {
+      "id": "wuxi",
+      "label": "无锡",
+      "fullName": "无锡市",
+      "names": [
+        "无锡市",
+        "无锡"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 31.4908,
+        "lng": 120.3119
+      }
+    },
+    {
+      "id": "xuzhou",
+      "label": "徐州",
+      "fullName": "徐州市",
+      "names": [
+        "徐州市",
+        "徐州"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 34.2044,
+        "lng": 117.2854
+      }
+    },
+    {
+      "id": "changzhou",
+      "label": "常州",
+      "fullName": "常州市",
+      "names": [
+        "常州市",
+        "常州"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 31.8158,
+        "lng": 119.9702
+      }
+    },
+    {
+      "id": "suzhou",
+      "label": "苏州",
+      "fullName": "苏州市",
+      "names": [
+        "苏州市",
+        "苏州"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 31.2989,
+        "lng": 120.5853
+      }
+    },
+    {
+      "id": "nantong",
+      "label": "南通",
+      "fullName": "南通市",
+      "names": [
+        "南通市",
+        "南通"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 31.9805,
+        "lng": 120.8943
+      }
+    },
+    {
+      "id": "lianyungang",
+      "label": "连云港",
+      "fullName": "连云港市",
+      "names": [
+        "连云港市",
+        "连云港"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 34.5964,
+        "lng": 119.2218
+      }
+    },
+    {
+      "id": "huaian",
+      "label": "淮安",
+      "fullName": "淮安市",
+      "names": [
+        "淮安市",
+        "淮安"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 33.6106,
+        "lng": 119.0153
+      }
+    },
+    {
+      "id": "yancheng",
+      "label": "盐城",
+      "fullName": "盐城市",
+      "names": [
+        "盐城市",
+        "盐城"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 33.3474,
+        "lng": 120.1619
+      }
+    },
+    {
+      "id": "yangzhou",
+      "label": "扬州",
+      "fullName": "扬州市",
+      "names": [
+        "扬州市",
+        "扬州"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 32.3943,
+        "lng": 119.4131
+      }
+    },
+    {
+      "id": "zhenjiang",
+      "label": "镇江",
+      "fullName": "镇江市",
+      "names": [
+        "镇江市",
+        "镇江"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 32.189,
+        "lng": 119.4244
+      }
+    },
+    {
+      "id": "taizhou",
+      "label": "泰州",
+      "fullName": "泰州市",
+      "names": [
+        "泰州市",
+        "泰州"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 32.4573,
+        "lng": 119.9227
+      }
+    },
+    {
+      "id": "suqian",
+      "label": "宿迁",
+      "fullName": "宿迁市",
+      "names": [
+        "宿迁市",
+        "宿迁"
+      ],
+      "province": "江苏省",
+      "preset": false,
+      "center": {
+        "lat": 33.9624,
+        "lng": 118.2758
+      }
+    },
+    {
+      "id": "hangzhou",
+      "label": "杭州",
+      "fullName": "杭州市",
+      "names": [
+        "杭州市",
+        "杭州"
+      ],
+      "province": "浙江省",
+      "preset": false,
+      "center": {
+        "lat": 30.2741,
+        "lng": 120.1551
+      }
+    },
+    {
+      "id": "ningbo",
+      "label": "宁波",
+      "fullName": "宁波市",
+      "names": [
+        "宁波市",
+        "宁波"
+      ],
+      "province": "浙江省",
+      "preset": false,
+      "center": {
+        "lat": 29.8684,
+        "lng": 121.544
+      }
+    },
+    {
+      "id": "wenzhou",
+      "label": "温州",
+      "fullName": "温州市",
+      "names": [
+        "温州市",
+        "温州"
+      ],
+      "province": "浙江省",
+      "preset": false,
+      "center": {
+        "lat": 27.9996,
+        "lng": 120.6713
+      }
+    },
+    {
+      "id": "jiaxing",
+      "label": "嘉兴",
+      "fullName": "嘉兴市",
+      "names": [
+        "嘉兴市",
+        "嘉兴"
+      ],
+      "province": "浙江省",
+      "preset": false,
+      "center": {
+        "lat": 30.7539,
+        "lng": 120.7553
+      }
+    },
+    {
+      "id": "huzhou",
+      "label": "湖州",
+      "fullName": "湖州市",
+      "names": [
+        "湖州市",
+        "湖州"
+      ],
+      "province": "浙江省",
+      "preset": false,
+      "center": {
+        "lat": 30.8724,
+        "lng": 120.0934
+      }
+    },
+    {
+      "id": "shaoxing",
+      "label": "绍兴",
+      "fullName": "绍兴市",
+      "names": [
+        "绍兴市",
+        "绍兴"
+      ],
+      "province": "浙江省",
+      "preset": false,
+      "center": {
+        "lat": 30.0302,
+        "lng": 120.5809
+      }
+    },
+    {
+      "id": "jinhua",
+      "label": "金华",
+      "fullName": "金华市",
+      "names": [
+        "金华市",
+        "金华"
+      ],
+      "province": "浙江省",
+      "preset": false,
+      "center": {
+        "lat": 29.0999,
+        "lng": 119.6495
+      }
+    },
+    {
+      "id": "quzhou",
+      "label": "衢州",
+      "fullName": "衢州市",
+      "names": [
+        "衢州市",
+        "衢州"
+      ],
+      "province": "浙江省",
+      "preset": false,
+      "center": {
+        "lat": 28.9356,
+        "lng": 118.8592
+      }
+    },
+    {
+      "id": "zhoushan",
+      "label": "舟山",
+      "fullName": "舟山市",
+      "names": [
+        "舟山市",
+        "舟山"
+      ],
+      "province": "浙江省",
+      "preset": false,
+      "center": {
+        "lat": 29.9853,
+        "lng": 122.2071
+      }
+    },
+    {
+      "id": "taizhou_zj",
+      "label": "台州",
+      "fullName": "台州市",
+      "names": [
+        "台州市",
+        "台州"
+      ],
+      "province": "浙江省",
+      "preset": false,
+      "center": {
+        "lat": 28.6561,
+        "lng": 121.4208
+      }
+    },
+    {
+      "id": "lishui",
+      "label": "丽水",
+      "fullName": "丽水市",
+      "names": [
+        "丽水市",
+        "丽水"
+      ],
+      "province": "浙江省",
+      "preset": false,
+      "center": {
+        "lat": 28.4677,
+        "lng": 119.9229
+      }
+    },
+    {
+      "id": "hefei",
+      "label": "合肥",
+      "fullName": "合肥市",
+      "names": [
+        "合肥市",
+        "合肥"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 31.8208,
+        "lng": 117.2272
+      }
+    },
+    {
+      "id": "wuhu",
+      "label": "芜湖",
+      "fullName": "芜湖市",
+      "names": [
+        "芜湖市",
+        "芜湖"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 31.3526,
+        "lng": 118.4333
+      }
+    },
+    {
+      "id": "bengbu",
+      "label": "蚌埠",
+      "fullName": "蚌埠市",
+      "names": [
+        "蚌埠市",
+        "蚌埠"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 32.9163,
+        "lng": 117.3894
+      }
+    },
+    {
+      "id": "huainan",
+      "label": "淮南",
+      "fullName": "淮南市",
+      "names": [
+        "淮南市",
+        "淮南"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 32.6254,
+        "lng": 116.9982
+      }
+    },
+    {
+      "id": "maanshan",
+      "label": "马鞍山",
+      "fullName": "马鞍山市",
+      "names": [
+        "马鞍山市",
+        "马鞍山"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 31.6708,
+        "lng": 118.5062
+      }
+    },
+    {
+      "id": "huaibei",
+      "label": "淮北",
+      "fullName": "淮北市",
+      "names": [
+        "淮北市",
+        "淮北"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 33.955,
+        "lng": 116.7991
+      }
+    },
+    {
+      "id": "tongling",
+      "label": "铜陵",
+      "fullName": "铜陵市",
+      "names": [
+        "铜陵市",
+        "铜陵"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 30.945,
+        "lng": 117.8122
+      }
+    },
+    {
+      "id": "anqing",
+      "label": "安庆",
+      "fullName": "安庆市",
+      "names": [
+        "安庆市",
+        "安庆"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 30.5438,
+        "lng": 117.063
+      }
+    },
+    {
+      "id": "huangshan",
+      "label": "黄山",
+      "fullName": "黄山市",
+      "names": [
+        "黄山市",
+        "黄山"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 29.7148,
+        "lng": 118.3376
+      }
+    },
+    {
+      "id": "chuzhou",
+      "label": "滁州",
+      "fullName": "滁州市",
+      "names": [
+        "滁州市",
+        "滁州"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 32.303,
+        "lng": 118.317
+      }
+    },
+    {
+      "id": "fuyang",
+      "label": "阜阳",
+      "fullName": "阜阳市",
+      "names": [
+        "阜阳市",
+        "阜阳"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 32.8896,
+        "lng": 115.815
+      }
+    },
+    {
+      "id": "suzhou_ah",
+      "label": "宿州",
+      "fullName": "宿州市",
+      "names": [
+        "宿州市",
+        "宿州"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 33.6461,
+        "lng": 116.9642
+      }
+    },
+    {
+      "id": "luan",
+      "label": "六安",
+      "fullName": "六安市",
+      "names": [
+        "六安市",
+        "六安"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 31.7349,
+        "lng": 116.5233
+      }
+    },
+    {
+      "id": "bozhou",
+      "label": "亳州",
+      "fullName": "亳州市",
+      "names": [
+        "亳州市",
+        "亳州"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 33.8459,
+        "lng": 115.7785
+      }
+    },
+    {
+      "id": "chizhou",
+      "label": "池州",
+      "fullName": "池州市",
+      "names": [
+        "池州市",
+        "池州"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 30.6648,
+        "lng": 117.4912
+      }
+    },
+    {
+      "id": "xuancheng",
+      "label": "宣城",
+      "fullName": "宣城市",
+      "names": [
+        "宣城市",
+        "宣城"
+      ],
+      "province": "安徽省",
+      "preset": false,
+      "center": {
+        "lat": 30.9417,
+        "lng": 118.7578
+      }
+    },
+    {
+      "id": "fuzhou",
+      "label": "福州",
+      "fullName": "福州市",
+      "names": [
+        "福州市",
+        "福州"
+      ],
+      "province": "福建省",
+      "preset": false,
+      "center": {
+        "lat": 26.0745,
+        "lng": 119.2965
+      }
+    },
+    {
+      "id": "xiamen",
+      "label": "厦门",
+      "fullName": "厦门市",
+      "names": [
+        "厦门市",
+        "厦门"
+      ],
+      "province": "福建省",
+      "preset": false,
+      "center": {
+        "lat": 24.4796,
+        "lng": 118.0894
+      }
+    },
+    {
+      "id": "putian",
+      "label": "莆田",
+      "fullName": "莆田市",
+      "names": [
+        "莆田市",
+        "莆田"
+      ],
+      "province": "福建省",
+      "preset": false,
+      "center": {
+        "lat": 25.4521,
+        "lng": 119.0079
+      }
+    },
+    {
+      "id": "sanming",
+      "label": "三明",
+      "fullName": "三明市",
+      "names": [
+        "三明市",
+        "三明"
+      ],
+      "province": "福建省",
+      "preset": false,
+      "center": {
+        "lat": 26.2635,
+        "lng": 117.6387
+      }
+    },
+    {
+      "id": "quanzhou",
+      "label": "泉州",
+      "fullName": "泉州市",
+      "names": [
+        "泉州市",
+        "泉州"
+      ],
+      "province": "福建省",
+      "preset": false,
+      "center": {
+        "lat": 24.8742,
+        "lng": 118.6757
+      }
+    },
+    {
+      "id": "zhangzhou",
+      "label": "漳州",
+      "fullName": "漳州市",
+      "names": [
+        "漳州市",
+        "漳州"
+      ],
+      "province": "福建省",
+      "preset": false,
+      "center": {
+        "lat": 24.5129,
+        "lng": 117.6471
+      }
+    },
+    {
+      "id": "nanping",
+      "label": "南平",
+      "fullName": "南平市",
+      "names": [
+        "南平市",
+        "南平"
+      ],
+      "province": "福建省",
+      "preset": false,
+      "center": {
+        "lat": 26.6418,
+        "lng": 118.1777
+      }
+    },
+    {
+      "id": "longyan",
+      "label": "龙岩",
+      "fullName": "龙岩市",
+      "names": [
+        "龙岩市",
+        "龙岩"
+      ],
+      "province": "福建省",
+      "preset": false,
+      "center": {
+        "lat": 25.0751,
+        "lng": 117.0175
+      }
+    },
+    {
+      "id": "ningde",
+      "label": "宁德",
+      "fullName": "宁德市",
+      "names": [
+        "宁德市",
+        "宁德"
+      ],
+      "province": "福建省",
+      "preset": false,
+      "center": {
+        "lat": 26.657,
+        "lng": 119.5477
+      }
+    },
+    {
+      "id": "nanchang",
+      "label": "南昌",
+      "fullName": "南昌市",
+      "names": [
+        "南昌市",
+        "南昌"
+      ],
+      "province": "江西省",
+      "preset": false,
+      "center": {
+        "lat": 28.6832,
+        "lng": 115.8579
+      }
+    },
+    {
+      "id": "jingdezhen",
+      "label": "景德镇",
+      "fullName": "景德镇市",
+      "names": [
+        "景德镇市",
+        "景德镇"
+      ],
+      "province": "江西省",
+      "preset": false,
+      "center": {
+        "lat": 29.2688,
+        "lng": 117.1795
+      }
+    },
+    {
+      "id": "pingxiang",
+      "label": "萍乡",
+      "fullName": "萍乡市",
+      "names": [
+        "萍乡市",
+        "萍乡"
+      ],
+      "province": "江西省",
+      "preset": false,
+      "center": {
+        "lat": 27.6229,
+        "lng": 113.8545
+      }
+    },
+    {
+      "id": "jiujiang",
+      "label": "九江",
+      "fullName": "九江市",
+      "names": [
+        "九江市",
+        "九江"
+      ],
+      "province": "江西省",
+      "preset": false,
+      "center": {
+        "lat": 29.7051,
+        "lng": 116
+      }
+    },
+    {
+      "id": "xinyu",
+      "label": "新余",
+      "fullName": "新余市",
+      "names": [
+        "新余市",
+        "新余"
+      ],
+      "province": "江西省",
+      "preset": false,
+      "center": {
+        "lat": 27.8175,
+        "lng": 114.9168
+      }
+    },
+    {
+      "id": "yingtan",
+      "label": "鹰潭",
+      "fullName": "鹰潭市",
+      "names": [
+        "鹰潭市",
+        "鹰潭"
+      ],
+      "province": "江西省",
+      "preset": false,
+      "center": {
+        "lat": 28.26,
+        "lng": 117.0695
+      }
+    },
+    {
+      "id": "ganzhou",
+      "label": "赣州",
+      "fullName": "赣州市",
+      "names": [
+        "赣州市",
+        "赣州"
+      ],
+      "province": "江西省",
+      "preset": false,
+      "center": {
+        "lat": 25.8314,
+        "lng": 114.9351
+      }
+    },
+    {
+      "id": "jian",
+      "label": "吉安",
+      "fullName": "吉安市",
+      "names": [
+        "吉安市",
+        "吉安"
+      ],
+      "province": "江西省",
+      "preset": false,
+      "center": {
+        "lat": 27.1137,
+        "lng": 114.9789
+      }
+    },
+    {
+      "id": "yichun_jx",
+      "label": "宜春",
+      "fullName": "宜春市",
+      "names": [
+        "宜春市",
+        "宜春"
+      ],
+      "province": "江西省",
+      "preset": false,
+      "center": {
+        "lat": 27.7955,
+        "lng": 114.4161
+      }
+    },
+    {
+      "id": "fuzhou_jx",
+      "label": "抚州",
+      "fullName": "抚州市",
+      "names": [
+        "抚州市",
+        "抚州"
+      ],
+      "province": "江西省",
+      "preset": false,
+      "center": {
+        "lat": 27.9824,
+        "lng": 116.3582
+      }
+    },
+    {
+      "id": "shangrao",
+      "label": "上饶",
+      "fullName": "上饶市",
+      "names": [
+        "上饶市",
+        "上饶"
+      ],
+      "province": "江西省",
+      "preset": false,
+      "center": {
+        "lat": 28.4552,
+        "lng": 117.9433
+      }
+    },
+    {
+      "id": "jinan",
+      "label": "济南",
+      "fullName": "济南市",
+      "names": [
+        "济南市",
+        "济南"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 36.6514,
+        "lng": 117.1201
+      }
+    },
+    {
+      "id": "qingdao",
+      "label": "青岛",
+      "fullName": "青岛市",
+      "names": [
+        "青岛市",
+        "青岛"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      }
+    },
+    {
+      "id": "zibo",
+      "label": "淄博",
+      "fullName": "淄博市",
+      "names": [
+        "淄博市",
+        "淄博"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 36.8131,
+        "lng": 118.0548
+      }
+    },
+    {
+      "id": "zaozhuang",
+      "label": "枣庄",
+      "fullName": "枣庄市",
+      "names": [
+        "枣庄市",
+        "枣庄"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 34.8104,
+        "lng": 117.3237
+      }
+    },
+    {
+      "id": "dongying",
+      "label": "东营",
+      "fullName": "东营市",
+      "names": [
+        "东营市",
+        "东营"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 37.4335,
+        "lng": 118.6749
+      }
+    },
+    {
+      "id": "yantai",
+      "label": "烟台",
+      "fullName": "烟台市",
+      "names": [
+        "烟台市",
+        "烟台"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 37.4638,
+        "lng": 121.4479
+      }
+    },
+    {
+      "id": "weifang",
+      "label": "潍坊",
+      "fullName": "潍坊市",
+      "names": [
+        "潍坊市",
+        "潍坊"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 36.7069,
+        "lng": 119.1617
+      }
+    },
+    {
+      "id": "jining",
+      "label": "济宁",
+      "fullName": "济宁市",
+      "names": [
+        "济宁市",
+        "济宁"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 35.4155,
+        "lng": 116.5873
+      }
+    },
+    {
+      "id": "taian",
+      "label": "泰安",
+      "fullName": "泰安市",
+      "names": [
+        "泰安市",
+        "泰安"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 36.19,
+        "lng": 117.0876
+      }
+    },
+    {
+      "id": "weihai",
+      "label": "威海",
+      "fullName": "威海市",
+      "names": [
+        "威海市",
+        "威海"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 37.5128,
+        "lng": 122.1205
+      }
+    },
+    {
+      "id": "rizhao",
+      "label": "日照",
+      "fullName": "日照市",
+      "names": [
+        "日照市",
+        "日照"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 35.9849,
+        "lng": 119.5268
+      }
+    },
+    {
+      "id": "linyi",
+      "label": "临沂",
+      "fullName": "临沂市",
+      "names": [
+        "临沂市",
+        "临沂"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 35.1042,
+        "lng": 118.3564
+      }
+    },
+    {
+      "id": "dezhou",
+      "label": "德州",
+      "fullName": "德州市",
+      "names": [
+        "德州市",
+        "德州"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 37.4369,
+        "lng": 116.3592
+      }
+    },
+    {
+      "id": "liaocheng",
+      "label": "聊城",
+      "fullName": "聊城市",
+      "names": [
+        "聊城市",
+        "聊城"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 36.4564,
+        "lng": 115.9854
+      }
+    },
+    {
+      "id": "binzhou",
+      "label": "滨州",
+      "fullName": "滨州市",
+      "names": [
+        "滨州市",
+        "滨州"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 37.3831,
+        "lng": 117.9712
+      }
+    },
+    {
+      "id": "heze",
+      "label": "菏泽",
+      "fullName": "菏泽市",
+      "names": [
+        "菏泽市",
+        "菏泽"
+      ],
+      "province": "山东省",
+      "preset": false,
+      "center": {
+        "lat": 35.2342,
+        "lng": 115.4807
+      }
+    },
+    {
+      "id": "zhengzhou",
+      "label": "郑州",
+      "fullName": "郑州市",
+      "names": [
+        "郑州市",
+        "郑州"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 34.7472,
+        "lng": 113.6253
+      }
+    },
+    {
+      "id": "kaifeng",
+      "label": "开封",
+      "fullName": "开封市",
+      "names": [
+        "开封市",
+        "开封"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 34.7976,
+        "lng": 114.3074
+      }
+    },
+    {
+      "id": "luoyang",
+      "label": "洛阳",
+      "fullName": "洛阳市",
+      "names": [
+        "洛阳市",
+        "洛阳"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 34.6197,
+        "lng": 112.4541
+      }
+    },
+    {
+      "id": "pingdingshan",
+      "label": "平顶山",
+      "fullName": "平顶山市",
+      "names": [
+        "平顶山市",
+        "平顶山"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 33.7663,
+        "lng": 113.1927
+      }
+    },
+    {
+      "id": "anyang",
+      "label": "安阳",
+      "fullName": "安阳市",
+      "names": [
+        "安阳市",
+        "安阳"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 36.0992,
+        "lng": 114.3926
+      }
+    },
+    {
+      "id": "hebi",
+      "label": "鹤壁",
+      "fullName": "鹤壁市",
+      "names": [
+        "鹤壁市",
+        "鹤壁"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 35.7481,
+        "lng": 114.2973
+      }
+    },
+    {
+      "id": "xinxiang",
+      "label": "新乡",
+      "fullName": "新乡市",
+      "names": [
+        "新乡市",
+        "新乡"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 35.302,
+        "lng": 113.9267
+      }
+    },
+    {
+      "id": "jiaozuo",
+      "label": "焦作",
+      "fullName": "焦作市",
+      "names": [
+        "焦作市",
+        "焦作"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 35.2155,
+        "lng": 113.242
+      }
+    },
+    {
+      "id": "puyang",
+      "label": "濮阳",
+      "fullName": "濮阳市",
+      "names": [
+        "濮阳市",
+        "濮阳"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 35.7619,
+        "lng": 115.0296
+      }
+    },
+    {
+      "id": "xuchang",
+      "label": "许昌",
+      "fullName": "许昌市",
+      "names": [
+        "许昌市",
+        "许昌"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 34.0233,
+        "lng": 113.8529
+      }
+    },
+    {
+      "id": "luohe",
+      "label": "漯河",
+      "fullName": "漯河市",
+      "names": [
+        "漯河市",
+        "漯河"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 33.5749,
+        "lng": 114.0172
+      }
+    },
+    {
+      "id": "sanmenxia",
+      "label": "三门峡",
+      "fullName": "三门峡市",
+      "names": [
+        "三门峡市",
+        "三门峡"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 34.773,
+        "lng": 111.2002
+      }
+    },
+    {
+      "id": "nanyang",
+      "label": "南阳",
+      "fullName": "南阳市",
+      "names": [
+        "南阳市",
+        "南阳"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 32.9908,
+        "lng": 112.5287
+      }
+    },
+    {
+      "id": "shangqiu",
+      "label": "商丘",
+      "fullName": "商丘市",
+      "names": [
+        "商丘市",
+        "商丘"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 34.4139,
+        "lng": 115.6562
+      }
+    },
+    {
+      "id": "xinyang",
+      "label": "信阳",
+      "fullName": "信阳市",
+      "names": [
+        "信阳市",
+        "信阳"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 32.1269,
+        "lng": 114.0915
+      }
+    },
+    {
+      "id": "zhoukou",
+      "label": "周口",
+      "fullName": "周口市",
+      "names": [
+        "周口市",
+        "周口"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 33.6259,
+        "lng": 114.851
+      }
+    },
+    {
+      "id": "zhumadian",
+      "label": "驻马店",
+      "fullName": "驻马店市",
+      "names": [
+        "驻马店市",
+        "驻马店"
+      ],
+      "province": "河南省",
+      "preset": false,
+      "center": {
+        "lat": 32.9781,
+        "lng": 114.0233
+      }
+    },
+    {
+      "id": "wuhan",
+      "label": "武汉",
+      "fullName": "武汉市",
+      "names": [
+        "武汉市",
+        "武汉"
+      ],
+      "province": "湖北省",
+      "preset": false,
+      "center": {
+        "lat": 30.5928,
+        "lng": 114.3055
+      }
+    },
+    {
+      "id": "huangshi",
+      "label": "黄石",
+      "fullName": "黄石市",
+      "names": [
+        "黄石市",
+        "黄石"
+      ],
+      "province": "湖北省",
+      "preset": false,
+      "center": {
+        "lat": 30.1999,
+        "lng": 115.0393
+      }
+    },
+    {
+      "id": "shiyan",
+      "label": "十堰",
+      "fullName": "十堰市",
+      "names": [
+        "十堰市",
+        "十堰"
+      ],
+      "province": "湖北省",
+      "preset": false,
+      "center": {
+        "lat": 32.6292,
+        "lng": 110.7982
+      }
+    },
+    {
+      "id": "yichang",
+      "label": "宜昌",
+      "fullName": "宜昌市",
+      "names": [
+        "宜昌市",
+        "宜昌"
+      ],
+      "province": "湖北省",
+      "preset": false,
+      "center": {
+        "lat": 30.692,
+        "lng": 111.2864
+      }
+    },
+    {
+      "id": "xiangyang",
+      "label": "襄阳",
+      "fullName": "襄阳市",
+      "names": [
+        "襄阳市",
+        "襄阳"
+      ],
+      "province": "湖北省",
+      "preset": false,
+      "center": {
+        "lat": 32.0424,
+        "lng": 112.1224
+      }
+    },
+    {
+      "id": "ezhou",
+      "label": "鄂州",
+      "fullName": "鄂州市",
+      "names": [
+        "鄂州市",
+        "鄂州"
+      ],
+      "province": "湖北省",
+      "preset": false,
+      "center": {
+        "lat": 30.3909,
+        "lng": 114.7842
+      }
+    },
+    {
+      "id": "jingmen",
+      "label": "荆门",
+      "fullName": "荆门市",
+      "names": [
+        "荆门市",
+        "荆门"
+      ],
+      "province": "湖北省",
+      "preset": false,
+      "center": {
+        "lat": 31.04,
+        "lng": 112.2035
+      }
+    },
+    {
+      "id": "xiaogan",
+      "label": "孝感",
+      "fullName": "孝感市",
+      "names": [
+        "孝感市",
+        "孝感"
+      ],
+      "province": "湖北省",
+      "preset": false,
+      "center": {
+        "lat": 31.9219,
+        "lng": 113.9169
+      }
+    },
+    {
+      "id": "jingzhou",
+      "label": "荆州",
+      "fullName": "荆州市",
+      "names": [
+        "荆州市",
+        "荆州"
+      ],
+      "province": "湖北省",
+      "preset": false,
+      "center": {
+        "lat": 30.3351,
+        "lng": 112.2413
+      }
+    },
+    {
+      "id": "huanggang",
+      "label": "黄冈",
+      "fullName": "黄冈市",
+      "names": [
+        "黄冈市",
+        "黄冈"
+      ],
+      "province": "湖北省",
+      "preset": false,
+      "center": {
+        "lat": 30.454,
+        "lng": 114.8726
+      }
+    },
+    {
+      "id": "xianning",
+      "label": "咸宁",
+      "fullName": "咸宁市",
+      "names": [
+        "咸宁市",
+        "咸宁"
+      ],
+      "province": "湖北省",
+      "preset": false,
+      "center": {
+        "lat": 29.8415,
+        "lng": 114.3224
+      }
+    },
+    {
+      "id": "suizhou",
+      "label": "随州",
+      "fullName": "随州市",
+      "names": [
+        "随州市",
+        "随州"
+      ],
+      "province": "湖北省",
+      "preset": false,
+      "center": {
+        "lat": 31.6904,
+        "lng": 113.3827
+      }
+    },
+    {
+      "id": "changsha",
+      "label": "长沙",
+      "fullName": "长沙市",
+      "names": [
+        "长沙市",
+        "长沙"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      }
+    },
+    {
+      "id": "zhuzhou",
+      "label": "株洲",
+      "fullName": "株洲市",
+      "names": [
+        "株洲市",
+        "株洲"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 27.8274,
+        "lng": 113.1339
+      }
+    },
+    {
+      "id": "xiangtan",
+      "label": "湘潭",
+      "fullName": "湘潭市",
+      "names": [
+        "湘潭市",
+        "湘潭"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 27.8298,
+        "lng": 112.9443
+      }
+    },
+    {
+      "id": "hengyang",
+      "label": "衡阳",
+      "fullName": "衡阳市",
+      "names": [
+        "衡阳市",
+        "衡阳"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 26.8935,
+        "lng": 112.5723
+      }
+    },
+    {
+      "id": "shaoyang",
+      "label": "邵阳",
+      "fullName": "邵阳市",
+      "names": [
+        "邵阳市",
+        "邵阳"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 27.2387,
+        "lng": 111.4699
+      }
+    },
+    {
+      "id": "yueyang",
+      "label": "岳阳",
+      "fullName": "岳阳市",
+      "names": [
+        "岳阳市",
+        "岳阳"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 29.3569,
+        "lng": 113.129
+      }
+    },
+    {
+      "id": "changde",
+      "label": "常德",
+      "fullName": "常德市",
+      "names": [
+        "常德市",
+        "常德"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 29.0318,
+        "lng": 111.6989
+      }
+    },
+    {
+      "id": "zhangjiajie",
+      "label": "张家界",
+      "fullName": "张家界市",
+      "names": [
+        "张家界市",
+        "张家界"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 29.1269,
+        "lng": 110.4795
+      }
+    },
+    {
+      "id": "yiyang",
+      "label": "益阳",
+      "fullName": "益阳市",
+      "names": [
+        "益阳市",
+        "益阳"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 28.5533,
+        "lng": 112.3553
+      }
+    },
+    {
+      "id": "chenzhou",
+      "label": "郴州",
+      "fullName": "郴州市",
+      "names": [
+        "郴州市",
+        "郴州"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 25.7707,
+        "lng": 113.0147
+      }
+    },
+    {
+      "id": "yongzhou",
+      "label": "永州",
+      "fullName": "永州市",
+      "names": [
+        "永州市",
+        "永州"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 26.4233,
+        "lng": 111.6132
+      }
+    },
+    {
+      "id": "huaihua",
+      "label": "怀化",
+      "fullName": "怀化市",
+      "names": [
+        "怀化市",
+        "怀化"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 27.5414,
+        "lng": 110.0009
+      }
+    },
+    {
+      "id": "loudi",
+      "label": "娄底",
+      "fullName": "娄底市",
+      "names": [
+        "娄底市",
+        "娄底"
+      ],
+      "province": "湖南省",
+      "preset": false,
+      "center": {
+        "lat": 27.7009,
+        "lng": 112.0051
+      }
+    },
+    {
+      "id": "guangzhou",
+      "label": "广州",
+      "fullName": "广州市",
+      "names": [
+        "广州市",
+        "广州"
+      ],
+      "province": "广东省",
+      "preset": true,
+      "center": {
+        "lat": 23.1291,
+        "lng": 113.2644
+      }
+    },
+    {
+      "id": "shenzhen",
+      "label": "深圳",
+      "fullName": "深圳市",
+      "names": [
+        "深圳市",
+        "深圳"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 22.5431,
+        "lng": 114.0579
+      }
+    },
+    {
+      "id": "zhuhai",
+      "label": "珠海",
+      "fullName": "珠海市",
+      "names": [
+        "珠海市",
+        "珠海"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 22.2707,
+        "lng": 113.5767
+      }
+    },
+    {
+      "id": "shantou",
+      "label": "汕头",
+      "fullName": "汕头市",
+      "names": [
+        "汕头市",
+        "汕头"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 23.354,
+        "lng": 116.6825
+      }
+    },
+    {
+      "id": "foshan",
+      "label": "佛山",
+      "fullName": "佛山市",
+      "names": [
+        "佛山市",
+        "佛山"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 23.0217,
+        "lng": 113.1206
+      }
+    },
+    {
+      "id": "shaoguan",
+      "label": "韶关",
+      "fullName": "韶关市",
+      "names": [
+        "韶关市",
+        "韶关"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 24.8107,
+        "lng": 113.5975
+      }
+    },
+    {
+      "id": "zhanjiang",
+      "label": "湛江",
+      "fullName": "湛江市",
+      "names": [
+        "湛江市",
+        "湛江"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 21.2707,
+        "lng": 110.3594
+      }
+    },
+    {
+      "id": "zhaoqing",
+      "label": "肇庆",
+      "fullName": "肇庆市",
+      "names": [
+        "肇庆市",
+        "肇庆"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 23.0473,
+        "lng": 112.4659
+      }
+    },
+    {
+      "id": "jiangmen",
+      "label": "江门",
+      "fullName": "江门市",
+      "names": [
+        "江门市",
+        "江门"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 22.5787,
+        "lng": 113.0815
+      }
+    },
+    {
+      "id": "maoming",
+      "label": "茂名",
+      "fullName": "茂名市",
+      "names": [
+        "茂名市",
+        "茂名"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 21.6634,
+        "lng": 110.9259
+      }
+    },
+    {
+      "id": "huizhou",
+      "label": "惠州",
+      "fullName": "惠州市",
+      "names": [
+        "惠州市",
+        "惠州"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 23.1116,
+        "lng": 114.4161
+      }
+    },
+    {
+      "id": "meizhou",
+      "label": "梅州",
+      "fullName": "梅州市",
+      "names": [
+        "梅州市",
+        "梅州"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 24.2885,
+        "lng": 116.1228
+      }
+    },
+    {
+      "id": "shanwei",
+      "label": "汕尾",
+      "fullName": "汕尾市",
+      "names": [
+        "汕尾市",
+        "汕尾"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 22.795,
+        "lng": 115.366
+      }
+    },
+    {
+      "id": "heyuan",
+      "label": "河源",
+      "fullName": "河源市",
+      "names": [
+        "河源市",
+        "河源"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 23.7465,
+        "lng": 114.6982
+      }
+    },
+    {
+      "id": "yangjiang",
+      "label": "阳江",
+      "fullName": "阳江市",
+      "names": [
+        "阳江市",
+        "阳江"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 21.8587,
+        "lng": 111.9823
+      }
+    },
+    {
+      "id": "qingyuan",
+      "label": "清远",
+      "fullName": "清远市",
+      "names": [
+        "清远市",
+        "清远"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 23.6822,
+        "lng": 113.057
+      }
+    },
+    {
+      "id": "dongguan",
+      "label": "东莞",
+      "fullName": "东莞市",
+      "names": [
+        "东莞市",
+        "东莞"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 23.0207,
+        "lng": 113.7518
+      }
+    },
+    {
+      "id": "zhongshan",
+      "label": "中山",
+      "fullName": "中山市",
+      "names": [
+        "中山市",
+        "中山"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 22.5168,
+        "lng": 113.3903
+      }
+    },
+    {
+      "id": "chaozhou",
+      "label": "潮州",
+      "fullName": "潮州市",
+      "names": [
+        "潮州市",
+        "潮州"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 23.6569,
+        "lng": 116.6227
+      }
+    },
+    {
+      "id": "jieyang",
+      "label": "揭阳",
+      "fullName": "揭阳市",
+      "names": [
+        "揭阳市",
+        "揭阳"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 23.5498,
+        "lng": 116.3732
+      }
+    },
+    {
+      "id": "yunfu",
+      "label": "云浮",
+      "fullName": "云浮市",
+      "names": [
+        "云浮市",
+        "云浮"
+      ],
+      "province": "广东省",
+      "preset": false,
+      "center": {
+        "lat": 22.9152,
+        "lng": 112.0447
+      }
+    },
+    {
+      "id": "nanning",
+      "label": "南宁",
+      "fullName": "南宁市",
+      "names": [
+        "南宁市",
+        "南宁"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 22.8173,
+        "lng": 108.3664
+      }
+    },
+    {
+      "id": "liuzhou",
+      "label": "柳州",
+      "fullName": "柳州市",
+      "names": [
+        "柳州市",
+        "柳州"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 24.3255,
+        "lng": 109.4168
+      }
+    },
+    {
+      "id": "guilin",
+      "label": "桂林",
+      "fullName": "桂林市",
+      "names": [
+        "桂林市",
+        "桂林"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 25.2741,
+        "lng": 110.2902
+      }
+    },
+    {
+      "id": "wuzhou",
+      "label": "梧州",
+      "fullName": "梧州市",
+      "names": [
+        "梧州市",
+        "梧州"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 23.4772,
+        "lng": 111.2796
+      }
+    },
+    {
+      "id": "beihai",
+      "label": "北海",
+      "fullName": "北海市",
+      "names": [
+        "北海市",
+        "北海"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 21.4807,
+        "lng": 109.1201
+      }
+    },
+    {
+      "id": "fangchenggang",
+      "label": "防城港",
+      "fullName": "防城港市",
+      "names": [
+        "防城港市",
+        "防城港"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 21.6154,
+        "lng": 108.355
+      }
+    },
+    {
+      "id": "qinzhou",
+      "label": "钦州",
+      "fullName": "钦州市",
+      "names": [
+        "钦州市",
+        "钦州"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 21.9534,
+        "lng": 108.6232
+      }
+    },
+    {
+      "id": "guigang",
+      "label": "贵港",
+      "fullName": "贵港市",
+      "names": [
+        "贵港市",
+        "贵港"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 23.1039,
+        "lng": 109.5958
+      }
+    },
+    {
+      "id": "yulin_gx",
+      "label": "玉林",
+      "fullName": "玉林市",
+      "names": [
+        "玉林市",
+        "玉林"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 22.6546,
+        "lng": 110.1549
+      }
+    },
+    {
+      "id": "baise",
+      "label": "百色",
+      "fullName": "百色市",
+      "names": [
+        "百色市",
+        "百色"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 23.8989,
+        "lng": 106.6187
+      }
+    },
+    {
+      "id": "hezhou",
+      "label": "贺州",
+      "fullName": "贺州市",
+      "names": [
+        "贺州市",
+        "贺州"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 24.411,
+        "lng": 111.5669
+      }
+    },
+    {
+      "id": "hechi",
+      "label": "河池",
+      "fullName": "河池市",
+      "names": [
+        "河池市",
+        "河池"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 24.6962,
+        "lng": 108.0853
+      }
+    },
+    {
+      "id": "laibin",
+      "label": "来宾",
+      "fullName": "来宾市",
+      "names": [
+        "来宾市",
+        "来宾"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 23.7339,
+        "lng": 109.2222
+      }
+    },
+    {
+      "id": "chongzuo",
+      "label": "崇左",
+      "fullName": "崇左市",
+      "names": [
+        "崇左市",
+        "崇左"
+      ],
+      "province": "广西壮族自治区",
+      "preset": false,
+      "center": {
+        "lat": 22.4041,
+        "lng": 107.365
+      }
+    },
+    {
+      "id": "haikou",
+      "label": "海口",
+      "fullName": "海口市",
+      "names": [
+        "海口市",
+        "海口"
+      ],
+      "province": "海南省",
+      "preset": false,
+      "center": {
+        "lat": 20.0442,
+        "lng": 110.1999
+      }
+    },
+    {
+      "id": "sanya",
+      "label": "三亚",
+      "fullName": "三亚市",
+      "names": [
+        "三亚市",
+        "三亚"
+      ],
+      "province": "海南省",
+      "preset": false,
+      "center": {
+        "lat": 18.2529,
+        "lng": 109.5119
+      }
+    },
+    {
+      "id": "sansha",
+      "label": "三沙",
+      "fullName": "三沙市",
+      "names": [
+        "三沙市",
+        "三沙"
+      ],
+      "province": "海南省",
+      "preset": false,
+      "center": {
+        "lat": 16.831,
+        "lng": 112.3386
+      }
+    },
+    {
+      "id": "danzhou",
+      "label": "儋州",
+      "fullName": "儋州市",
+      "names": [
+        "儋州市",
+        "儋州"
+      ],
+      "province": "海南省",
+      "preset": false,
+      "center": {
+        "lat": 19.521,
+        "lng": 109.577
+      }
+    },
+    {
+      "id": "chengdu",
+      "label": "成都",
+      "fullName": "成都市",
+      "names": [
+        "成都市",
+        "成都"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 30.6593,
+        "lng": 104.0814
+      }
+    },
+    {
+      "id": "zigong",
+      "label": "自贡",
+      "fullName": "自贡市",
+      "names": [
+        "自贡市",
+        "自贡"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 29.3529,
+        "lng": 104.7787
+      }
+    },
+    {
+      "id": "panzhihua",
+      "label": "攀枝花",
+      "fullName": "攀枝花市",
+      "names": [
+        "攀枝花市",
+        "攀枝花"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 26.5823,
+        "lng": 101.7193
+      }
+    },
+    {
+      "id": "luzhou",
+      "label": "泸州",
+      "fullName": "泸州市",
+      "names": [
+        "泸州市",
+        "泸州"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 28.8702,
+        "lng": 105.4433
+      }
+    },
+    {
+      "id": "deyang",
+      "label": "德阳",
+      "fullName": "德阳市",
+      "names": [
+        "德阳市",
+        "德阳"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 31.1277,
+        "lng": 104.3979
+      }
+    },
+    {
+      "id": "mianyang",
+      "label": "绵阳",
+      "fullName": "绵阳市",
+      "names": [
+        "绵阳市",
+        "绵阳"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 31.468,
+        "lng": 104.6797
+      }
+    },
+    {
+      "id": "guangyuan",
+      "label": "广元",
+      "fullName": "广元市",
+      "names": [
+        "广元市",
+        "广元"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 32.4354,
+        "lng": 105.8449
+      }
+    },
+    {
+      "id": "suining",
+      "label": "遂宁",
+      "fullName": "遂宁市",
+      "names": [
+        "遂宁市",
+        "遂宁"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 30.5133,
+        "lng": 105.5703
+      }
+    },
+    {
+      "id": "neijiang",
+      "label": "内江",
+      "fullName": "内江市",
+      "names": [
+        "内江市",
+        "内江"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 29.5805,
+        "lng": 105.0589
+      }
+    },
+    {
+      "id": "leshan",
+      "label": "乐山",
+      "fullName": "乐山市",
+      "names": [
+        "乐山市",
+        "乐山"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 29.5525,
+        "lng": 103.7658
+      }
+    },
+    {
+      "id": "nanchong",
+      "label": "南充",
+      "fullName": "南充市",
+      "names": [
+        "南充市",
+        "南充"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 30.8375,
+        "lng": 106.1105
+      }
+    },
+    {
+      "id": "meishan",
+      "label": "眉山",
+      "fullName": "眉山市",
+      "names": [
+        "眉山市",
+        "眉山"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 30.0491,
+        "lng": 103.8317
+      }
+    },
+    {
+      "id": "yibin",
+      "label": "宜宾",
+      "fullName": "宜宾市",
+      "names": [
+        "宜宾市",
+        "宜宾"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 28.7512,
+        "lng": 104.6418
+      }
+    },
+    {
+      "id": "guangan",
+      "label": "广安",
+      "fullName": "广安市",
+      "names": [
+        "广安市",
+        "广安"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 30.4558,
+        "lng": 106.6333
+      }
+    },
+    {
+      "id": "dazhou",
+      "label": "达州",
+      "fullName": "达州市",
+      "names": [
+        "达州市",
+        "达州"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 31.2092,
+        "lng": 107.468
+      }
+    },
+    {
+      "id": "yaan",
+      "label": "雅安",
+      "fullName": "雅安市",
+      "names": [
+        "雅安市",
+        "雅安"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 29.9771,
+        "lng": 103.001
+      }
+    },
+    {
+      "id": "bazhong",
+      "label": "巴中",
+      "fullName": "巴中市",
+      "names": [
+        "巴中市",
+        "巴中"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 31.8691,
+        "lng": 106.7448
+      }
+    },
+    {
+      "id": "ziyang",
+      "label": "资阳",
+      "fullName": "资阳市",
+      "names": [
+        "资阳市",
+        "资阳"
+      ],
+      "province": "四川省",
+      "preset": false,
+      "center": {
+        "lat": 30.1229,
+        "lng": 104.6283
+      }
+    },
+    {
+      "id": "guiyang",
+      "label": "贵阳",
+      "fullName": "贵阳市",
+      "names": [
+        "贵阳市",
+        "贵阳"
+      ],
+      "province": "贵州省",
+      "preset": false,
+      "center": {
+        "lat": 26.647,
+        "lng": 106.6308
+      }
+    },
+    {
+      "id": "liupanshui",
+      "label": "六盘水",
+      "fullName": "六盘水市",
+      "names": [
+        "六盘水市",
+        "六盘水"
+      ],
+      "province": "贵州省",
+      "preset": false,
+      "center": {
+        "lat": 26.593,
+        "lng": 104.8317
+      }
+    },
+    {
+      "id": "zunyi",
+      "label": "遵义",
+      "fullName": "遵义市",
+      "names": [
+        "遵义市",
+        "遵义"
+      ],
+      "province": "贵州省",
+      "preset": false,
+      "center": {
+        "lat": 27.7257,
+        "lng": 106.9274
+      }
+    },
+    {
+      "id": "anshun",
+      "label": "安顺",
+      "fullName": "安顺市",
+      "names": [
+        "安顺市",
+        "安顺"
+      ],
+      "province": "贵州省",
+      "preset": false,
+      "center": {
+        "lat": 26.2461,
+        "lng": 105.9273
+      }
+    },
+    {
+      "id": "bijie",
+      "label": "毕节",
+      "fullName": "毕节市",
+      "names": [
+        "毕节市",
+        "毕节"
+      ],
+      "province": "贵州省",
+      "preset": false,
+      "center": {
+        "lat": 27.2971,
+        "lng": 105.2853
+      }
+    },
+    {
+      "id": "tongren",
+      "label": "铜仁",
+      "fullName": "铜仁市",
+      "names": [
+        "铜仁市",
+        "铜仁"
+      ],
+      "province": "贵州省",
+      "preset": false,
+      "center": {
+        "lat": 27.7312,
+        "lng": 109.1901
+      }
+    },
+    {
+      "id": "kunming",
+      "label": "昆明",
+      "fullName": "昆明市",
+      "names": [
+        "昆明市",
+        "昆明"
+      ],
+      "province": "云南省",
+      "preset": false,
+      "center": {
+        "lat": 24.8807,
+        "lng": 102.8332
+      }
+    },
+    {
+      "id": "qujing",
+      "label": "曲靖",
+      "fullName": "曲靖市",
+      "names": [
+        "曲靖市",
+        "曲靖"
+      ],
+      "province": "云南省",
+      "preset": false,
+      "center": {
+        "lat": 25.4901,
+        "lng": 103.7969
+      }
+    },
+    {
+      "id": "yuxi",
+      "label": "玉溪",
+      "fullName": "玉溪市",
+      "names": [
+        "玉溪市",
+        "玉溪"
+      ],
+      "province": "云南省",
+      "preset": false,
+      "center": {
+        "lat": 24.3518,
+        "lng": 102.5427
+      }
+    },
+    {
+      "id": "baoshan",
+      "label": "保山",
+      "fullName": "保山市",
+      "names": [
+        "保山市",
+        "保山"
+      ],
+      "province": "云南省",
+      "preset": false,
+      "center": {
+        "lat": 25.1122,
+        "lng": 99.1618
+      }
+    },
+    {
+      "id": "zhaotong",
+      "label": "昭通",
+      "fullName": "昭通市",
+      "names": [
+        "昭通市",
+        "昭通"
+      ],
+      "province": "云南省",
+      "preset": false,
+      "center": {
+        "lat": 27.3204,
+        "lng": 103.7175
+      }
+    },
+    {
+      "id": "lijiang",
+      "label": "丽江",
+      "fullName": "丽江市",
+      "names": [
+        "丽江市",
+        "丽江"
+      ],
+      "province": "云南省",
+      "preset": false,
+      "center": {
+        "lat": 26.872,
+        "lng": 100.23
+      }
+    },
+    {
+      "id": "puer",
+      "label": "普洱",
+      "fullName": "普洱市",
+      "names": [
+        "普洱市",
+        "普洱"
+      ],
+      "province": "云南省",
+      "preset": false,
+      "center": {
+        "lat": 22.8251,
+        "lng": 100.9669
+      }
+    },
+    {
+      "id": "lincang",
+      "label": "临沧",
+      "fullName": "临沧市",
+      "names": [
+        "临沧市",
+        "临沧"
+      ],
+      "province": "云南省",
+      "preset": false,
+      "center": {
+        "lat": 23.8772,
+        "lng": 100.093
+      }
+    },
+    {
+      "id": "lasa",
+      "label": "拉萨",
+      "fullName": "拉萨市",
+      "names": [
+        "拉萨市",
+        "拉萨"
+      ],
+      "province": "西藏自治区",
+      "preset": false,
+      "center": {
+        "lat": 29.653,
+        "lng": 91.1171
+      }
+    },
+    {
+      "id": "rikaze",
+      "label": "日喀则",
+      "fullName": "日喀则市",
+      "names": [
+        "日喀则市",
+        "日喀则"
+      ],
+      "province": "西藏自治区",
+      "preset": false,
+      "center": {
+        "lat": 29.2689,
+        "lng": 88.8763
+      }
+    },
+    {
+      "id": "changdu",
+      "label": "昌都",
+      "fullName": "昌都市",
+      "names": [
+        "昌都市",
+        "昌都"
+      ],
+      "province": "西藏自治区",
+      "preset": false,
+      "center": {
+        "lat": 31.137,
+        "lng": 97.1789
+      }
+    },
+    {
+      "id": "linzhi",
+      "label": "林芝",
+      "fullName": "林芝市",
+      "names": [
+        "林芝市",
+        "林芝"
+      ],
+      "province": "西藏自治区",
+      "preset": false,
+      "center": {
+        "lat": 29.6491,
+        "lng": 94.3624
+      }
+    },
+    {
+      "id": "shannan",
+      "label": "山南",
+      "fullName": "山南市",
+      "names": [
+        "山南市",
+        "山南"
+      ],
+      "province": "西藏自治区",
+      "preset": false,
+      "center": {
+        "lat": 29.2369,
+        "lng": 91.7662
+      }
+    },
+    {
+      "id": "naqu",
+      "label": "那曲",
+      "fullName": "那曲市",
+      "names": [
+        "那曲市",
+        "那曲"
+      ],
+      "province": "西藏自治区",
+      "preset": false,
+      "center": {
+        "lat": 31.476,
+        "lng": 92.0527
+      }
+    },
+    {
+      "id": "xian",
+      "label": "西安",
+      "fullName": "西安市",
+      "names": [
+        "西安市",
+        "西安"
+      ],
+      "province": "陕西省",
+      "preset": false,
+      "center": {
+        "lat": 34.3416,
+        "lng": 108.9398
+      }
+    },
+    {
+      "id": "tongchuan",
+      "label": "铜川",
+      "fullName": "铜川市",
+      "names": [
+        "铜川市",
+        "铜川"
+      ],
+      "province": "陕西省",
+      "preset": false,
+      "center": {
+        "lat": 34.8966,
+        "lng": 108.9451
+      }
+    },
+    {
+      "id": "baoji",
+      "label": "宝鸡",
+      "fullName": "宝鸡市",
+      "names": [
+        "宝鸡市",
+        "宝鸡"
+      ],
+      "province": "陕西省",
+      "preset": false,
+      "center": {
+        "lat": 34.3617,
+        "lng": 107.2371
+      }
+    },
+    {
+      "id": "xianyang",
+      "label": "咸阳",
+      "fullName": "咸阳市",
+      "names": [
+        "咸阳市",
+        "咸阳"
+      ],
+      "province": "陕西省",
+      "preset": false,
+      "center": {
+        "lat": 34.3298,
+        "lng": 108.7089
+      }
+    },
+    {
+      "id": "weinan",
+      "label": "渭南",
+      "fullName": "渭南市",
+      "names": [
+        "渭南市",
+        "渭南"
+      ],
+      "province": "陕西省",
+      "preset": false,
+      "center": {
+        "lat": 34.4998,
+        "lng": 109.5098
+      }
+    },
+    {
+      "id": "yanan",
+      "label": "延安",
+      "fullName": "延安市",
+      "names": [
+        "延安市",
+        "延安"
+      ],
+      "province": "陕西省",
+      "preset": false,
+      "center": {
+        "lat": 36.5855,
+        "lng": 109.4893
+      }
+    },
+    {
+      "id": "hanzhong",
+      "label": "汉中",
+      "fullName": "汉中市",
+      "names": [
+        "汉中市",
+        "汉中"
+      ],
+      "province": "陕西省",
+      "preset": false,
+      "center": {
+        "lat": 33.0676,
+        "lng": 107.0233
+      }
+    },
+    {
+      "id": "yulin_sx",
+      "label": "榆林",
+      "fullName": "榆林市",
+      "names": [
+        "榆林市",
+        "榆林"
+      ],
+      "province": "陕西省",
+      "preset": false,
+      "center": {
+        "lat": 38.2853,
+        "lng": 109.735
+      }
+    },
+    {
+      "id": "ankang",
+      "label": "安康",
+      "fullName": "安康市",
+      "names": [
+        "安康市",
+        "安康"
+      ],
+      "province": "陕西省",
+      "preset": false,
+      "center": {
+        "lat": 32.6847,
+        "lng": 109.0293
+      }
+    },
+    {
+      "id": "shangluo",
+      "label": "商洛",
+      "fullName": "商洛市",
+      "names": [
+        "商洛市",
+        "商洛"
+      ],
+      "province": "陕西省",
+      "preset": false,
+      "center": {
+        "lat": 33.8699,
+        "lng": 109.9403
+      }
+    },
+    {
+      "id": "lanzhou",
+      "label": "兰州",
+      "fullName": "兰州市",
+      "names": [
+        "兰州市",
+        "兰州"
+      ],
+      "province": "甘肃省",
+      "preset": false,
+      "center": {
+        "lat": 36.0611,
+        "lng": 103.8344
+      }
+    },
+    {
+      "id": "jiayuguan",
+      "label": "嘉峪关",
+      "fullName": "嘉峪关市",
+      "names": [
+        "嘉峪关市",
+        "嘉峪关"
+      ],
+      "province": "甘肃省",
+      "preset": false,
+      "center": {
+        "lat": 39.772,
+        "lng": 98.2899
+      }
+    },
+    {
+      "id": "jinchang",
+      "label": "金昌",
+      "fullName": "金昌市",
+      "names": [
+        "金昌市",
+        "金昌"
+      ],
+      "province": "甘肃省",
+      "preset": false,
+      "center": {
+        "lat": 38.516,
+        "lng": 102.1878
+      }
+    },
+    {
+      "id": "baiyin",
+      "label": "白银",
+      "fullName": "白银市",
+      "names": [
+        "白银市",
+        "白银"
+      ],
+      "province": "甘肃省",
+      "preset": false,
+      "center": {
+        "lat": 36.5449,
+        "lng": 104.1389
+      }
+    },
+    {
+      "id": "tianshui",
+      "label": "天水",
+      "fullName": "天水市",
+      "names": [
+        "天水市",
+        "天水"
+      ],
+      "province": "甘肃省",
+      "preset": false,
+      "center": {
+        "lat": 34.5808,
+        "lng": 105.7253
+      }
+    },
+    {
+      "id": "wuwei",
+      "label": "武威",
+      "fullName": "武威市",
+      "names": [
+        "武威市",
+        "武威"
+      ],
+      "province": "甘肃省",
+      "preset": false,
+      "center": {
+        "lat": 37.9283,
+        "lng": 102.6364
+      }
+    },
+    {
+      "id": "zhangye",
+      "label": "张掖",
+      "fullName": "张掖市",
+      "names": [
+        "张掖市",
+        "张掖"
+      ],
+      "province": "甘肃省",
+      "preset": false,
+      "center": {
+        "lat": 38.9259,
+        "lng": 100.4496
+      }
+    },
+    {
+      "id": "pingliang",
+      "label": "平凉",
+      "fullName": "平凉市",
+      "names": [
+        "平凉市",
+        "平凉"
+      ],
+      "province": "甘肃省",
+      "preset": false,
+      "center": {
+        "lat": 35.5427,
+        "lng": 106.6847
+      }
+    },
+    {
+      "id": "jiuquan",
+      "label": "酒泉",
+      "fullName": "酒泉市",
+      "names": [
+        "酒泉市",
+        "酒泉"
+      ],
+      "province": "甘肃省",
+      "preset": false,
+      "center": {
+        "lat": 39.732,
+        "lng": 98.4941
+      }
+    },
+    {
+      "id": "qingyang",
+      "label": "庆阳",
+      "fullName": "庆阳市",
+      "names": [
+        "庆阳市",
+        "庆阳"
+      ],
+      "province": "甘肃省",
+      "preset": false,
+      "center": {
+        "lat": 35.7104,
+        "lng": 107.6443
+      }
+    },
+    {
+      "id": "dingxi",
+      "label": "定西",
+      "fullName": "定西市",
+      "names": [
+        "定西市",
+        "定西"
+      ],
+      "province": "甘肃省",
+      "preset": false,
+      "center": {
+        "lat": 35.5805,
+        "lng": 104.6263
+      }
+    },
+    {
+      "id": "longnan",
+      "label": "陇南",
+      "fullName": "陇南市",
+      "names": [
+        "陇南市",
+        "陇南"
+      ],
+      "province": "甘肃省",
+      "preset": false,
+      "center": {
+        "lat": 33.4004,
+        "lng": 104.9223
+      }
+    },
+    {
+      "id": "xining",
+      "label": "西宁",
+      "fullName": "西宁市",
+      "names": [
+        "西宁市",
+        "西宁"
+      ],
+      "province": "青海省",
+      "preset": false,
+      "center": {
+        "lat": 36.6171,
+        "lng": 101.7782
+      }
+    },
+    {
+      "id": "haidong",
+      "label": "海东",
+      "fullName": "海东市",
+      "names": [
+        "海东市",
+        "海东"
+      ],
+      "province": "青海省",
+      "preset": false,
+      "center": {
+        "lat": 36.5029,
+        "lng": 102.1028
+      }
+    },
+    {
+      "id": "yinchuan",
+      "label": "银川",
+      "fullName": "银川市",
+      "names": [
+        "银川市",
+        "银川"
+      ],
+      "province": "宁夏回族自治区",
+      "preset": false,
+      "center": {
+        "lat": 38.4872,
+        "lng": 106.2309
+      }
+    },
+    {
+      "id": "shizuishan",
+      "label": "石嘴山",
+      "fullName": "石嘴山市",
+      "names": [
+        "石嘴山市",
+        "石嘴山"
+      ],
+      "province": "宁夏回族自治区",
+      "preset": false,
+      "center": {
+        "lat": 38.9844,
+        "lng": 106.3762
+      }
+    },
+    {
+      "id": "wuzhong",
+      "label": "吴忠",
+      "fullName": "吴忠市",
+      "names": [
+        "吴忠市",
+        "吴忠"
+      ],
+      "province": "宁夏回族自治区",
+      "preset": false,
+      "center": {
+        "lat": 37.9989,
+        "lng": 106.1992
+      }
+    },
+    {
+      "id": "guyuan",
+      "label": "固原",
+      "fullName": "固原市",
+      "names": [
+        "固原市",
+        "固原"
+      ],
+      "province": "宁夏回族自治区",
+      "preset": false,
+      "center": {
+        "lat": 35.9968,
+        "lng": 106.2849
+      }
+    },
+    {
+      "id": "zhongwei",
+      "label": "中卫",
+      "fullName": "中卫市",
+      "names": [
+        "中卫市",
+        "中卫"
+      ],
+      "province": "宁夏回族自治区",
+      "preset": false,
+      "center": {
+        "lat": 37.4991,
+        "lng": 105.1967
+      }
+    },
+    {
+      "id": "wulumuqi",
+      "label": "乌鲁木齐",
+      "fullName": "乌鲁木齐市",
+      "names": [
+        "乌鲁木齐市",
+        "乌鲁木齐"
+      ],
+      "province": "新疆维吾尔自治区",
+      "preset": false,
+      "center": {
+        "lat": 43.8256,
+        "lng": 87.6168
+      }
+    },
+    {
+      "id": "kelamayi",
+      "label": "克拉玛依",
+      "fullName": "克拉玛依市",
+      "names": [
+        "克拉玛依市",
+        "克拉玛依"
+      ],
+      "province": "新疆维吾尔自治区",
+      "preset": false,
+      "center": {
+        "lat": 45.5951,
+        "lng": 84.8889
+      }
+    },
+    {
+      "id": "tulufan",
+      "label": "吐鲁番",
+      "fullName": "吐鲁番市",
+      "names": [
+        "吐鲁番市",
+        "吐鲁番"
+      ],
+      "province": "新疆维吾尔自治区",
+      "preset": false,
+      "center": {
+        "lat": 42.9513,
+        "lng": 89.1852
+      }
+    },
+    {
+      "id": "hami",
+      "label": "哈密",
+      "fullName": "哈密市",
+      "names": [
+        "哈密市",
+        "哈密"
+      ],
+      "province": "新疆维吾尔自治区",
+      "preset": false,
+      "center": {
+        "lat": 42.8189,
+        "lng": 93.5151
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+# 临时文件与本地日志
+.tmp/
+*.log
+
+# 运行日志落盘（web/server.mjs 的 /__log 接口写入）
+web/logs/
+
+# 地图数据大文件（可重新下载/生成）
+mapdata/*.pbf
+mapdata/*.json
+mapdata/download/
+web/data/*.json
+
+# 参考图模块生成的预览/报告（可重建）
+tools/reference/out*/
+web/data/shapes/cache/
+
+# 大体积历史预览截图（清理方案 2026-11-09 §4.2：已从仓库移出，本地保留）
+# 精确列出，不用 web/preview-*.png 通配——会误伤要保留的小图
+web/preview-agent.png
+web/preview-roads-layer.png
+web/preview-shape.png
+web/preview-reference-e2e.png
+web/preview-log.png
+
+# 依赖目录兜底（README 称"无 npm 依赖"，防御未来引入）
+node_modules/
+
+# 测试过程产物：截图、生成图库（可重建，不进仓库）
+# 文字报告 docs/测试报告/**/*.md 不受影响
+docs/测试报告/**/*.png
+docs/测试报告/**/*.jpg
+docs/测试报告/**/*.jpeg
+docs/测试报告/**/*.webp
+docs/测试报告/**/*.gif
+docs/测试报告/**/index.html
+docs/测试报告/**/index-*.html
+# 结构化结果默认不入库（清理方案 2026-11-09 §4.6）：一次性语料回放/盲评/对照产物
+# 体积大且可重跑；只白名单下列"验收溯源必须入库"的证据。
+# 注意 docs/archive/ 下是已归档的验收报告正文目录，JSON 白名单同样适用。
+docs/测试报告/**/*.json
+docs/archive/**/*.json
+!docs/**/history-snapshot-*.json
+!docs/**/catalog-verify*.json
+!docs/**/fetch-evidence.json
+
+# 归档目录同样只入库文档正文：截图/生成页属可重跑产物（2026-11-09 二次审计补充）
+docs/archive/**/*.png
+docs/archive/**/*.jpg
+docs/archive/**/*.jpeg
+docs/archive/**/*.webp
+docs/archive/**/*.gif
+docs/archive/**/index.html
+
+# 可幂等重新生成的测试素材：图像描摹链路验收用的白底剪影/照片样本
+# 由 node tools/make-trace-fixtures.mjs 生成；E2E 驱动检测到缺失会自动生成。
+# 断言依赖的 SVG 素材（test/fixtures/e2e-shapes/）与固定基准（frozen-targets/）仍然入库。
+test/fixtures/trace-images/
+
+# 本地待办/想法草稿：由项目负责人本地维护，改动不进提交（保留工作区）
+next.md
+
+# 本地环境变量
+.env
+.env.local
+
+# 智能体 LLM 配置（含密钥，勿提交）
+web/src/agent/agent-config.js
+
+# Python 字节码缓存（mapdata/tools 下运行 extract_areas.py 等生成）
+__pycache__/
+*.pyc
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# corpus-replay 默认按 set 产出的基线（校准集不入库，入库基线只有 all 集 baseline-phase0.json）
+test/fixtures/corpus/baseline-phase0-calibration.json
+test/fixtures/corpus/baseline-phase0-holdout.json
+test/fixtures/corpus/baseline-phase0-final.json
+
+# 城市路网按需获取缓存（可重新获取，不进仓库）
+web/data/city-roads/

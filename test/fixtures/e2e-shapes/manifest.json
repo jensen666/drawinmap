@@ -1,0 +1,1406 @@
+{
+  "version": 1,
+  "description": "E2E 用 100 种用户可能画的图形：PhyloPic 53 + Openclipart 20 + Font Awesome 27；每项已绑定素材，转换链路必须全部产出 T。",
+  "entries": [
+    {
+      "id": "horse",
+      "zh": "马",
+      "en": "horse",
+      "group": "animal",
+      "file": "horse.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/b302ceef-072c-471c-bc7d-164c428dd57a",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      }
+    },
+    {
+      "id": "dog",
+      "zh": "狗",
+      "en": "dog",
+      "group": "animal",
+      "file": "dog.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/6f3ebbc6-be53-4216-b45b-946f7984669b",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      }
+    },
+    {
+      "id": "cat",
+      "zh": "猫",
+      "en": "cat",
+      "group": "animal",
+      "file": "cat.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/481a9659-5cbb-4087-b8a7-9eb85c8311d2",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      }
+    },
+    {
+      "id": "human",
+      "zh": "人",
+      "en": "human",
+      "group": "animal",
+      "file": "human.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/a146bf1b-c94d-46e1-9cd8-a0ac52a1e0a9",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "T. Michael Keesey"
+      }
+    },
+    {
+      "id": "pigeon",
+      "zh": "鸽子",
+      "en": "pigeon",
+      "group": "animal",
+      "file": "pigeon.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/310b4994-af54-4d7b-93ac-27bbf80f7706",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Amy Beauvois"
+      }
+    },
+    {
+      "id": "chicken",
+      "zh": "鸡",
+      "en": "chicken",
+      "group": "animal",
+      "file": "chicken.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/2de1c95c-7e1f-429b-9c08-17f0a27d176f",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Steven Traver"
+      }
+    },
+    {
+      "id": "duck",
+      "zh": "鸭",
+      "en": "duck",
+      "group": "animal",
+      "file": "duck.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/f562234a-9b05-439c-aad5-0ea83ed4c553",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Caleb M. Gordon"
+      }
+    },
+    {
+      "id": "goose",
+      "zh": "鹅",
+      "en": "goose",
+      "group": "animal",
+      "file": "goose.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/1d7e3c02-e1c6-4f94-9568-e3cd6b01b854",
+        "license": "PDM-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "attribution": ""
+      }
+    },
+    {
+      "id": "eagle",
+      "zh": "鹰",
+      "en": "eagle",
+      "group": "animal",
+      "file": "eagle.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/7779e472-9159-4219-8e8e-68197bb73557",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Andy Wilson"
+      }
+    },
+    {
+      "id": "owl",
+      "zh": "猫头鹰",
+      "en": "owl",
+      "group": "animal",
+      "file": "owl.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/d7d457c1-4c08-4e7e-9af4-f537020c2775",
+        "license": "PDM-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "attribution": "the von Wright brothers"
+      }
+    },
+    {
+      "id": "penguin",
+      "zh": "企鹅",
+      "en": "penguin",
+      "group": "animal",
+      "file": "penguin.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/f2e02022-2700-484d-a66d-b2a900030371",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      }
+    },
+    {
+      "id": "swan",
+      "zh": "天鹅",
+      "en": "swan",
+      "group": "animal",
+      "file": "swan.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/5fa31c76-161d-4f37-91d4-57c389dee1ae",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Andy Wilson"
+      }
+    },
+    {
+      "id": "peacock",
+      "zh": "孔雀",
+      "en": "peacock",
+      "group": "animal",
+      "file": "peacock.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/2928641d-32f3-4543-889e-dd891c1a7783",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      }
+    },
+    {
+      "id": "triceratops",
+      "zh": "三角龙",
+      "en": "Triceratops",
+      "group": "animal",
+      "file": "triceratops.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/1ef8f3a2-6c8b-400e-ab01-cc26ed9d1a4d",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Jagged Fang Designs"
+      }
+    },
+    {
+      "id": "stegosaurus",
+      "zh": "剑龙",
+      "en": "Stegosaurus",
+      "group": "animal",
+      "file": "stegosaurus.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/8c4e6e33-bf09-465a-b46d-fdf85fdd7728",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Connor Ashbridge"
+      }
+    },
+    {
+      "id": "zebrafish",
+      "zh": "鱼",
+      "en": "fish",
+      "group": "animal",
+      "file": "zebrafish.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/591e0439-e61c-4a4a-8dba-ab2de87091d0",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Chuanixn Yu"
+      }
+    },
+    {
+      "id": "shark",
+      "zh": "鲨鱼",
+      "en": "shark",
+      "group": "animal",
+      "file": "shark.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/07eeaf0e-0284-4c1d-8415-ddd65a736232",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      }
+    },
+    {
+      "id": "whale",
+      "zh": "鲸",
+      "en": "whale",
+      "group": "animal",
+      "file": "whale.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/e68270c1-3091-4aee-92ae-51341a40e94a",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Scott Hartman"
+      }
+    },
+    {
+      "id": "dolphin",
+      "zh": "海豚",
+      "en": "dolphin",
+      "group": "animal",
+      "file": "dolphin.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/19bdf10a-42b4-4736-9da8-c3171175fb0e",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      }
+    },
+    {
+      "id": "elephant",
+      "zh": "大象",
+      "en": "elephant",
+      "group": "animal",
+      "file": "elephant.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/2a070808-0874-409d-81c0-d0c1995e54bb",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      }
+    },
+    {
+      "id": "lion",
+      "zh": "狮子",
+      "en": "lion",
+      "group": "animal",
+      "file": "lion.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/dd7c7bc6-2c6d-48e4-860b-02bf37886b5b",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      }
+    },
+    {
+      "id": "tiger",
+      "zh": "老虎",
+      "en": "tiger",
+      "group": "animal",
+      "file": "tiger.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/2d866913-d59f-4e48-93d8-19a0ce8201cb",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Andy Wilson"
+      }
+    },
+    {
+      "id": "bear",
+      "zh": "熊",
+      "en": "bear",
+      "group": "animal",
+      "file": "bear.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/5629fae2-1da6-479d-bfeb-08a59a58121a",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      }
+    },
+    {
+      "id": "wolf",
+      "zh": "狼",
+      "en": "wolf",
+      "group": "animal",
+      "file": "wolf.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/b625de9c-f1c1-4641-8ab7-ef67b3bb1b1f",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "François-Louis PELISSIER"
+      }
+    },
+    {
+      "id": "fox",
+      "zh": "狐狸",
+      "en": "fox",
+      "group": "animal",
+      "file": "fox.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/9b3e3567-2238-40bf-ab5d-bcb6ce7b32d5",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Ferran Sayol"
+      }
+    },
+    {
+      "id": "deer",
+      "zh": "鹿",
+      "en": "deer",
+      "group": "animal",
+      "file": "deer.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/cc03f5c2-933f-4c40-9c64-7f8727556fdb",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Ferran Sayol"
+      }
+    },
+    {
+      "id": "giraffe",
+      "zh": "长颈鹿",
+      "en": "giraffe",
+      "group": "animal",
+      "file": "giraffe.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/a0b3548c-3757-48e5-8b3f-5c42d212a4a8",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Steven Traver"
+      }
+    },
+    {
+      "id": "zebra",
+      "zh": "斑马",
+      "en": "zebra",
+      "group": "animal",
+      "file": "zebra.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/f7d817d0-d733-493d-bd4a-3f178e0760a8",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Andy Wilson"
+      }
+    },
+    {
+      "id": "rhinoceros",
+      "zh": "犀牛",
+      "en": "rhinoceros",
+      "group": "animal",
+      "file": "rhinoceros.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/55b24c01-3552-4c09-a485-087e4d2c4889",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Christophe Mallet"
+      }
+    },
+    {
+      "id": "hippopotamus",
+      "zh": "河马",
+      "en": "hippopotamus",
+      "group": "animal",
+      "file": "hippopotamus.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/bab03f09-73ba-45ea-8534-ea176c82a1a0",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Steven Traver"
+      }
+    },
+    {
+      "id": "camel",
+      "zh": "骆驼",
+      "en": "camel",
+      "group": "animal",
+      "file": "camel.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/93c5e5b0-6606-4e10-97e8-699156c57042",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Katy Lawler"
+      }
+    },
+    {
+      "id": "kangaroo",
+      "zh": "袋鼠",
+      "en": "kangaroo",
+      "group": "animal",
+      "file": "kangaroo.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/624e3d80-cba2-4465-8f3a-c9ae4025198b",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Michael Scroggie"
+      }
+    },
+    {
+      "id": "koala",
+      "zh": "考拉",
+      "en": "koala",
+      "group": "animal",
+      "file": "koala.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/132e695c-a23a-4e82-93c0-5ca8e8982844",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      }
+    },
+    {
+      "id": "panda",
+      "zh": "熊猫",
+      "en": "panda",
+      "group": "animal",
+      "file": "panda.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/887ea34b-b62a-4126-9e98-434d6000dd0c",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      }
+    },
+    {
+      "id": "monkey",
+      "zh": "猴",
+      "en": "monkey",
+      "group": "animal",
+      "file": "monkey.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/4e9c5666-79cc-4766-a7d3-d547514b0d77",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Matthew Schmitz"
+      }
+    },
+    {
+      "id": "rabbit",
+      "zh": "兔",
+      "en": "rabbit",
+      "group": "animal",
+      "file": "rabbit.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/ad7d2a9d-ef0d-46f2-895d-7c67bb8e6355",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Ferran Sayol"
+      }
+    },
+    {
+      "id": "mouse",
+      "zh": "鼠",
+      "en": "mouse",
+      "group": "animal",
+      "file": "mouse.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/11ccace5-9ad4-409b-97fe-9320058280c7",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Matthew Schmitz"
+      }
+    },
+    {
+      "id": "cattle",
+      "zh": "牛",
+      "en": "cattle",
+      "group": "animal",
+      "file": "cattle.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/b2d6bc6c-bda4-4450-8566-cab6065aca66",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Alfonso Arribas, Guiomar Garrido, César Viseras, Jesús M. Soria, Sila Pla, José G. Solano, Miguel Garcés, Elisabet Beamud & José S. Carrión"
+      }
+    },
+    {
+      "id": "sheep",
+      "zh": "羊",
+      "en": "sheep",
+      "group": "animal",
+      "file": "sheep.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/d9c0cddb-6f19-4570-94f4-60316d3f3051",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      }
+    },
+    {
+      "id": "pig",
+      "zh": "猪",
+      "en": "pig",
+      "group": "animal",
+      "file": "pig.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/5cf39625-0de7-4ffe-a28f-9c88670af448",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Kai Caspar"
+      }
+    },
+    {
+      "id": "butterfly",
+      "zh": "蝴蝶",
+      "en": "butterfly",
+      "group": "animal",
+      "file": "butterfly.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/0fde2bb6-0472-4273-bf46-2d6073fa8fbc",
+        "license": "PDM-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "attribution": "Curtis (modified by T. Michael Keesey)"
+      }
+    },
+    {
+      "id": "bee",
+      "zh": "蜜蜂",
+      "en": "bee",
+      "group": "animal",
+      "file": "bee.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/956cf95f-9cbd-459b-a457-c80ba19877a4",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Adrian Reich"
+      }
+    },
+    {
+      "id": "spider",
+      "zh": "蜘蛛",
+      "en": "spider",
+      "group": "animal",
+      "file": "spider.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/882a9d18-5724-44a9-b439-1b2686339a00",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      }
+    },
+    {
+      "id": "snake",
+      "zh": "蛇",
+      "en": "snake",
+      "group": "animal",
+      "file": "snake.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/68721107-d9ec-4ff0-9747-07e0d098b10f",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Jessica Tingle"
+      }
+    },
+    {
+      "id": "frog",
+      "zh": "青蛙",
+      "en": "frog",
+      "group": "animal",
+      "file": "frog.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/c387bde8-a9de-4101-928b-e99f2a7a33e5",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Jose Carlos Arenas-Monroy"
+      }
+    },
+    {
+      "id": "crab",
+      "zh": "螃蟹",
+      "en": "crab",
+      "group": "animal",
+      "file": "crab.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/fbb93c22-618f-4901-aade-2d07a9797e02",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Carter Johnson"
+      }
+    },
+    {
+      "id": "snail",
+      "zh": "蜗牛",
+      "en": "snail",
+      "group": "animal",
+      "file": "snail.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/3244258c-e93a-497b-8f37-ac008e574c44",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Alexandra Hahn"
+      }
+    },
+    {
+      "id": "oak",
+      "zh": "树",
+      "en": "tree",
+      "group": "plant",
+      "file": "oak.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/43afe2df-ab6c-47e6-a105-c0a82b8af1c5",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      }
+    },
+    {
+      "id": "mushroom",
+      "zh": "蘑菇",
+      "en": "mushroom",
+      "group": "fungus",
+      "file": "mushroom.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/afd875a3-815f-443b-9b93-3e5bedd9a7a3",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      }
+    },
+    {
+      "id": "bivalve",
+      "zh": "贝壳",
+      "en": "shell",
+      "group": "animal",
+      "file": "bivalve.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/183f29c5-acd2-4315-b45f-b3b7e3941c11",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Katie S. Collins"
+      }
+    },
+    {
+      "id": "octopus",
+      "zh": "章鱼",
+      "en": "octopus",
+      "group": "animal",
+      "file": "octopus.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/f400b519-3564-4183-b4bd-c3b922cc7c5e",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      }
+    },
+    {
+      "id": "crocodile",
+      "zh": "鳄鱼",
+      "en": "crocodile",
+      "group": "animal",
+      "file": "crocodile.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/b43ea475-18b3-44d5-8ab9-7a08266e6d62",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Ananth Srinivas"
+      }
+    },
+    {
+      "id": "turtle",
+      "zh": "龟",
+      "en": "turtle",
+      "group": "animal",
+      "file": "turtle.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/b76ae98d-894d-4490-a587-edf66650bc25",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      }
+    },
+    {
+      "id": "goat",
+      "zh": "山羊",
+      "en": "Capra hircus",
+      "group": "animal",
+      "file": "goat.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/c39a1d31-eb36-4b62-ba4d-32e29e0e5a8d",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Steven Traver"
+      }
+    },
+    {
+      "id": "donkey",
+      "zh": "驴",
+      "en": "Equus asinus",
+      "group": "animal",
+      "file": "donkey.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/eed9512e-fb13-46b2-a846-8b149cea7288",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Mathew Stewart"
+      }
+    },
+    {
+      "id": "squirrel",
+      "zh": "松鼠",
+      "en": "Sciurus vulgaris",
+      "group": "animal",
+      "file": "squirrel.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/23c700c9-e695-404a-8d0c-146e1fc4bada",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Ferran Sayol"
+      }
+    },
+    {
+      "id": "hedgehog",
+      "zh": "刺猬",
+      "en": "Erinaceus europaeus",
+      "group": "animal",
+      "file": "hedgehog.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/6ecff71e-fcfc-4cb9-b773-9e6e21607587",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Steven Traver"
+      }
+    },
+    {
+      "id": "bat",
+      "zh": "蝙蝠",
+      "en": "Pteropus vampyrus",
+      "group": "animal",
+      "file": "bat.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/bfe2f90b-136c-4199-9552-9f85287df468",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Lucas Damásio"
+      }
+    },
+    {
+      "id": "seal",
+      "zh": "海豹",
+      "en": "Phoca vitulina",
+      "group": "animal",
+      "file": "seal.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/1925a9aa-bf33-4270-824c-b8f781f8ec82",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Andy Wilson"
+      }
+    },
+    {
+      "id": "otter",
+      "zh": "水獭",
+      "en": "Lutra lutra",
+      "group": "animal",
+      "file": "otter.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/3cdae098-058b-4ce2-8f46-ad3101b624db",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Margot Michaud"
+      }
+    },
+    {
+      "id": "flamingo",
+      "zh": "火烈鸟",
+      "en": "Phoenicopterus roseus",
+      "group": "animal",
+      "file": "flamingo.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/0fd55b33-e756-4b66-bb60-a917ddeb56a8",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Kai Caspar"
+      }
+    },
+    {
+      "id": "parrot",
+      "zh": "鹦鹉",
+      "en": "Psittaciformes",
+      "group": "animal",
+      "file": "parrot.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/6c7791bf-88fd-4077-bca1-1b5d0d7786c3",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Matías Muñoz"
+      }
+    },
+    {
+      "id": "lizard",
+      "zh": "蜥蜴",
+      "en": "Lacertilia",
+      "group": "animal",
+      "file": "lizard.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/ce6a78bc-3ef1-4d60-ab40-113eb84c7802",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Steven Traver"
+      }
+    },
+    {
+      "id": "jellyfish",
+      "zh": "水母",
+      "en": "Medusozoa",
+      "group": "animal",
+      "file": "jellyfish.svg",
+      "source": {
+        "name": "PhyloPic",
+        "url": "https://www.phylopic.org/images/f0494167-77f6-46eb-841d-c4cefb683bbd",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": ""
+      }
+    },
+    {
+      "id": "car",
+      "zh": "汽车",
+      "en": "car",
+      "group": "vehicle",
+      "file": "car.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/327743/car",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      }
+    },
+    {
+      "id": "airplane",
+      "zh": "飞机",
+      "en": "airplane",
+      "group": "vehicle",
+      "file": "airplane.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/323341/airplane",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      }
+    },
+    {
+      "id": "motorcycle",
+      "zh": "摩托车",
+      "en": "motorcycle",
+      "group": "vehicle",
+      "file": "motorcycle.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/337502/motorcycle-silhouette",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "liftarn"
+      }
+    },
+    {
+      "id": "tower",
+      "zh": "塔",
+      "en": "tower",
+      "group": "building",
+      "file": "tower.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/215777/ostankino-tower",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "rones"
+      }
+    },
+    {
+      "id": "castle",
+      "zh": "城堡",
+      "en": "castle",
+      "group": "building",
+      "file": "castle.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/323776/castle",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      }
+    },
+    {
+      "id": "key",
+      "zh": "钥匙",
+      "en": "key",
+      "group": "object",
+      "file": "key.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/63961/key",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "laobc"
+      }
+    },
+    {
+      "id": "book",
+      "zh": "书",
+      "en": "book",
+      "group": "object",
+      "file": "book.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/323495/book",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      }
+    },
+    {
+      "id": "glasses",
+      "zh": "眼镜",
+      "en": "glasses",
+      "group": "object",
+      "file": "glasses.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/323793/glasses",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      }
+    },
+    {
+      "id": "apple",
+      "zh": "苹果",
+      "en": "apple",
+      "group": "food",
+      "file": "apple.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/327590/apple",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      }
+    },
+    {
+      "id": "moon",
+      "zh": "月亮",
+      "en": "moon",
+      "group": "nature",
+      "file": "moon.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/327768/moon",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      }
+    },
+    {
+      "id": "fire",
+      "zh": "火焰",
+      "en": "fire",
+      "group": "nature",
+      "file": "fire.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/323295/fire",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      }
+    },
+    {
+      "id": "leaf",
+      "zh": "叶子",
+      "en": "leaf",
+      "group": "nature",
+      "file": "leaf.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/327629/leaf",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      }
+    },
+    {
+      "id": "heart",
+      "zh": "心形",
+      "en": "heart",
+      "group": "symbol",
+      "file": "heart.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/324755/white-heart",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "iwanPlays"
+      }
+    },
+    {
+      "id": "arrow",
+      "zh": "箭头",
+      "en": "arrow",
+      "group": "symbol",
+      "file": "arrow.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/322449/arrow",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      }
+    },
+    {
+      "id": "hammer",
+      "zh": "锤子",
+      "en": "hammer",
+      "group": "tool",
+      "file": "hammer.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/3619/hammer",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "alst"
+      }
+    },
+    {
+      "id": "dragon",
+      "zh": "龙",
+      "en": "dragon",
+      "group": "character",
+      "file": "dragon.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/319538/chinese-dragon",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "liftarn"
+      }
+    },
+    {
+      "id": "pagoda",
+      "zh": "宝塔",
+      "en": "pagoda",
+      "group": "culture",
+      "file": "pagoda.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/174924/pagoda-silhouette",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "Silveira"
+      }
+    },
+    {
+      "id": "piano",
+      "zh": "钢琴",
+      "en": "piano",
+      "group": "music-sport",
+      "file": "piano.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/151849/piano",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "Moini"
+      }
+    },
+    {
+      "id": "guitar",
+      "zh": "吉他",
+      "en": "guitar",
+      "group": "music-sport",
+      "file": "guitar.svg",
+      "source": {
+        "name": "Openclipart",
+        "url": "https://openclipart.org/detail/323478/guitar",
+        "license": "Public-Domain",
+        "licenseUrl": "https://openclipart.org/license",
+        "attribution": "NicholasJudy567"
+      }
+    },
+    {
+      "id": "fa-house",
+      "zh": "房子",
+      "en": "house",
+      "group": "building",
+      "file": "fa-house.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/house?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-rocket",
+      "zh": "火箭",
+      "en": "rocket",
+      "group": "vehicle",
+      "file": "fa-rocket.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/rocket?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-star",
+      "zh": "星星",
+      "en": "star",
+      "group": "nature",
+      "file": "fa-star.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/star?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-cloud",
+      "zh": "云",
+      "en": "cloud",
+      "group": "nature",
+      "file": "fa-cloud.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/cloud?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-anchor",
+      "zh": "锚",
+      "en": "anchor",
+      "group": "object",
+      "file": "fa-anchor.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/anchor?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-bone",
+      "zh": "骨头",
+      "en": "bone",
+      "group": "object",
+      "file": "fa-bone.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/bone?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-crown",
+      "zh": "皇冠",
+      "en": "crown",
+      "group": "object",
+      "file": "fa-crown.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/crown?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-feather",
+      "zh": "羽毛",
+      "en": "feather",
+      "group": "nature",
+      "file": "fa-feather.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/feather?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-snowflake",
+      "zh": "雪花",
+      "en": "snowflake",
+      "group": "nature",
+      "file": "fa-snowflake.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/snowflake?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-lemon",
+      "zh": "柠檬",
+      "en": "lemon",
+      "group": "food",
+      "file": "fa-lemon.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/lemon?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-drumstick-bite",
+      "zh": "鸡腿",
+      "en": "drumstick-bite",
+      "group": "food",
+      "file": "fa-drumstick-bite.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/drumstick-bite?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-ghost",
+      "zh": "幽灵",
+      "en": "ghost",
+      "group": "character",
+      "file": "fa-ghost.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/ghost?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-bolt",
+      "zh": "闪电",
+      "en": "bolt",
+      "group": "nature",
+      "file": "fa-bolt.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/bolt?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-droplet",
+      "zh": "水滴",
+      "en": "droplet",
+      "group": "nature",
+      "file": "fa-droplet.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/droplet?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-wrench",
+      "zh": "扳手",
+      "en": "wrench",
+      "group": "tool",
+      "file": "fa-wrench.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/wrench?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-crow",
+      "zh": "乌鸦",
+      "en": "crow",
+      "group": "animal",
+      "file": "fa-crow.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/crow?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    },
+    {
+      "id": "fa-cross",
+      "zh": "十字",
+      "en": "cross",
+      "group": "symbol",
+      "file": "fa-cross.svg",
+      "source": {
+        "name": "Font Awesome Free",
+        "url": "https://fontawesome.com/icons/cross?f=classic&s=solid",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Font Awesome Free 6.7.2"
+      }
+    }
+  ]
+}

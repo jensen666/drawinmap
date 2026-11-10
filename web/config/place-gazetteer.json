@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "activeCityId": "guangzhou",
+  "matching": {
+    "coverageMarginDeg": 0.01,
+    "poiContainmentMinQueryLength": 3,
+    "roadContainmentMinQueryLength": 3,
+    "roadContainmentMinSegments": 1,
+    "unresolvedPlace": "ask"
+  },
+  "cities": [
+    {
+      "id": "guangzhou",
+      "label": "广州",
+      "names": ["广州", "广州市"],
+      "title": "广州地图原型",
+      "subtitle": "广州地图原型 · Leaflet + OpenStreetMap",
+      "mapAriaLabel": "广州地图",
+      "view": {
+        "center": { "lat": 23.1291, "lng": 113.2644 },
+        "zoom": 11
+      },
+      "coverage": {
+        "centerLabel": "广州覆盖中心",
+        "description": "广州市区核心一带",
+        "hint": "广州市区"
+      },
+      "examples": [
+        "在广州塔附近走个心形",
+        "在越秀公园画个五角星",
+        "在珠江新城附近能画什么？"
+      ],
+      "roads": {
+        "dataUrl": "/data/guangzhou-roads.json",
+        "examples": ["北京路", "花城大道"]
+      },
+      "pois": [
+        { "name": "广州塔", "category": "城市地标", "lat": 23.1066, "lng": 113.3246 },
+        { "name": "花城广场", "category": "城市客厅", "lat": 23.1207, "lng": 113.3214 },
+        { "name": "珠江新城", "category": "中央商务区", "lat": 23.1198, "lng": 113.3245 },
+        { "name": "越秀公园", "category": "公园", "lat": 23.1357, "lng": 113.2649 },
+        { "name": "陈家祠", "category": "岭南建筑", "lat": 23.1285, "lng": 113.2461 },
+        { "name": "沙面岛", "category": "历史街区", "lat": 23.1076, "lng": 113.2436 },
+        { "name": "北京路步行街", "category": "商业街区", "lat": 23.1249, "lng": 113.2653 },
+        { "name": "白云山", "category": "自然景观", "lat": 23.1747, "lng": 113.2925 }
+      ],
+      "districts": [
+        { "name": "越秀区", "point": { "lat": 23.13, "lng": 113.27 } },
+        { "name": "荔湾区", "point": { "lat": 23.12, "lng": 113.24 }, "shortName": "荔湾" },
+        { "name": "海珠区", "point": { "lat": 23.08, "lng": 113.32 }, "shortName": "海珠" },
+        { "name": "天河区", "point": { "lat": 23.13, "lng": 113.33 } },
+        { "name": "白云区", "point": { "lat": 23.16, "lng": 113.27 } },
+        { "name": "黄埔区", "point": { "lat": 23.18, "lng": 113.46 }, "shortName": "黄埔" },
+        { "name": "番禺区", "point": { "lat": 22.95, "lng": 113.36 }, "shortName": "番禺" },
+        { "name": "花都区", "point": { "lat": 23.4, "lng": 113.22 }, "shortName": "花都" },
+        { "name": "南沙区", "point": { "lat": 22.8, "lng": 113.53 }, "shortName": "南沙" },
+        { "name": "从化区", "point": { "lat": 23.55, "lng": 113.59 }, "shortName": "从化" },
+        { "name": "增城区", "point": { "lat": 23.29, "lng": 113.83 }, "shortName": "增城" }
+      ],
+      "aliases": [
+        { "text": "小蛮腰", "target": { "type": "poi", "name": "广州塔" } },
+        { "text": "广州新电视塔", "target": { "type": "poi", "name": "广州塔" } },
+        { "text": "越秀", "target": { "type": "poi", "name": "越秀公园" } },
+        { "text": "越秀山", "target": { "type": "poi", "name": "越秀公园" } },
+        { "text": "白云", "target": { "type": "poi", "name": "白云山" } },
+        { "text": "沙面", "target": { "type": "poi", "name": "沙面岛" } },
+        { "text": "花城", "target": { "type": "poi", "name": "花城广场" } },
+        { "text": "花城汇", "target": { "type": "poi", "name": "花城广场" } },
+        { "text": "珠江", "target": { "type": "poi", "name": "珠江新城" } },
+        { "text": "新城", "target": { "type": "poi", "name": "珠江新城" } },
+        { "text": "陈家", "target": { "type": "poi", "name": "陈家祠" } },
+        { "text": "北京路", "target": { "type": "poi", "name": "北京路步行街" } },
+        { "text": "天河", "target": { "type": "road", "name": "天河" } }
+      ]
+    }
+  ]
+}

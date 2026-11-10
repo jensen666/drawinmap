@@ -1,0 +1,17 @@
+{
+  "name": "drawinmap",
+  "private": true,
+  "type": "module",
+  "description": "DrawInMap —— 用脚画图：把一句话解析成结构化意图，在真实路网上规划能走出来的图形路线",
+  "scripts": {
+    "test": "node tools/run-tests.mjs",
+    "test:fast": "node tools/run-tests.mjs --fast",
+    "test:list": "node tools/run-tests.mjs --list",
+    "check": "node tools/run-tests.mjs --check-only && node tools/check-docs-links.mjs && node tools/check-module-graph.mjs && node tools/check-tools-cdp.mjs && node tools/check-css-dupes.mjs && node tools/check-file-size.mjs",
+    "check:size": "node tools/check-file-size.mjs",
+    "test:e2e": "node tools/e2e-real-llm-30.mjs --cases-file test/e2e-accuracy-20-cases.mjs",
+    "test:e2e:smoke": "node tools/run-e2e-smoke.mjs",
+    "test:e2e:llm-config": "node tools/e2e-llm-config.mjs",
+    "serve": "node web/server.mjs 5173"
+  }
+}

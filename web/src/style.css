@@ -1,0 +1,2196 @@
+:root {
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+  --color-primary: #2563eb;
+  --color-danger: #dc2626;
+  --panel-bg: rgba(255, 255, 255, 0.92);
+  --panel-border: rgba(148, 163, 184, 0.35);
+  --panel-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  color: var(--color-text);
+  background: #e2e8f0;
+}
+
+/* 地图占满视口 */
+#map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* 通用浮层 */
+.hud {
+  position: absolute;
+  z-index: 1000;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  box-shadow: var(--panel-shadow);
+  backdrop-filter: blur(8px);
+}
+
+/* 左上角品牌卡 */
+.hud-brand {
+  top: 16px;
+  left: 16px;
+  padding: 12px 16px;
+  pointer-events: none;
+}
+
+.brand-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-primary);
+}
+
+.brand-subtitle {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+/* 左下角状态栏 */
+.hud-status {
+  left: 16px;
+  bottom: 16px;
+  min-width: 208px;
+  padding: 10px 14px;
+  font-size: 12px;
+  line-height: 1.8;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.status-row {
+  display: flex;
+  gap: 8px;
+}
+
+.status-key {
+  flex: 0 0 32px;
+  color: var(--color-text-muted);
+}
+
+
+
+/* "回到默认视野"按钮 */
+.hud-locate {
+  left: 16px;
+  bottom: 138px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primary);
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  background: var(--panel-bg);
+  box-shadow: var(--panel-shadow);
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+/* hud 按钮共用交互态（等价合并，方案 2026-11-09 §3.2 B3）：
+   五处悬停/按下位移声明体逐条相同，合并成一条多选择器规则；
+   位置保持在原 .hud-locate:hover/:active 处——仍在 .hud-roads:disabled 之前，
+   禁用态 transform:none 的覆盖关系与原文件一致。 */
+.hud-locate:hover,
+.hud-roads:hover,
+.hud-agent:hover,
+.hud-logs:hover,
+.hud-city:hover {
+  background: #fff;
+  transform: translateY(-1px);
+}
+
+.hud-locate:active,
+.hud-roads:active,
+.hud-agent:active,
+.hud-logs:active,
+.hud-city:active {
+  transform: translateY(0);
+}
+
+/* "路网数据"按钮 */
+.hud-roads {
+  left: 16px;
+  bottom: 194px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  background: var(--panel-bg);
+  box-shadow: var(--panel-shadow);
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.hud-roads:disabled {
+  opacity: 0.7;
+  cursor: default;
+  transform: none;
+}
+
+/* 地标圆点（divIcon 内部元素） */
+.poi-icon {
+  background: transparent;
+  border: none;
+}
+
+.poi-dot {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 6px rgba(37, 99, 235, 0.55);
+  transition: transform 0.15s ease;
+}
+
+.poi-icon:hover .poi-dot {
+  transform: scale(1.25);
+}
+
+/* 地标悬浮名称 */
+.poi-tooltip {
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+}
+
+
+
+/* 地标弹窗内容 */
+.poi-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 120px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.poi-popup strong {
+  font-size: 14px;
+}
+
+.poi-popup span {
+  color: var(--color-text-muted);
+  font-size: 12px;
+}
+
+.poi-popup .poi-coord {
+  color: #94a3b8;
+  font-variant-numeric: tabular-nums;
+}
+
+/* "智能体"按钮（右下角） */
+.hud-agent {
+  right: 16px;
+  bottom: 16px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  background: var(--panel-bg);
+  box-shadow: var(--panel-shadow);
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+/* 智能体对话面板（右侧抽屉）
+   max-height 留出顶部空间给"图形切换"浮层（top:96px，高约 34px），
+   面板顶部落在 142px，两者不互相遮挡。 */
+.agent-panel {
+  right: 16px;
+  bottom: 68px;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 210px);
+  padding: 12px 14px;
+  font-size: 13px;
+}
+
+.agent-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.agent-messages {
+  flex: 1;
+  min-height: 120px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 2px;
+}
+
+.agent-msg {
+  max-width: 88%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  line-height: 1.6;
+  white-space: pre-line;
+  word-break: break-word;
+}
+
+/* 面板内轻提示（点选比例尺卡片等就地操作的即时反馈）：
+   浮在输入区上方、几秒后淡出；不进入消息流，也不改变消息区滚动位置。
+   pointer-events: none 保证它不挡输入/卡片点击。 */
+.agent-toast {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 60px;
+  z-index: 2;
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #fff;
+  background: rgba(15, 23, 42, 0.92);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.24);
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.agent-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.agent-toast.is-warn {
+  background: rgba(180, 83, 9, 0.94);
+}
+
+.agent-toast.is-error {
+  background: rgba(185, 28, 28, 0.94);
+}
+
+.agent-msg-user {
+  align-self: flex-end;
+  color: #fff;
+  background: var(--color-primary);
+  border-bottom-right-radius: 4px;
+}
+
+.agent-msg-agent {
+  align-self: flex-start;
+  color: var(--color-text);
+  background: #f1f5f9;
+  border: 1px solid var(--panel-border);
+  border-bottom-left-radius: 4px;
+}
+
+.agent-msg-agent.is-pending {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+/* 推理过程：进行中逐行实时显示，完成后收进 <details> 折叠块 */
+.agent-reasoning-steps {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* 进行中步骤行尾的等待/用时秒数（每秒刷新，避免长模型调用期间像卡死） */
+.agent-step-elapsed {
+  margin-left: 4px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.7;
+}
+
+.agent-reasoning {
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.agent-reasoning summary {
+  cursor: pointer;
+  user-select: none;
+  font-style: italic;
+}
+
+.agent-msg-error {
+  align-self: flex-start;
+  color: var(--color-danger);
+  background: #fef2f2;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  border-bottom-left-radius: 4px;
+}
+
+.agent-msg-img {
+  display: block;
+  max-width: 180px;
+  max-height: 140px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+}
+
+/* 回复内目标点序列图：点列渲染小图 + 来源说明（地图画的是贴路网路线，这里是目标形状） */
+.agent-outline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 2px;
+}
+
+.agent-outline-img {
+  flex: none;
+  width: 88px;
+  height: 88px;
+  background: #fff;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+}
+
+.agent-outline-caption {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+/* 每轮回复的 traceId 复制条：画得不对时点一下复制完整 id，发给编程工具按 trace 定位 */
+.agent-msg-trace {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.agent-msg-trace .agent-trace-label {
+  user-select: none;
+  opacity: 0.75;
+}
+
+.agent-trace-copy {
+  max-width: 100%;
+  padding: 1px 8px;
+  overflow: hidden;
+  font: inherit;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+}
+
+.agent-trace-copy:hover {
+  color: var(--color-primary);
+  background: #fff;
+  border-color: rgba(37, 99, 235, 0.4);
+}
+
+.agent-trace-copy.is-copied {
+  color: #047857;
+  background: #ecfdf5;
+  border-color: rgba(5, 150, 105, 0.45);
+}
+
+.agent-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+/* 引导追问的可点选项行（复用 chip 样式，排列在消息区） */
+.agent-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0 4px 8px;
+}
+
+.agent-options .agent-chip {
+  font-size: 12px;
+  padding: 5px 12px;
+  color: var(--color-text);
+  background: #fff;
+}
+
+/* 交互态主蓝色（等价合并，方案 2026-11-09 §3.2 B3）：
+   五处 hover/is-active 的 color + border-color 声明体逐条相同，合并为一条多选择器规则。
+   位置沿用原 .agent-options .agent-chip:hover：hud 三条激活态均在其基础规则之后，
+   且与 .hud-roads:disabled 不冲突（后者只设 opacity/cursor/transform，属性不重叠），
+   级联结果与原文件一致。 */
+
+
+.agent-chip {
+  padding: 3px 10px;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  background: #f8fafc;
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+/* 参考候选并排选择卡（方案 2026-10-31 §6.4）：展示实际归一化 T、名称/姿态、
+   点数、来源/许可；桌面最多三张并排，窄屏纵向排列，不产生页面级横向溢出 */
+.agent-reference-choice {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px;
+  max-width: 100%;
+  margin: 4px 0 4px 8px;
+}
+
+.agent-ref-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  font: inherit;
+  text-align: left;
+  background: #fff;
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.agent-ref-card:hover:not(:disabled) {
+  border-color: rgba(37, 99, 235, 0.55);
+  box-shadow: 0 1px 6px rgba(37, 99, 235, 0.18);
+}
+
+.agent-ref-card:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.agent-ref-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+
+
+.agent-ref-card .agent-ref-meta {
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+/* 来源徽标：本地精选 / 在线未审核（在线候选必须经用户确认才能正式规划） */
+.agent-ref-badge {
+  align-self: flex-start;
+  padding: 1px 7px;
+  font-size: 10px;
+  border-radius: 999px;
+}
+
+.agent-ref-badge.is-curated {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.agent-ref-badge.is-unreviewed {
+  color: #854d0e;
+  background: #fef9c3;
+}
+
+/* 自由轮廓候选（LLM 生成、已通过视觉质检）：第三种来源，与本地精选/在线未审核区分 */
+.agent-ref-badge.is-freeform {
+  color: #4c1d95;
+  background: #ede9fe;
+}
+
+.agent-ref-card .agent-ref-attribution {
+  padding: 0;
+  font-size: 10px;
+  color: var(--color-primary);
+  text-align: left;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ==== 多比例尺候选卡片（需求 2026-11-09）：本次规划全部可交付比例尺档，
+   点选切换不重新规划；失效轮静态灰卡仅回顾 ==== */
+.agent-scale-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  gap: 8px;
+  max-width: 100%;
+  margin: 6px 0 4px 8px;
+}
+
+.agent-scale-caption {
+  grid-column: 1 / -1;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.agent-scale-card {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 8px;
+  font: inherit;
+  text-align: left;
+  background: #fff;
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.agent-scale-card:hover:not(:disabled) {
+  border-color: rgba(22, 163, 74, 0.55);
+  box-shadow: 0 1px 6px rgba(22, 163, 74, 0.16);
+}
+
+.agent-scale-card:disabled {
+  cursor: default;
+}
+
+/* 当前交付版：绿框 + 徽标（与地图绿线同一语义色） */
+.agent-scale-card.is-current {
+  border-color: rgba(22, 163, 74, 0.65);
+  background: #f0fdf4;
+}
+
+/* 失效轮（新输入/切会话/切城市/刷新后）：静态灰卡，点了无反应 */
+.agent-scale-cards.is-stale .agent-scale-card {
+  opacity: 0.6;
+}
+
+.agent-scale-card .agent-scale-size {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.agent-scale-card .agent-scale-size b {
+  font-weight: 700;
+}
+
+.agent-scale-badge {
+  padding: 0 6px;
+  font-size: 10px;
+  color: #166534;
+  background: #dcfce7;
+  border-radius: 999px;
+}
+
+.agent-scale-card .agent-scale-line {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.agent-scale-card .agent-scale-line.is-offset {
+  font-size: 10px;
+  color: #854d0e;
+}
+
+/* 窄屏：候选卡与比例尺卡片两列窄卡，不产生页面级横向溢出（方案 §11.4 / 需求 E2E-10，约 375px）。
+   两处声明体相同，等价合并为一条规则（方案 2026-11-09 §3.2 B3）；
+   位置沿用原 .agent-scale-cards 窄屏块：仍在两者基础规则之后，窄屏覆盖顺序不变。 */
+@media (max-width: 640px) {
+  .agent-reference-choice,
+  .agent-scale-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-left: 0;
+  }
+}
+
+.agent-attach {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 6px;
+  border: 1px dashed var(--panel-border);
+  border-radius: 8px;
+}
+
+.agent-attach img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.agent-attach button {
+  padding: 2px 8px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  background: transparent;
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.agent-input-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.agent-input-row textarea {
+  flex: 1;
+  min-width: 0;
+  max-height: 96px;
+  padding: 7px 10px;
+  font-size: 13px;
+  font-family: inherit;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: #fff;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  resize: none;
+}
+
+#agent-image-btn,
+#agent-send {
+  flex: 0 0 auto;
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#agent-image-btn {
+  color: var(--color-text-muted);
+  background: #f8fafc;
+  border: 1px solid var(--panel-border);
+}
+
+#agent-send {
+  color: #fff;
+  background: var(--color-primary);
+  border: none;
+}
+
+
+
+
+
+/* Leaflet 控件微调，避免与浮层视觉冲突 */
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: var(--panel-shadow) !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom a {
+  background: var(--panel-bg) !important;
+  color: var(--color-text) !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #fff !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-radius: 6px 0 0 0;
+  font-size: 11px !important;
+}
+
+/* 小屏适配 */
+@media (max-width: 640px) {
+  .hud-brand {
+    top: 10px;
+    left: 10px;
+    padding: 10px 12px;
+  }
+
+  /* 窄屏隐藏品牌副标题与"中心"坐标（屏幕小，会被底部浮层挤掉）；
+     两处声明体相同，等价合并为一条规则（方案 2026-11-09 §3.2 B3） */
+  .brand-subtitle,
+  .hud-status .status-row:first-child {
+    display: none;
+  }
+
+  /* 窄屏：状态栏改为横排一行，给底部对话面板让出高度（面板底部在 58px） */
+  .hud-status {
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    min-width: 0;
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .hud-status .status-row {
+    gap: 4px;
+  }
+
+  .hud-locate {
+    left: 10px;
+    bottom: 128px;
+  }
+
+  .hud-roads {
+    left: 10px;
+    bottom: 184px;
+  }
+
+  .hud-agent {
+    right: 10px;
+    bottom: 10px;
+  }
+  /* 对话面板窄屏尺寸在文件末尾的窄屏块统一声明（此处不再重复，避免两处 max-height 相互覆盖） */
+}
+
+/* ============================ 运行日志查看器 ============================ */
+
+/* "日志"按钮（左下角，叠在"路网数据"按钮上方） */
+.hud-logs {
+  left: 16px;
+  bottom: 306px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  background: var(--panel-bg);
+  box-shadow: var(--panel-shadow);
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+/* 日志面板（左侧抽屉，在"日志"按钮上方展开）。
+   max-height 用 vh-400px 而不是任务建议的 vh-340px：bottom 为 300px 时，
+   vh-340px 会让面板顶部落在 40px 处、压住左上品牌卡（品牌卡底边约 80px）；
+   vh-400px 对应顶部 100px，给品牌卡留出安全间距。 */
+.log-panel {
+  left: 16px;
+  bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 400px);
+  padding: 12px 14px;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+/* 面板右上角收起/关闭按钮（对话面板与日志面板共用；等价合并，方案 §3.2 B3）。
+   放在原 .log-close 处：@media (max-width: 640px) 里 .agent-collapse 的触控尺寸
+   覆盖规则仍在文件末尾，窄屏覆盖关系不变。 */
+
+
+/* 面板收起/关闭按钮悬停（等价合并，方案 §3.2 B3）：三处声明体相同 */
+
+
+/* 筛选行：级别、模块、关键词、导出、清空 */
+.log-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.log-controls select,
+.log-controls input {
+  min-width: 0;
+  height: 26px;
+  padding: 0 8px;
+  font-size: 12px;
+  font-family: inherit;
+  color: var(--color-text);
+  background: #fff;
+  border: 1px solid var(--panel-border);
+  border-radius: 7px;
+}
+
+.log-controls select {
+  max-width: 124px;
+  cursor: pointer;
+}
+
+#log-search {
+  flex: 1 1 140px;
+}
+
+/* 输入框聚焦：去默认 outline + 蓝色描边（等价合并，方案 §3.2 B3）。
+   位置沿用原 #log-search:focus：两处均在各输入框基础规则之后、无其他 border-color 竞争者。 */
+
+
+.log-action {
+  flex: 0 0 auto;
+  height: 26px;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: #f8fafc;
+  border: 1px solid var(--panel-border);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#log-clear:hover {
+  color: var(--color-danger);
+  border-color: rgba(220, 38, 38, 0.4);
+}
+
+/* 状态栏：会话 id、条数、落盘状态、localStorage 条数 */
+.log-status {
+  margin-bottom: 4px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  word-break: break-all;
+}
+
+/* "仅显示最新 N 条"提示 */
+.log-limit {
+  margin-bottom: 4px;
+  padding: 2px 8px;
+  font-size: 11px;
+  color: #b45309;
+  background: #fffbeb;
+  border-radius: 6px;
+}
+
+/* 日志列表（内部滚动，不撑高面板） */
+.log-list {
+  flex: 1 1 auto;
+  min-height: 90px;
+  overflow-y: auto;
+  padding: 2px;
+  border-top: 1px solid var(--panel-border);
+}
+
+.log-empty {
+  padding: 16px 4px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.log-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 6px;
+  padding: 3px 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-variant-numeric: tabular-nums;
+}
+
+.log-row:hover,
+.log-row.is-open {
+  background: #f8fafc;
+}
+
+/* 级别徽标 */
+.log-badge {
+  flex: 0 0 auto;
+  min-width: 36px;
+  padding: 0 5px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.log-level-debug {
+  background: #94a3b8;
+}
+
+.log-level-info {
+  background: var(--color-primary);
+}
+
+.log-level-warn {
+  background: #d97706;
+}
+
+.log-level-error {
+  background: var(--color-danger);
+}
+
+.log-time {
+  flex: 0 0 auto;
+  color: #94a3b8;
+}
+
+.log-module {
+  flex: 0 0 auto;
+  max-width: 110px;
+  overflow: hidden;
+  color: #7c3aed;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.log-event {
+  flex: 1 1 auto;
+  min-width: 80px;
+  color: var(--color-text);
+  word-break: break-all;
+}
+
+.log-duration {
+  flex: 0 0 auto;
+  color: var(--color-text-muted);
+}
+
+/* trace 短标签：点击按该 traceId 筛选 */
+.log-trace {
+  flex: 0 0 auto;
+  padding: 0 6px;
+  font-size: 10px;
+  line-height: 16px;
+  color: #0369a1;
+  background: #e0f2fe;
+  border: 1px solid rgba(3, 105, 161, 0.25);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.log-trace:hover {
+  background: #bae6fd;
+}
+
+/* 展开的完整 JSON（textContent 写入，含 data/error） */
+.log-detail {
+  flex: 1 1 100%;
+  max-height: 240px;
+  margin: 4px 0 2px;
+  padding: 6px 8px;
+  overflow: auto;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 11px;
+  line-height: 1.45;
+  color: #334155;
+  background: #f1f5f9;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* 窄屏（641–840px）：缩窄日志面板，避免与右侧智能体面板水平重叠 */
+@media (max-width: 840px) and (min-width: 641px) {
+  .log-panel {
+    width: min(460px, calc(100vw - 380px));
+  }
+}
+
+/* 小屏适配（沿用现有按钮堆叠位置） */
+@media (max-width: 640px) {
+  .hud-logs {
+    left: 10px;
+    bottom: 222px;
+  }
+
+  .log-panel {
+    left: 10px;
+    bottom: 290px;
+    width: calc(100vw - 20px);
+    max-height: calc(100vh - 372px);
+  }
+
+  .log-list {
+    min-height: 70px;
+  }
+}
+
+/* ============================ 历史对话与图形切换 ============================ */
+
+/* 对话面板标题栏：新增控件按用途分区（会话管理在对话面板） */
+.agent-title-actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 4px;
+}
+
+.agent-action {
+  flex: 0 0 auto;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  background: transparent;
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 小按钮/芯片悬停：主蓝字 + 蓝边 + 白底（等价合并，方案 2026-11-09 §3.2 B3）。
+   位置沿用原 .agent-action:hover：仍在 .agent-action.is-active 之前（激活态背景
+   #eff6ff 照旧覆盖悬停白底）；其余选择器在各自基础规则之后、无同属性竞争者。 */
+
+
+.agent-action.is-active {
+  color: var(--color-primary);
+  border-color: rgba(37, 99, 235, 0.4);
+  background: #eff6ff;
+}
+
+/* 历史对话列表：独立浮层，展开/收起不引起页面布局跳动 */
+.session-panel {
+  right: 372px;
+  bottom: 68px;
+  display: flex;
+  flex-direction: column;
+  width: 268px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 180px);
+  padding: 12px 12px 10px;
+  overflow: hidden;
+  z-index: 1100;
+  font-size: 12px;
+}
+
+.session-close {
+  flex: 0 0 auto;
+  padding: 2px 8px;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  background: transparent;
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.session-list {
+  flex: 1 1 auto;
+  min-height: 60px;
+  overflow-y: auto;
+  padding: 2px;
+  border-top: 1px solid var(--panel-border);
+}
+
+.session-empty {
+  padding: 18px 6px;
+  color: #94a3b8;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.session-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 0;
+  border-radius: 8px;
+}
+
+.session-item:hover {
+  background: rgba(241, 245, 249, 0.7);
+}
+
+/* 激活/悬停浅蓝底（等价合并，方案 §3.2 B3）：历史会话当前项、图形切换"最新版"、
+   消息内"查看此图形"。放在原 .session-item.is-active 位置：仍在 .session-item:hover
+   之后、.session-item.is-confirming 之前，删除确认红色背景的覆盖关系不变；
+   另两个选择器的基础规则在文件后部，靠 :hover/:not(:disabled) 特异性胜出，等价。 */
+.session-item.is-active,
+.shape-latest:hover:not(:disabled),
+.agent-shape-view:hover {
+  background: #eff6ff;
+}
+
+.session-item-main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  padding: 6px 8px;
+  font: inherit;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.session-item-main:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.session-item-title {
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.session-item-meta {
+  overflow: hidden;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.session-item-del {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-text-muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.session-item-del:hover {
+  color: var(--color-danger);
+  border-color: rgba(220, 38, 38, 0.35);
+}
+
+/* 删除二次确认（行内确认，不打断操作） */
+.session-item.is-confirming {
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 6px 8px;
+  background: #fef2f2;
+  border: 1px solid rgba(220, 38, 38, 0.25);
+}
+
+.session-confirm-text {
+  flex: 1 1 100%;
+  font-size: 11px;
+  color: var(--color-danger);
+}
+
+.session-confirm-yes,
+.session-confirm-no {
+  flex: 0 0 auto;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.session-confirm-yes {
+  color: #fff;
+  background: var(--color-danger);
+  border: 1px solid var(--color-danger);
+}
+
+
+
+/* 存储不可用提示（"历史不会保存"） */
+.session-note {
+  margin-top: 8px;
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #b45309;
+  background: #fffbeb;
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  border-radius: 6px;
+}
+
+/* 图形切换控件：靠地图右上角，避开 Leaflet 缩放控件（topright，高约 74px）
+   与右侧对话面板（顶部 142px），三者互不遮挡。 */
+.shape-switcher {
+  top: 96px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: min(320px, calc(100vw - 32px));
+  padding: 6px 8px;
+  font-size: 12px;
+}
+
+.shape-nav {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1;
+  color: var(--color-text);
+  background: #f8fafc;
+  border: 1px solid var(--panel-border);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.shape-nav:disabled,
+.shape-latest:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.shape-indicator {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  padding: 0 4px;
+  color: var(--color-text);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-variant-numeric: tabular-nums;
+}
+
+.shape-latest {
+  flex: 0 0 auto;
+  padding: 3px 9px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: #fff;
+  border: 1px solid rgba(37, 99, 235, 0.4);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+/* 消息内的"查看此图形"入口 */
+.agent-shape-view {
+  padding: 2px 9px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: #fff;
+  border: 1px solid rgba(37, 99, 235, 0.4);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+/* 消息内的状态备注（已停止 / 回复未完成） */
+.agent-msg-note {
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+/* 历史引导选项：只展示不可点（悬停也不变成可点样式） */
+.agent-options.is-history .agent-chip.is-static,
+.agent-options.is-history .agent-chip.is-static:hover {
+  cursor: default;
+  color: var(--color-text-muted);
+  background: #f1f5f9;
+  border-color: var(--panel-border);
+}
+
+/* 发送按钮在进行中变成"停止" */
+#agent-send.is-stop {
+  color: #fff;
+  background: var(--color-danger);
+}
+
+#agent-send.is-stop:hover {
+  background: #b91c1c;
+}
+
+/* 窄屏适配：历史列表盖在对话面板上方（全宽抽屉），图形切换控件缩窄并下移 */
+@media (max-width: 640px) {
+  .session-panel {
+    right: 10px;
+    left: 10px;
+    bottom: 58px;
+    top: auto;
+    width: auto;
+    max-width: none;
+    /* 顶边 = 100vh - 58 - (100vh - 210) = 152px：留在图形切换控件（top:92 + 约 34px 高）下方，互不遮挡 */
+    max-height: calc(100vh - 210px);
+    z-index: 1200;
+  }
+
+  .shape-switcher {
+    top: 92px;
+    right: 10px;
+    max-width: calc(100vw - 20px);
+    padding: 5px 6px;
+  }
+
+  .agent-panel {
+    right: 10px;
+    bottom: 58px;
+    width: calc(100% - 20px);
+    max-width: 360px;
+    max-height: calc(100vh - 190px);
+  }
+
+  .agent-title-actions {
+    gap: 3px;
+  }
+
+  .agent-action {
+    padding: 3px 7px;
+  }
+
+  /* 窄屏触控目标：新控件按钮补足到 ≥30~34px，避免"可点区域太小" */
+  .shape-nav {
+    min-width: 34px;
+    min-height: 34px;
+  }
+
+  .shape-latest {
+    min-height: 30px;
+    padding: 4px 10px;
+  }
+
+  .session-close,
+  .agent-collapse {
+    min-height: 30px;
+    padding: 4px 9px;
+  }
+
+  
+
+  .session-item-del {
+    min-width: 34px;
+    min-height: 34px;
+    font-size: 15px;
+  }
+
+  .session-confirm-yes,
+  .session-confirm-no {
+    min-height: 32px;
+    padding: 4px 8px;
+  }
+
+  .agent-shape-view {
+    min-height: 30px;
+    padding: 5px 12px;
+  }
+}
+
+/* 中等宽度（641~900px）：历史列表放地图左侧，不与右侧对话面板重叠 */
+@media (max-width: 900px) and (min-width: 641px) {
+  .session-panel {
+    right: auto;
+    left: 16px;
+    top: 96px;
+    bottom: auto;
+    width: min(268px, calc(100vw - 400px));
+    /* 底边 = 96 + (100vh - 286) = 100vh - 190：留在左下角"回到城市"按钮（顶边约 100vh - 178）上方 */
+    max-height: calc(100vh - 286px);
+    z-index: 1100;
+  }
+}
+
+/* 键盘可达性：新控件统一的焦点环（不改变鼠标交互观感） */
+
+
+/* ==================== 城市面板（按需获取全国城市路网，方案 2026-11-08 §5.4） ==================== */
+
+.hud-city {
+  left: 16px;
+  bottom: 250px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  background: var(--panel-bg);
+  box-shadow: var(--panel-shadow);
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.hud-city.is-active {
+  border-color: #7c3aed;
+  color: #6d28d9;
+}
+
+.hud-city:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.city-panel {
+  /* 与左侧"城市"按钮同侧：悬在按钮列（日志按钮上缘 ≈342px）之上 */
+  left: 16px;
+  bottom: 352px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-width: calc(100vw - 32px);
+  max-height: min(520px, calc(100vh - 380px));
+  padding: 12px 12px 10px;
+  overflow: hidden;
+  z-index: 1150;
+  font-size: 12px;
+}
+
+.city-title-text {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.city-meta {
+  flex: 1;
+  color: var(--color-muted, #64748b);
+}
+
+.city-close {
+  border: none;
+  background: transparent;
+  color: var(--color-muted, #64748b);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.city-close:hover {
+  background: rgba(15, 23, 42, 0.06);
+  color: var(--color-text);
+}
+
+.city-search-row {
+  margin-bottom: 8px;
+}
+
+.city-search-row input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.city-list {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.city-list.is-busy {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.city-group-head {
+  padding: 6px 8px 4px;
+  font-weight: 700;
+  color: var(--color-muted, #64748b);
+  font-size: 11px;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.city-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.city-row:hover {
+  background: rgba(124, 58, 237, 0.08);
+}
+
+.city-row.is-active-row {
+  background: rgba(124, 58, 237, 0.12);
+}
+
+.city-row:disabled {
+  cursor: not-allowed;
+}
+
+.city-name {
+  flex: 1;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.city-status {
+  font-size: 11px;
+  color: var(--color-muted, #64748b);
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.city-status.is-current { color: #6d28d9; font-weight: 700; }
+
+.city-status.is-fetching { color: #b45309; }
+
+.city-status.is-notfetched { color: var(--color-muted, #64748b); }
+
+.city-retry {
+  padding: 1px 8px;
+  border: 1px solid #b91c1c;
+  color: #b91c1c;
+  border-radius: 999px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.city-retry:hover {
+  background: #b91c1c;
+  color: #fff;
+}
+
+.city-note {
+  margin-top: 8px;
+  color: var(--color-muted, #64748b);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* ==================== 共享声明体（等价合并，方案 2026-11-09 §3.2 B3） ====================
+   以下规则由原文件里"选择器不同、声明体逐条相同"的多条规则合并而来，声明值零改动。
+   合并位置统一放在文件末尾：这些选择器在各自基础规则之后均无同属性竞争者
+   （逐组核对过：hud 按钮、面板标题、输入框聚焦、禁用态等只有本组规则设置该属性），
+   放到末尾不改变级联结果；[hidden] 组靠属性选择器特异性（0,2,0）高于组件基类
+   （0,1,0），隐藏覆盖关系与原文件一致。目的：同一份声明只写一次，避免多处漂移。 */
+
+/* hidden 属性：面板/附件条/提示条收起时必须真正隐藏（9 处同声明体） */
+
+
+/* 面板标题栏：日志/历史对话/城市三处同构（flex 行 + 居中 + 间距） */
+.log-title,
+.session-title,
+.city-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* 面板标题文字：日志/历史对话两处同构 */
+.log-title-text,
+.session-title-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* 面板标题右侧元信息：日志/历史对话两处同构（自动靠右 + 单行省略 + 等宽数字） */
+.log-meta,
+.session-meta {
+  margin-left: auto;
+  min-width: 0;
+  overflow: hidden;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 危险红字：瓦片加载异常与图片附件删除按钮悬停 */
+#status-tiles.is-error,
+.agent-attach button:hover {
+  color: var(--color-danger);
+}
+
+/* 折叠块内步骤列表与"查看此图形"入口的上边距 */
+.agent-reasoning .agent-reasoning-steps,
+.agent-msg-shape {
+  margin-top: 6px;
+}
+
+/* 小号弱化文字：参考候选标签与比例尺卡片辅助行 */
+.agent-ref-card .agent-ref-tags,
+.agent-scale-card .agent-scale-line.is-aux {
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+/* 弱化文字：比例尺卡片里程行与图形切换空态指示 */
+.agent-scale-card .agent-scale-line.is-meta,
+.shape-switcher.is-empty .shape-indicator {
+  color: var(--color-text-muted);
+}
+
+/* 禁用态：对话面板快捷操作与历史会话删除按钮 */
+.agent-action:disabled,
+.session-item-del:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* ==================== LLM 配置设置界面（需求 2026-11-09 R1～R8，方案 §5） ==================== */
+
+/* hidden 属性优先于自定义 display（面板/引导条/错误行/提示/确认区收起时必须真正隐藏） */
+
+
+/* 设置视图打开：隐藏对话展示区（只隐藏 DOM，不删除消息、不清空输入） */
+
+
+/* 未配置引导条（R7）：无生效配置时常驻对话区之上 */
+.agent-config-required {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #92400e;
+  background: #fffbeb;
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  border-radius: 8px;
+}
+
+.agent-config-required-text {
+  flex: 1 1 160px;
+  min-width: 0;
+}
+
+#agent-config-required-open {
+  flex: 0 0 auto;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: #b45309;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#agent-config-required-open:hover {
+  background: #92400e;
+}
+
+/* 「去配置」入口闪烁高亮（发送被未配置闸门拦下时） */
+.is-flash {
+  animation: llm-config-flash 0.4s ease-in-out 3;
+}
+
+@keyframes llm-config-flash {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(217, 119, 6, 0);
+  }
+  50% {
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.45);
+  }
+}
+
+/* 设置视图：占满面板剩余高度，面板内纵向滚动（窄屏 375px 不产生页面级横向溢出） */
+.agent-config {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.agent-config-title {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.agent-config-source {
+  padding: 1px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: #f1f5f9;
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.agent-config-source.is-page {
+  color: #1d4ed8;
+  background: #eff6ff;
+  border-color: rgba(37, 99, 235, 0.4);
+}
+
+.agent-config-source.is-file {
+  color: #15803d;
+  background: #f0fdf4;
+  border-color: rgba(22, 163, 74, 0.4);
+}
+
+.agent-config-source.is-none {
+  color: #b45309;
+  background: #fffbeb;
+  border-color: rgba(217, 119, 6, 0.4);
+}
+
+.agent-collapse, .log-close, .agent-config-close {
+  flex: 0 0 auto;
+  padding: 2px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  background: transparent;
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.agent-collapse:hover, .log-close:hover, .session-close:hover, .agent-config-close:hover {
+  color: var(--color-text);
+  background: #fff;
+}
+
+.agent-config-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  min-width: 0;
+  padding: 2px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* 字段块：label + input + 提示 + 字段级错误行 */
+.llm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.agent-ref-card .agent-ref-name, .llm-field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.llm-field input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: #fff;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+}
+
+/* 模型行：「模型」输入框 + 「获取模型」按钮（追加需求 2026-11-10，窄屏不横向溢出） */
+
+
+.llm-model-row input {
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+}
+
+#llm-models-fetch {
+  flex: 0 0 auto;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  background: #fff;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* 获取成功后的模型下拉：首项占位「选择模型（共 N 个）」 */
+.llm-models-select {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--color-text);
+  background: #fff;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+}
+
+/* 获取模型结果区：数量/选择/失败文案 */
+
+
+
+
+.llm-models-result.is-warn {
+  color: #92400e;
+}
+
+
+
+.llm-models-result.is-info {
+  color: #1e40af;
+}
+
+.poi-tooltip::before, .agent-panel[hidden], .agent-attach[hidden], .log-panel[hidden], .log-limit[hidden], .log-detail[hidden], .session-panel[hidden], .session-note[hidden], .shape-switcher[hidden], .city-panel[hidden], .agent-config[hidden], .agent-config-required[hidden], .llm-notice[hidden], .llm-field-error[hidden], .llm-test-result[hidden], .llm-restore-confirm[hidden], #llm-config-restore[hidden], .agent-panel.is-config-open .agent-messages, .agent-panel.is-config-open .agent-examples, .agent-panel.is-config-open .agent-attach, .agent-panel.is-config-open .agent-input-row, .llm-models-select[hidden], .llm-models-result[hidden] {
+  display: none;
+}
+
+.agent-input-row textarea:focus, #log-search:focus, .llm-field input:focus {
+  outline: none;
+  border-color: rgba(37, 99, 235, 0.5);
+}
+
+.llm-field input[aria-invalid='true'] {
+  border-color: rgba(220, 38, 38, 0.6);
+  background: #fef2f2;
+}
+
+.llm-field-hint {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  overflow-wrap: anywhere;
+}
+
+.llm-field-error {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--color-danger);
+  overflow-wrap: anywhere;
+}
+
+/* 密钥行：输入框 + 显示/隐藏切换 */
+.llm-model-row, .llm-key-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.llm-key-row input {
+  flex: 1 1 auto;
+  width: auto;
+}
+
+#llm-api-key-toggle {
+  flex: 0 0 auto;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  background: #fff;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hud-roads.is-active, .hud-agent.is-active, .hud-logs.is-active, .agent-options .agent-chip:hover, #agent-image-btn:hover, #llm-models-fetch:hover:not(:disabled), #llm-api-key-toggle:hover {
+  color: var(--color-primary);
+  border-color: rgba(37, 99, 235, 0.4);
+}
+
+/* 面板内提示区：保存成功/失败、端点自动纠正、损坏忽略 */
+.llm-notice {
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.llm-notice.is-success {
+  color: #166534;
+  background: #f0fdf4;
+  border-color: rgba(22, 163, 74, 0.4);
+}
+
+.llm-notice.is-warn {
+  color: #92400e;
+  background: #fffbeb;
+  border-color: rgba(217, 119, 6, 0.4);
+}
+
+.llm-notice.is-error {
+  color: #991b1b;
+  background: #fef2f2;
+  border-color: rgba(220, 38, 38, 0.4);
+}
+
+.llm-notice.is-info {
+  color: #1e40af;
+  background: #eff6ff;
+  border-color: rgba(37, 99, 235, 0.35);
+}
+
+/* 测试连接行 */
+.llm-test-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+#llm-config-test {
+  align-self: flex-start;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text);
+  background: #f8fafc;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.agent-chip:hover, .log-action:hover, .agent-action:hover, .shape-nav:hover:not(:disabled), #llm-config-test:hover:not(:disabled) {
+  color: var(--color-primary);
+  border-color: rgba(37, 99, 235, 0.4);
+  background: #fff;
+}
+
+#agent-image-btn:disabled, #agent-send:disabled, .agent-input-row textarea:disabled, #llm-models-fetch:disabled, #llm-config-test:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.llm-models-result, .llm-test-result {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  overflow-wrap: anywhere;
+}
+
+.city-status.is-ready, .llm-models-result.is-ok, .llm-test-result.is-ok {
+  color: #15803d;
+}
+
+.city-status.is-failed, .llm-models-result.is-error, .llm-test-result.is-error {
+  color: #b91c1c;
+}
+
+/* 保存 / 恢复默认 */
+.llm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#llm-config-save,
+#llm-config-restore,
+#llm-config-restore-ok,
+#llm-config-restore-cancel {
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#llm-config-save {
+  color: #fff;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+#agent-send:hover, #llm-config-save:hover {
+  background: #1d4ed8;
+}
+
+#llm-config-restore {
+  color: #b91c1c;
+  background: #fff;
+  border: 1px solid rgba(220, 38, 38, 0.45);
+}
+
+#llm-config-restore:hover {
+  background: #fef2f2;
+}
+
+/* 恢复默认行内二次确认（R6）：文案明确「将删除浏览器中的配置，回落到文件配置」 */
+.llm-restore-confirm {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #991b1b;
+  background: #fef2f2;
+  border: 1px solid rgba(220, 38, 38, 0.45);
+  border-radius: 8px;
+}
+
+.llm-restore-confirm-text {
+  margin: 0;
+}
+
+.llm-restore-confirm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+#llm-config-restore-ok {
+  color: #fff;
+  background: #b91c1c;
+  border: 1px solid #b91c1c;
+}
+
+#llm-config-restore-ok:hover {
+  background: #991b1b;
+}
+
+.session-confirm-no, #llm-config-restore-cancel {
+  color: var(--color-text-muted);
+  background: #fff;
+  border: 1px solid var(--panel-border);
+}
+
+.status-key + span, #llm-config-restore-cancel:hover {
+  color: var(--color-text);
+}
+
+/* 常驻安全提示（R8） */
+.llm-security-note {
+  margin: 0;
+  padding-top: 6px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  border-top: 1px dashed var(--panel-border);
+  overflow-wrap: anywhere;
+}
+
+/* 错误气泡内的「去配置」入口（R7）：与气泡同色系的小按钮，不改变消息其它样式 */
+.agent-open-config {
+  display: block;
+  margin-top: 8px;
+  padding: 4px 12px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: #991b1b;
+  background: #fff;
+  border: 1px solid rgba(220, 38, 38, 0.45);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.agent-open-config:hover {
+  color: #fff;
+  background: #b91c1c;
+  border-color: #b91c1c;
+}
+
+/* 键盘可达性：设置界面新控件统一焦点环 */
+.shape-nav:focus-visible, .shape-latest:focus-visible, .session-close:focus-visible, .session-item-main:focus-visible, .session-item-del:focus-visible, .session-confirm-yes:focus-visible, .session-confirm-no:focus-visible, .agent-action:focus-visible, .agent-collapse:focus-visible, .agent-shape-view:focus-visible, .agent-config-close:focus-visible, #llm-api-key-toggle:focus-visible, #llm-models-fetch:focus-visible, .llm-models-select:focus-visible, #llm-config-test:focus-visible, #llm-config-save:focus-visible, #llm-config-restore:focus-visible, #llm-config-restore-ok:focus-visible, #llm-config-restore-cancel:focus-visible, #agent-config-required-open:focus-visible, .llm-field input:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* 窄屏（需求 §5 边界情况约 375px）：字段/按钮宽度 100%、min-width:0，
+   面板内部滚动；保证可填写、保存、关闭且无页面级横向溢出 */
+@media (max-width: 640px) {
+  .agent-config-body {
+    gap: 9px;
+    padding: 2px 0;
+  }
+
+  .llm-actions {
+    flex-wrap: wrap;
+  }
+
+  #llm-config-save,
+  #llm-config-restore {
+    flex: 1 1 120px;
+    min-height: 34px;
+  }
+
+  
+
+  #llm-config-test, #llm-config-restore-ok, #llm-config-restore-cancel, #llm-models-fetch {
+    min-height: 32px;
+  }
+
+  
+
+  .agent-action, #agent-config-required-open {
+    min-height: 30px;
+  }
+
+  .llm-models-select, .llm-field input {
+    font-size: 14px;
+  }
+}

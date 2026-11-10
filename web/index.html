@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="DrawInMap Web 原型：使用 Leaflet 与 OpenStreetMap 展示地图" />
+    <title>DrawInMap</title>
+    <link rel="stylesheet" href="/vendor/leaflet.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- 地图容器：占满整个视口（城市与视野由地点配置决定） -->
+    <div id="map" aria-label="地图"></div>
+
+    <!-- 左上角品牌与说明（副标题运行时由地点配置填充） -->
+    <header class="hud hud-brand">
+      <div class="brand-title">DrawInMap</div>
+      <div class="brand-subtitle" id="brand-subtitle">Leaflet + OpenStreetMap</div>
+    </header>
+
+    <!-- 左下角状态栏：中心坐标、缩放级别、瓦片源 -->
+    <footer class="hud hud-status" id="status">
+      <div class="status-row"><span class="status-key">中心</span><span id="status-center">--</span></div>
+      <div class="status-row"><span class="status-key">缩放</span><span id="status-zoom">--</span></div>
+      <div class="status-row"><span class="status-key">底图</span><span id="status-tiles">--</span></div>
+    </footer>
+
+    <button class="hud hud-locate" id="locate-btn" type="button" title="回到默认视野">
+      回到默认视野
+    </button>
+
+    <button class="hud hud-roads" id="roads-btn" type="button" title="叠加显示本地 OSM 路网数据">
+      路网数据
+    </button>
+
+    <button class="hud hud-city" id="city-btn" type="button" title="选择城市：全国地级市/直辖市按需获取路网">
+      城市：<span id="city-btn-label">--</span>
+    </button>
+
+    <button class="hud hud-logs" id="log-btn" type="button" title="查看运行日志（可追溯/导出）">
+      日志
+    </button>
+
+    <button class="hud hud-agent" id="agent-btn" type="button" title="用自然语言或图片让智能体规划图形路线">
+      智能体
+    </button>
+
+    <!-- 城市面板（选择城市/查看获取进度/失败重试；按需获取前当前城市不变） -->
+    <section class="hud city-panel" id="city-panel" role="dialog" aria-label="选择城市" hidden>
+      <div class="city-title">
+        <span class="city-title-text">选择城市</span>
+        <span class="city-meta" id="city-meta">--</span>
+        <button class="city-close" id="city-close" type="button" title="关闭城市面板">关闭</button>
+      </div>
+      <div class="city-search-row">
+        <input id="city-search" type="search" placeholder="搜索城市名（全国地级市/直辖市）" autocomplete="off" />
+      </div>
+      <div class="city-list" id="city-list"></div>
+      <div class="city-note" id="city-note" hidden></div>
+    </section>
+
+    <!-- 右下角智能体对话面板 -->
+    <section class="hud agent-panel" id="agent-panel" hidden>
+      <div class="agent-title">
+        <span>画图智能体</span>
+        <div class="agent-title-actions">
+          <button class="agent-action" id="agent-new-session" type="button" title="新建对话（历史对话完整保留）">
+            新对话
+          </button>
+          <button class="agent-action" id="agent-history-toggle" type="button" title="历史对话列表" aria-controls="session-panel" aria-expanded="false">
+            历史
+          </button>
+          <button class="agent-action" id="agent-config-open" type="button" title="LLM 配置（端点/密钥/模型/超时/最大输出）">
+            设置
+          </button>
+          <button class="agent-collapse" id="agent-collapse" type="button" title="收起面板">收起</button>
+        </div>
+      </div>
+      <!-- 未配置引导条（R7）：无生效配置时常驻于对话区之上，点「去配置」打开设置界面 -->
+      <div class="agent-config-required" id="agent-config-required" hidden>
+        <span class="agent-config-required-text">尚未配置 LLM：请点击「去配置」填写端点、密钥与模型。</span>
+        <button id="agent-config-required-open" type="button">去配置</button>
+      </div>
+      <!-- LLM 配置设置视图（R1～R8）：打开时用 #agent-panel.is-config-open 隐藏对话区，不删除任何消息节点 -->
+      <section class="agent-config" id="agent-config" hidden aria-label="LLM 配置">
+        <div class="agent-config-title">
+          <span>LLM 配置</span>
+          <span class="agent-config-source" id="llm-config-source">--</span>
+          <button class="agent-config-close" id="llm-config-close" type="button" title="关闭设置，返回对话">关闭</button>
+        </div>
+        <div class="agent-config-body">
+          <div class="llm-notice" id="llm-config-notice" role="status" aria-live="polite" hidden></div>
+          <div class="llm-field">
+            <label for="llm-endpoint">端点</label>
+            <input id="llm-endpoint" type="text" autocomplete="off" spellcheck="false" placeholder="https://api.example.com/v1" />
+            <div class="llm-field-hint">OpenAI 兼容接口地址，不要带 /chat/completions；误带会在保存前自动纠正并提示。</div>
+            <div class="llm-field-error" id="llm-endpoint-error" hidden></div>
+          </div>
+          <div class="llm-field">
+            <label for="llm-api-key">密钥</label>
+            <div class="llm-key-row">
+              <input id="llm-api-key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-..." />
+              <button id="llm-api-key-toggle" type="button" aria-pressed="false" aria-controls="llm-api-key" aria-label="显示密钥">显示</button>
+            </div>
+            <div class="llm-field-hint">密钥只保存在本机浏览器，不上传服务端。</div>
+            <div class="llm-field-error" id="llm-api-key-error" hidden></div>
+          </div>
+          <div class="llm-field">
+            <label for="llm-model">模型</label>
+            <div class="llm-model-row">
+              <input id="llm-model" type="text" autocomplete="off" spellcheck="false" placeholder="deepseek-v4.1-flash" />
+              <button id="llm-models-fetch" type="button" title="从端点拉取可用模型列表（需要先填写端点与密钥）">获取模型</button>
+            </div>
+            <select id="llm-models-select" class="llm-models-select" aria-label="可用模型列表" hidden></select>
+            <div class="llm-models-result" id="llm-models-result" role="status" aria-live="polite" hidden></div>
+            <div class="llm-field-error" id="llm-model-error" hidden></div>
+          </div>
+          <div class="llm-field">
+            <label for="llm-timeout">单次超时（毫秒）</label>
+            <input id="llm-timeout" type="number" inputmode="numeric" min="1000" max="600000" step="1" placeholder="180000" />
+            <div class="llm-field-hint">1000 ~ 600000 毫秒（1 秒 ~ 10 分钟），默认 180000（3 分钟）。</div>
+            <div class="llm-field-error" id="llm-timeout-error" hidden></div>
+          </div>
+          <div class="llm-field">
+            <label for="llm-max-tokens">最大输出（token）</label>
+            <input id="llm-max-tokens" type="number" inputmode="numeric" min="256" max="64000" step="1" placeholder="32000" />
+            <div class="llm-field-hint">256 ~ 64000，默认 32000。</div>
+            <div class="llm-field-error" id="llm-max-tokens-error" hidden></div>
+          </div>
+          <div class="llm-test-row">
+            <button id="llm-config-test" type="button">测试连接</button>
+            <div class="llm-test-result" id="llm-config-test-result" role="status" aria-live="polite" hidden></div>
+          </div>
+          <div class="llm-actions">
+            <button id="llm-config-save" type="button">保存</button>
+            <button id="llm-config-restore" type="button" hidden>恢复默认</button>
+          </div>
+          <div class="llm-restore-confirm" id="llm-config-restore-confirm" hidden>
+            <p class="llm-restore-confirm-text">将删除浏览器中的配置，回落到文件配置。此操作不修改代码文件，确认恢复？</p>
+            <div class="llm-restore-confirm-actions">
+              <button id="llm-config-restore-ok" type="button">确认恢复</button>
+              <button id="llm-config-restore-cancel" type="button">取消</button>
+            </div>
+          </div>
+          <p class="llm-security-note">密钥以明文保存在本机浏览器，仅限可信设备/本地自用；公共设备请勿填写。</p>
+        </div>
+      </section>
+      <div class="agent-messages" id="agent-messages"></div>
+      <div class="agent-examples" id="agent-examples"></div>
+      <div class="agent-attach" id="agent-attach" hidden>
+        <img id="agent-attach-thumb" alt="待发送图片预览" />
+        <button id="agent-attach-remove" type="button" title="移除图片">×</button>
+      </div>
+      <div class="agent-input-row">
+        <button
+          id="agent-image-btn"
+          type="button"
+          title="上传图片描摹外轮廓（只接受线稿、剪影、白底或纯色底图标；得到实心外轮廓，孔洞不保留）"
+        >图片</button>
+        <input type="file" id="agent-image-input" accept="image/*" hidden />
+        <textarea
+          id="agent-input"
+          rows="1"
+          placeholder="想画什么？如：画个五角星"
+        ></textarea>
+        <button id="agent-send" type="button">发送</button>
+      </div>
+    </section>
+
+    <!-- 历史对话列表（会话管理，紧邻对话面板左侧；窄屏时覆盖在对话面板之上） -->
+    <section class="hud session-panel" id="session-panel" role="dialog" aria-label="历史对话列表" hidden>
+      <div class="session-title">
+        <span class="session-title-text">历史对话</span>
+        <span class="session-meta" id="session-meta">--</span>
+        <button class="session-close" id="session-close" type="button" title="关闭历史列表">关闭</button>
+      </div>
+      <div class="session-list" id="session-list"></div>
+      <div class="session-note" id="session-note" hidden></div>
+    </section>
+
+    <!-- 地图侧图形切换控件（前后翻看本对话生成过的每个图形） -->
+    <div class="hud shape-switcher" id="shape-switcher" role="group" aria-label="当前对话的图形切换" hidden>
+      <button class="shape-nav" id="shape-prev" type="button" title="上一个图形">‹</button>
+      <span class="shape-indicator" id="shape-indicator">暂无图形</span>
+      <button class="shape-nav" id="shape-next" type="button" title="下一个图形">›</button>
+      <button class="shape-latest" id="shape-latest" type="button" title="回到最新图形">最新</button>
+    </div>
+
+    <!-- 左下角运行日志抽屉：默认隐藏，点"日志"按钮展开（可筛选/展开详情/导出） -->
+    <section class="hud log-panel" id="log-panel" hidden>
+      <div class="log-title">
+        <span class="log-title-text">运行日志</span>
+        <span class="log-meta" id="log-meta">--</span>
+        <button class="log-close" id="log-close" type="button" title="关闭日志面板">关闭</button>
+      </div>
+      <div class="log-controls">
+        <select id="log-level" title="日志级别（最低级别语义）">
+          <option value="debug" selected>全部级别</option>
+          <option value="info">info 及以上</option>
+          <option value="warn">warn 及以上</option>
+          <option value="error">仅 error</option>
+        </select>
+        <select id="log-module" title="按模块筛选">
+          <option value="">全部模块</option>
+        </select>
+        <input id="log-search" type="search" placeholder="关键词 / traceId（忽略大小写）" autocomplete="off" />
+        <button class="log-action" id="log-export" type="button" title="导出当前筛选的 JSONL">导出</button>
+        <button class="log-action" id="log-clear" type="button" title="清空页面内日志（已落盘文件保留）">清空</button>
+      </div>
+      <div class="log-status" id="log-status">--</div>
+      <div class="log-limit" id="log-limit" hidden></div>
+      <div class="log-list" id="log-list"></div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

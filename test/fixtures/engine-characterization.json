@@ -1,0 +1,130 @@
+{
+  "_meta": {
+    "description": "引擎行为特征化基线（T-B1b）。由 `node test/engine-characterization.mjs --update` 生成；数值 round 到 0.1，非有限值存字符串。",
+    "generatedFromCommit": "898689f",
+    "metricKeys": [
+      "routePointCount",
+      "failedLegs",
+      "snapMaxMeters",
+      "snapAvgMeters",
+      "coverage",
+      "partCount",
+      "keyMaxOffsetRatio",
+      "orderedOutlineMeanRatio",
+      "orderedRouteMeanRatio",
+      "snapSource"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "straight",
+      "summary": {
+        "routeMeters": 1598.2,
+        "failedLegs": 0,
+        "reusedEdgeCount": 8,
+        "legsCount": 2,
+        "score": 100,
+        "metrics": {
+          "routePointCount": 17,
+          "failedLegs": 0,
+          "snapMaxMeters": 0,
+          "snapAvgMeters": 0,
+          "coverage": 100,
+          "partCount": 1,
+          "keyMaxOffsetRatio": 0,
+          "orderedOutlineMeanRatio": 0,
+          "orderedRouteMeanRatio": 0,
+          "snapSource": "nearest"
+        }
+      }
+    },
+    {
+      "id": "triangle",
+      "summary": {
+        "routeMeters": 1198.7,
+        "failedLegs": 0,
+        "reusedEdgeCount": 3,
+        "legsCount": 3,
+        "score": 72,
+        "metrics": {
+          "routePointCount": 13,
+          "failedLegs": 0,
+          "snapMaxMeters": 0,
+          "snapAvgMeters": 0,
+          "coverage": 100,
+          "partCount": 1,
+          "keyMaxOffsetRatio": 0,
+          "orderedOutlineMeanRatio": 0,
+          "orderedRouteMeanRatio": 0,
+          "snapSource": "nearest"
+        }
+      }
+    },
+    {
+      "id": "loop",
+      "summary": {
+        "routeMeters": 3196.4,
+        "failedLegs": 0,
+        "reusedEdgeCount": 4,
+        "legsCount": 6,
+        "score": 85,
+        "metrics": {
+          "routePointCount": 17,
+          "failedLegs": 0,
+          "snapMaxMeters": 0,
+          "snapAvgMeters": 0,
+          "coverage": 100,
+          "partCount": 1,
+          "keyMaxOffsetRatio": 0,
+          "orderedOutlineMeanRatio": 0,
+          "orderedRouteMeanRatio": 0,
+          "snapSource": "nearest"
+        }
+      }
+    },
+    {
+      "id": "multipart-connector",
+      "summary": {
+        "routeMeters": 4395.1,
+        "failedLegs": 0,
+        "reusedEdgeCount": 5,
+        "legsCount": 7,
+        "score": 85,
+        "metrics": {
+          "routePointCount": 23,
+          "failedLegs": 0,
+          "snapMaxMeters": 0,
+          "snapAvgMeters": 0,
+          "coverage": 100,
+          "partCount": 2,
+          "keyMaxOffsetRatio": 0,
+          "orderedOutlineMeanRatio": 0,
+          "orderedRouteMeanRatio": 0,
+          "snapSource": "nearest"
+        }
+      }
+    },
+    {
+      "id": "snap-shortcircuit",
+      "summary": {
+        "routeMeters": 0,
+        "failedLegs": 0,
+        "reusedEdgeCount": 0,
+        "legsCount": 0,
+        "score": 0,
+        "metrics": {
+          "routePointCount": 0,
+          "failedLegs": 0,
+          "snapMaxMeters": 200,
+          "snapAvgMeters": 200,
+          "coverage": 100,
+          "partCount": 1,
+          "keyMaxOffsetRatio": 0.3,
+          "orderedOutlineMeanRatio": "Infinity",
+          "orderedRouteMeanRatio": "Infinity",
+          "snapSource": "nearest"
+        }
+      }
+    }
+  ]
+}

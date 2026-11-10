@@ -1,0 +1,1255 @@
+{
+  "version": 1,
+  "description": "在线检索 shadow 的冻结查询集（PhyloPic 生物 + Openclipart 非生物对象；含预期无源反例）。",
+  "queries": [
+    {
+      "id": "horse",
+      "zh": "马",
+      "en": "horse",
+      "group": "animal",
+      "scientificNames": [
+        "Equus ferus caballus"
+      ]
+    },
+    {
+      "id": "dog",
+      "zh": "狗",
+      "en": "dog",
+      "group": "animal",
+      "scientificNames": [
+        "Canis familiaris"
+      ]
+    },
+    {
+      "id": "cat",
+      "zh": "猫",
+      "en": "cat",
+      "group": "animal",
+      "scientificNames": [
+        "Felis catus",
+        "Felis lybica",
+        "Felis"
+      ]
+    },
+    {
+      "id": "human",
+      "zh": "人",
+      "en": "human",
+      "group": "animal",
+      "scientificNames": [
+        "Homo sapiens"
+      ]
+    },
+    {
+      "id": "pigeon",
+      "zh": "鸽子",
+      "en": "pigeon",
+      "group": "animal",
+      "scientificNames": [
+        "Columba livia"
+      ]
+    },
+    {
+      "id": "chicken",
+      "zh": "鸡",
+      "en": "chicken",
+      "group": "animal",
+      "scientificNames": [
+        "Gallus gallus"
+      ]
+    },
+    {
+      "id": "duck",
+      "zh": "鸭",
+      "en": "duck",
+      "group": "animal",
+      "scientificNames": [
+        "Anas platyrhynchos"
+      ]
+    },
+    {
+      "id": "goose",
+      "zh": "鹅",
+      "en": "goose",
+      "group": "animal",
+      "scientificNames": [
+        "Anser anser"
+      ]
+    },
+    {
+      "id": "eagle",
+      "zh": "鹰",
+      "en": "eagle",
+      "group": "animal",
+      "scientificNames": [
+        "Aquila chrysaetos",
+        "Haliaeetus leucocephalus"
+      ]
+    },
+    {
+      "id": "owl",
+      "zh": "猫头鹰",
+      "en": "owl",
+      "group": "animal",
+      "scientificNames": [
+        "Bubo bubo",
+        "Strigiformes"
+      ]
+    },
+    {
+      "id": "penguin",
+      "zh": "企鹅",
+      "en": "penguin",
+      "group": "animal",
+      "scientificNames": [
+        "Aptenodytes forsteri",
+        "Sphenisciformes"
+      ]
+    },
+    {
+      "id": "swan",
+      "zh": "天鹅",
+      "en": "swan",
+      "group": "animal",
+      "scientificNames": [
+        "Cygnus olor"
+      ]
+    },
+    {
+      "id": "peacock",
+      "zh": "孔雀",
+      "en": "peacock",
+      "group": "animal",
+      "scientificNames": [
+        "Pavo cristatus",
+        "Pavo"
+      ]
+    },
+    {
+      "id": "tyrannosaurus",
+      "zh": "霸王龙",
+      "en": "Tyrannosaurus",
+      "group": "animal",
+      "scientificNames": [
+        "Tyrannosaurus"
+      ]
+    },
+    {
+      "id": "triceratops",
+      "zh": "三角龙",
+      "en": "Triceratops",
+      "group": "animal",
+      "scientificNames": [
+        "Triceratops"
+      ]
+    },
+    {
+      "id": "stegosaurus",
+      "zh": "剑龙",
+      "en": "Stegosaurus",
+      "group": "animal",
+      "scientificNames": [
+        "Stegosaurus"
+      ]
+    },
+    {
+      "id": "zebrafish",
+      "zh": "鱼",
+      "en": "fish",
+      "group": "animal",
+      "scientificNames": [
+        "Danio rerio"
+      ]
+    },
+    {
+      "id": "shark",
+      "zh": "鲨鱼",
+      "en": "shark",
+      "group": "animal",
+      "scientificNames": [
+        "Carcharhinus leucas",
+        "Selachimorpha",
+        "Carcharhinus"
+      ]
+    },
+    {
+      "id": "whale",
+      "zh": "鲸",
+      "en": "whale",
+      "group": "animal",
+      "scientificNames": [
+        "Cetacea",
+        "Balaenoptera musculus"
+      ]
+    },
+    {
+      "id": "dolphin",
+      "zh": "海豚",
+      "en": "dolphin",
+      "group": "animal",
+      "scientificNames": [
+        "Delphinus delphis",
+        "Delphinidae",
+        "Delphinus"
+      ]
+    },
+    {
+      "id": "elephant",
+      "zh": "大象",
+      "en": "elephant",
+      "group": "animal",
+      "scientificNames": [
+        "Loxodonta africana"
+      ]
+    },
+    {
+      "id": "lion",
+      "zh": "狮子",
+      "en": "lion",
+      "group": "animal",
+      "scientificNames": [
+        "Panthera leo"
+      ]
+    },
+    {
+      "id": "tiger",
+      "zh": "老虎",
+      "en": "tiger",
+      "group": "animal",
+      "scientificNames": [
+        "Panthera tigris"
+      ]
+    },
+    {
+      "id": "bear",
+      "zh": "熊",
+      "en": "bear",
+      "group": "animal",
+      "scientificNames": [
+        "Ursus arctos"
+      ]
+    },
+    {
+      "id": "wolf",
+      "zh": "狼",
+      "en": "wolf",
+      "group": "animal",
+      "scientificNames": [
+        "Canis lupus"
+      ]
+    },
+    {
+      "id": "fox",
+      "zh": "狐狸",
+      "en": "fox",
+      "group": "animal",
+      "scientificNames": [
+        "Vulpes vulpes"
+      ]
+    },
+    {
+      "id": "deer",
+      "zh": "鹿",
+      "en": "deer",
+      "group": "animal",
+      "scientificNames": [
+        "Cervus elaphus"
+      ]
+    },
+    {
+      "id": "giraffe",
+      "zh": "长颈鹿",
+      "en": "giraffe",
+      "group": "animal",
+      "scientificNames": [
+        "Giraffa camelopardalis",
+        "Giraffa"
+      ]
+    },
+    {
+      "id": "zebra",
+      "zh": "斑马",
+      "en": "zebra",
+      "group": "animal",
+      "scientificNames": [
+        "Equus quagga"
+      ]
+    },
+    {
+      "id": "rhinoceros",
+      "zh": "犀牛",
+      "en": "rhinoceros",
+      "group": "animal",
+      "scientificNames": [
+        "Ceratotherium simum"
+      ]
+    },
+    {
+      "id": "hippopotamus",
+      "zh": "河马",
+      "en": "hippopotamus",
+      "group": "animal",
+      "scientificNames": [
+        "Hippopotamus amphibius"
+      ]
+    },
+    {
+      "id": "camel",
+      "zh": "骆驼",
+      "en": "camel",
+      "group": "animal",
+      "scientificNames": [
+        "Camelus dromedarius"
+      ]
+    },
+    {
+      "id": "kangaroo",
+      "zh": "袋鼠",
+      "en": "kangaroo",
+      "group": "animal",
+      "scientificNames": [
+        "Macropus giganteus"
+      ]
+    },
+    {
+      "id": "koala",
+      "zh": "考拉",
+      "en": "koala",
+      "group": "animal",
+      "scientificNames": [
+        "Phascolarctos cinereus"
+      ]
+    },
+    {
+      "id": "panda",
+      "zh": "熊猫",
+      "en": "panda",
+      "group": "animal",
+      "scientificNames": [
+        "Ailuropoda melanoleuca"
+      ]
+    },
+    {
+      "id": "monkey",
+      "zh": "猴",
+      "en": "monkey",
+      "group": "animal",
+      "scientificNames": [
+        "Macaca mulatta"
+      ]
+    },
+    {
+      "id": "rabbit",
+      "zh": "兔",
+      "en": "rabbit",
+      "group": "animal",
+      "scientificNames": [
+        "Oryctolagus cuniculus"
+      ]
+    },
+    {
+      "id": "mouse",
+      "zh": "鼠",
+      "en": "mouse",
+      "group": "animal",
+      "scientificNames": [
+        "Mus musculus"
+      ]
+    },
+    {
+      "id": "cattle",
+      "zh": "牛",
+      "en": "cattle",
+      "group": "animal",
+      "scientificNames": [
+        "Bos taurus",
+        "Bos"
+      ]
+    },
+    {
+      "id": "sheep",
+      "zh": "羊",
+      "en": "sheep",
+      "group": "animal",
+      "scientificNames": [
+        "Ovis aries"
+      ]
+    },
+    {
+      "id": "pig",
+      "zh": "猪",
+      "en": "pig",
+      "group": "animal",
+      "scientificNames": [
+        "Sus scrofa"
+      ]
+    },
+    {
+      "id": "butterfly",
+      "zh": "蝴蝶",
+      "en": "butterfly",
+      "group": "animal",
+      "scientificNames": [
+        "Lepidoptera"
+      ]
+    },
+    {
+      "id": "bee",
+      "zh": "蜜蜂",
+      "en": "bee",
+      "group": "animal",
+      "scientificNames": [
+        "Apis mellifera"
+      ]
+    },
+    {
+      "id": "spider",
+      "zh": "蜘蛛",
+      "en": "spider",
+      "group": "animal",
+      "scientificNames": [
+        "Araneae"
+      ]
+    },
+    {
+      "id": "snake",
+      "zh": "蛇",
+      "en": "snake",
+      "group": "animal",
+      "scientificNames": [
+        "Serpentes"
+      ]
+    },
+    {
+      "id": "frog",
+      "zh": "青蛙",
+      "en": "frog",
+      "group": "animal",
+      "scientificNames": [
+        "Anura"
+      ]
+    },
+    {
+      "id": "crab",
+      "zh": "螃蟹",
+      "en": "crab",
+      "group": "animal",
+      "scientificNames": [
+        "Brachyura"
+      ]
+    },
+    {
+      "id": "snail",
+      "zh": "蜗牛",
+      "en": "snail",
+      "group": "animal",
+      "scientificNames": [
+        "Gastropoda"
+      ]
+    },
+    {
+      "id": "oak",
+      "zh": "树",
+      "en": "tree",
+      "group": "plant",
+      "scientificNames": [
+        "Quercus"
+      ]
+    },
+    {
+      "id": "magnolia",
+      "zh": "花",
+      "en": "flower",
+      "group": "plant",
+      "scientificNames": [
+        "Magnolia",
+        "Magnoliaceae"
+      ]
+    },
+    {
+      "id": "mushroom",
+      "zh": "蘑菇",
+      "en": "mushroom",
+      "group": "fungus",
+      "scientificNames": [
+        "Agaricus bisporus",
+        "Agaricaceae",
+        "Basidiomycota"
+      ]
+    },
+    {
+      "id": "bivalve",
+      "zh": "贝壳",
+      "en": "shell",
+      "group": "animal",
+      "scientificNames": [
+        "Bivalvia"
+      ]
+    },
+    {
+      "id": "octopus",
+      "zh": "章鱼",
+      "en": "octopus",
+      "group": "animal",
+      "scientificNames": [
+        "Octopus vulgaris"
+      ]
+    },
+    {
+      "id": "crocodile",
+      "zh": "鳄鱼",
+      "en": "crocodile",
+      "group": "animal",
+      "scientificNames": [
+        "Crocodylus niloticus"
+      ]
+    },
+    {
+      "id": "turtle",
+      "zh": "龟",
+      "en": "turtle",
+      "group": "animal",
+      "scientificNames": [
+        "Testudines",
+        "Chelonia",
+        "Emydidae"
+      ]
+    },
+    {
+      "id": "house",
+      "zh": "房子",
+      "en": "house",
+      "group": "building",
+      "scientificNames": [],
+      "searchTerms": [
+        "house",
+        "house silhouette",
+        "house icon"
+      ],
+      "source": "openclipart"
+    },
+    {
+      "id": "car",
+      "zh": "汽车",
+      "en": "car",
+      "group": "vehicle",
+      "scientificNames": [],
+      "searchTerms": [
+        "car",
+        "car silhouette",
+        "car icon"
+      ],
+      "source": "openclipart"
+    },
+    {
+      "id": "airplane",
+      "zh": "飞机",
+      "en": "airplane",
+      "group": "vehicle",
+      "scientificNames": [],
+      "searchTerms": [
+        "airplane",
+        "airplane silhouette",
+        "airplane icon"
+      ],
+      "source": "openclipart"
+    },
+    {
+      "id": "boat",
+      "zh": "船",
+      "en": "boat",
+      "group": "vehicle",
+      "scientificNames": [],
+      "searchTerms": [
+        "boat",
+        "boat silhouette",
+        "boat icon"
+      ],
+      "source": "openclipart"
+    },
+    {
+      "id": "robot",
+      "zh": "机器人",
+      "en": "robot",
+      "group": "character",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "robot",
+        "robot silhouette",
+        "robot icon"
+      ]
+    },
+    {
+      "id": "bicycle",
+      "zh": "自行车",
+      "en": "bicycle",
+      "group": "vehicle",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "bicycle",
+        "bicycle silhouette",
+        "bicycle icon"
+      ]
+    },
+    {
+      "id": "train",
+      "zh": "火车",
+      "en": "train",
+      "group": "vehicle",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "train",
+        "train silhouette",
+        "train icon"
+      ]
+    },
+    {
+      "id": "motorcycle",
+      "zh": "摩托车",
+      "en": "motorcycle",
+      "group": "vehicle",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "motorcycle",
+        "motorcycle silhouette",
+        "motorcycle icon"
+      ]
+    },
+    {
+      "id": "bus",
+      "zh": "公交车",
+      "en": "bus",
+      "group": "vehicle",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "bus",
+        "bus silhouette",
+        "bus icon"
+      ]
+    },
+    {
+      "id": "helicopter",
+      "zh": "直升机",
+      "en": "helicopter",
+      "group": "vehicle",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "helicopter",
+        "helicopter silhouette",
+        "helicopter icon"
+      ]
+    },
+    {
+      "id": "rocket",
+      "zh": "火箭",
+      "en": "rocket",
+      "group": "vehicle",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "rocket",
+        "rocket silhouette",
+        "rocket icon"
+      ]
+    },
+    {
+      "id": "bridge",
+      "zh": "桥",
+      "en": "bridge",
+      "group": "building",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "bridge",
+        "bridge silhouette",
+        "bridge icon"
+      ]
+    },
+    {
+      "id": "tower",
+      "zh": "塔",
+      "en": "tower",
+      "group": "building",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "tower",
+        "tower silhouette",
+        "tower icon"
+      ]
+    },
+    {
+      "id": "castle",
+      "zh": "城堡",
+      "en": "castle",
+      "group": "building",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "castle",
+        "castle silhouette",
+        "castle icon"
+      ]
+    },
+    {
+      "id": "lighthouse",
+      "zh": "灯塔",
+      "en": "lighthouse",
+      "group": "building",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "lighthouse",
+        "lighthouse silhouette",
+        "lighthouse icon"
+      ]
+    },
+    {
+      "id": "windmill",
+      "zh": "风车",
+      "en": "windmill",
+      "group": "building",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "windmill",
+        "windmill silhouette",
+        "windmill icon"
+      ]
+    },
+    {
+      "id": "umbrella",
+      "zh": "雨伞",
+      "en": "umbrella",
+      "group": "object",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "umbrella",
+        "umbrella silhouette",
+        "umbrella icon"
+      ]
+    },
+    {
+      "id": "key",
+      "zh": "钥匙",
+      "en": "key",
+      "group": "object",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "key",
+        "key silhouette",
+        "key icon"
+      ]
+    },
+    {
+      "id": "cup",
+      "zh": "杯子",
+      "en": "cup",
+      "group": "object",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "cup",
+        "cup silhouette",
+        "cup icon"
+      ]
+    },
+    {
+      "id": "chair",
+      "zh": "椅子",
+      "en": "chair",
+      "group": "object",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "chair",
+        "chair silhouette",
+        "chair icon"
+      ]
+    },
+    {
+      "id": "book",
+      "zh": "书",
+      "en": "book",
+      "group": "object",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "book",
+        "book silhouette",
+        "book icon"
+      ]
+    },
+    {
+      "id": "clock",
+      "zh": "时钟",
+      "en": "clock",
+      "group": "object",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "clock",
+        "clock silhouette",
+        "clock icon"
+      ]
+    },
+    {
+      "id": "camera",
+      "zh": "相机",
+      "en": "camera",
+      "group": "object",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "camera",
+        "camera silhouette",
+        "camera icon"
+      ]
+    },
+    {
+      "id": "phone",
+      "zh": "手机",
+      "en": "phone",
+      "group": "object",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "phone",
+        "phone silhouette",
+        "phone icon"
+      ]
+    },
+    {
+      "id": "glasses",
+      "zh": "眼镜",
+      "en": "glasses",
+      "group": "object",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "glasses",
+        "glasses silhouette",
+        "glasses icon"
+      ]
+    },
+    {
+      "id": "hat",
+      "zh": "帽子",
+      "en": "hat",
+      "group": "object",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "hat",
+        "hat silhouette",
+        "hat icon"
+      ]
+    },
+    {
+      "id": "apple",
+      "zh": "苹果",
+      "en": "apple",
+      "group": "food",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "apple",
+        "apple silhouette",
+        "apple icon"
+      ]
+    },
+    {
+      "id": "banana",
+      "zh": "香蕉",
+      "en": "banana",
+      "group": "food",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "banana",
+        "banana silhouette",
+        "banana icon"
+      ]
+    },
+    {
+      "id": "pizza",
+      "zh": "披萨",
+      "en": "pizza",
+      "group": "food",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "pizza",
+        "pizza silhouette",
+        "pizza icon"
+      ]
+    },
+    {
+      "id": "cake",
+      "zh": "蛋糕",
+      "en": "cake",
+      "group": "food",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "cake",
+        "cake silhouette",
+        "cake icon"
+      ]
+    },
+    {
+      "id": "mountain",
+      "zh": "山",
+      "en": "mountain",
+      "group": "nature",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "mountain",
+        "mountain silhouette",
+        "mountain icon"
+      ]
+    },
+    {
+      "id": "sun",
+      "zh": "太阳",
+      "en": "sun",
+      "group": "nature",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "sun",
+        "sun silhouette",
+        "sun icon"
+      ]
+    },
+    {
+      "id": "moon",
+      "zh": "月亮",
+      "en": "moon",
+      "group": "nature",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "moon",
+        "moon silhouette",
+        "moon icon"
+      ]
+    },
+    {
+      "id": "cloud",
+      "zh": "云",
+      "en": "cloud",
+      "group": "nature",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "cloud",
+        "cloud silhouette",
+        "cloud icon"
+      ]
+    },
+    {
+      "id": "fire",
+      "zh": "火焰",
+      "en": "fire",
+      "group": "nature",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "fire",
+        "fire silhouette",
+        "fire icon"
+      ]
+    },
+    {
+      "id": "leaf",
+      "zh": "叶子",
+      "en": "leaf",
+      "group": "nature",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "leaf",
+        "leaf silhouette",
+        "leaf icon"
+      ]
+    },
+    {
+      "id": "heart",
+      "zh": "心形",
+      "en": "heart",
+      "group": "symbol",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "heart",
+        "heart silhouette",
+        "heart icon"
+      ]
+    },
+    {
+      "id": "arrow",
+      "zh": "箭头",
+      "en": "arrow",
+      "group": "symbol",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "arrow",
+        "arrow silhouette",
+        "arrow icon"
+      ]
+    },
+    {
+      "id": "cross",
+      "zh": "十字",
+      "en": "cross",
+      "group": "symbol",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "cross",
+        "cross silhouette",
+        "cross icon"
+      ]
+    },
+    {
+      "id": "hammer",
+      "zh": "锤子",
+      "en": "hammer",
+      "group": "tool",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "hammer",
+        "hammer silhouette",
+        "hammer icon"
+      ]
+    },
+    {
+      "id": "scissors",
+      "zh": "剪刀",
+      "en": "scissors",
+      "group": "tool",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "scissors",
+        "scissors silhouette",
+        "scissors icon"
+      ]
+    },
+    {
+      "id": "wrench",
+      "zh": "扳手",
+      "en": "wrench",
+      "group": "tool",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "wrench",
+        "wrench silhouette",
+        "wrench icon"
+      ]
+    },
+    {
+      "id": "dragon",
+      "zh": "龙",
+      "en": "dragon",
+      "group": "character",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "dragon",
+        "dragon silhouette",
+        "dragon icon"
+      ]
+    },
+    {
+      "id": "lantern",
+      "zh": "灯笼",
+      "en": "lantern",
+      "group": "culture",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "lantern",
+        "lantern silhouette",
+        "lantern icon"
+      ]
+    },
+    {
+      "id": "pagoda",
+      "zh": "宝塔",
+      "en": "pagoda",
+      "group": "culture",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "pagoda",
+        "pagoda silhouette",
+        "pagoda icon"
+      ]
+    },
+    {
+      "id": "piano",
+      "zh": "钢琴",
+      "en": "piano",
+      "group": "music-sport",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "piano",
+        "piano silhouette",
+        "piano icon"
+      ]
+    },
+    {
+      "id": "guitar",
+      "zh": "吉他",
+      "en": "guitar",
+      "group": "music-sport",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "guitar",
+        "guitar silhouette",
+        "guitar icon"
+      ]
+    },
+    {
+      "id": "soccer",
+      "zh": "足球",
+      "en": "soccer",
+      "group": "music-sport",
+      "source": "openclipart",
+      "scientificNames": [],
+      "searchTerms": [
+        "soccer",
+        "soccer silhouette",
+        "soccer icon"
+      ]
+    },
+    {
+      "id": "goat",
+      "zh": "山羊",
+      "en": "Capra hircus",
+      "group": "animal",
+      "scientificNames": [
+        "Capra hircus",
+        "Capra"
+      ]
+    },
+    {
+      "id": "donkey",
+      "zh": "驴",
+      "en": "Equus asinus",
+      "group": "animal",
+      "scientificNames": [
+        "Equus asinus",
+        "Equus"
+      ]
+    },
+    {
+      "id": "squirrel",
+      "zh": "松鼠",
+      "en": "Sciurus vulgaris",
+      "group": "animal",
+      "scientificNames": [
+        "Sciurus vulgaris",
+        "Sciurus"
+      ]
+    },
+    {
+      "id": "hedgehog",
+      "zh": "刺猬",
+      "en": "Erinaceus europaeus",
+      "group": "animal",
+      "scientificNames": [
+        "Erinaceus europaeus",
+        "Erinaceus"
+      ]
+    },
+    {
+      "id": "bat",
+      "zh": "蝙蝠",
+      "en": "Pteropus vampyrus",
+      "group": "animal",
+      "scientificNames": [
+        "Pteropus vampyrus",
+        "Chiroptera"
+      ]
+    },
+    {
+      "id": "seal",
+      "zh": "海豹",
+      "en": "Phoca vitulina",
+      "group": "animal",
+      "scientificNames": [
+        "Phoca vitulina",
+        "Phocidae"
+      ]
+    },
+    {
+      "id": "otter",
+      "zh": "水獭",
+      "en": "Lutra lutra",
+      "group": "animal",
+      "scientificNames": [
+        "Lutra lutra",
+        "Lutrinae"
+      ]
+    },
+    {
+      "id": "flamingo",
+      "zh": "火烈鸟",
+      "en": "Phoenicopterus roseus",
+      "group": "animal",
+      "scientificNames": [
+        "Phoenicopterus roseus",
+        "Phoenicopterus"
+      ]
+    },
+    {
+      "id": "parrot",
+      "zh": "鹦鹉",
+      "en": "Psittaciformes",
+      "group": "animal",
+      "scientificNames": [
+        "Psittaciformes",
+        "Psittacidae"
+      ]
+    },
+    {
+      "id": "lizard",
+      "zh": "蜥蜴",
+      "en": "Lacertilia",
+      "group": "animal",
+      "scientificNames": [
+        "Lacerta agilis",
+        "Lacerta",
+        "Varanus"
+      ]
+    },
+    {
+      "id": "jellyfish",
+      "zh": "水母",
+      "en": "Medusozoa",
+      "group": "animal",
+      "scientificNames": [
+        "Aurelia aurita",
+        "Scyphozoa",
+        "Medusozoa"
+      ]
+    }
+  ]
+}
