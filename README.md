@@ -6,6 +6,34 @@
 
 > 本目录是 GitHub 发布副本。主开发仓库在 Gitee，GitHub 侧只做同步发布。
 
+![广州地图原型（在沙面岛画个心形 · 路线贴合 85 分）](web/preview.jpg)
+
+## 真实运行演示
+
+### 1. 一句话到高贴合度图形路线（含三路轮廓候选与多比例尺就地切换）
+
+![核心画图与多比例尺切换全流程演示](assets/demo-workflow.gif)
+
+### 2. 高准确度贴路图形展示（内置图形 / 有机动物轮廓 / 多对象组合）
+
+| 花城广场 · 鲨鱼（路线贴合 85 分 · 5.4 km） | 越秀公园 · 天鹅（路线贴合 83 分 · 5.4 km） |
+| :---: | :---: |
+| ![花城广场画鲨鱼（路线贴合 85 分）](assets/showcase-shark-85.jpg) | ![越秀公园画天鹅（路线贴合 83 分）](assets/showcase-swan-83.jpg) |
+| **广州塔 · 五角星（路线贴合 81 分 · 7.2 km）** | **越秀公园 · 猫 + 狗多对象组合（路线贴合 85 分 · 9.0 km）** |
+| ![广州塔画五角星（路线贴合 81 分）](assets/showcase-star-81.jpg) | ![越秀公园画猫和狗（路线贴合 85 分）](assets/showcase-cat-dog-85.jpg) |
+
+### 3. 路网图层叠加、多图形切换、全国城市按需获取、运行日志与 LLM 配置
+
+![路网叠加、多图形切换、城市获取、日志与配置演示](assets/demo-features.gif)
+
+| 三种轮廓来源候选卡片挑选 | 多比例尺候选卡片就地切换（路线贴合 85 分） |
+| :---: | :---: |
+| ![三种轮廓来源候选卡片](assets/feature-reference-candidates.jpg) | ![多比例尺候选卡片就地切换](assets/feature-scale-switch.jpg) |
+| **条件实测推荐（只给时间与地点）** | **本地 26,211 条路网图层与全国 297 城按需获取** |
+| ![条件实测推荐](assets/feature-recommend.jpg) | ![本地路网与全国城市按需获取](assets/feature-roads-city.jpg) |
+| **全链路运行日志抽屉与历史图形切换** | **页面内 LLM 配置（支持获取模型与测试连接）** |
+| ![运行日志抽屉与图形切换](assets/feature-log-session.jpg) | ![页面内 LLM 配置面板](assets/feature-llm-config.jpg) |
+
 ## 它做什么
 
 - **自然语言画图**：输入「在广州塔附近画一个 800 米的五角星」这类需求，LLM 解析成结构化意图（图形 / 地点 / 尺寸），地点按配置解析为坐标，引擎在路网上规划出一条贴合的闭合路线。
@@ -65,6 +93,7 @@ export const AGENT_LLM = {
 ## 目录结构
 
 ```
+├── assets/       # README 展示动图（GIF）与高准确度功能截图
 ├── web/          # Web 原型（原生 HTML/CSS/ES Modules + 本地 Leaflet，零构建）
 │   ├── src/      # main / map / engine / agent / session / city / reference / log
 │   ├── server/   # Node-only 服务端模块（在线检索、城市路网获取）
